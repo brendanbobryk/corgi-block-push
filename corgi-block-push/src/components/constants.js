@@ -1,12 +1,13 @@
 // Game constants
 export const CELL_SIZE = 60; // px
-export const GRID_ROWS = 5;
-export const GRID_COLS = 5;
+export const GRID_ROWS = 7;
+export const GRID_COLS = 7;
 
 export const EMOJIS = {
   CORGI: "🐶",
   BLOCK: "🟫",
   EMPTY: "⬜",
+  GOAL: "⭐", // Goal tile
 };
 
 export const DIRECTIONS = {
@@ -20,4 +21,5 @@ export const DIRECTIONS = {
 export const PROPERTIES = {
   YOU: "YOU",   // Controllable object
   PUSH: "PUSH", // Pushable object
+  WIN: "WIN",   // Reaching this triggers win
 };
