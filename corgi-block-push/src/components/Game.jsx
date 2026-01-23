@@ -1,16 +1,29 @@
 import React, { useState, useEffect } from "react";
 import Cell from "./Cell";
-import { CELL_SIZE, GRID_ROWS, GRID_COLS, DIRECTIONS, PROPERTIES } from "./constants";
+import { CELL_SIZE, GRID_ROWS, GRID_COLS, DIRECTIONS } from "./constants";
 
-// Initial grid with walls and blocks
+// Maze layout: walls, pushable blocks, treat, goal
 const initialGrid = [
-  [ [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }] ],
-  [ [{ type: "WALL", properties: ["WALL"] }], [], [{ type: "BLOCK", properties: ["PUSH"] }], [], [], [{ type: "BLOCK", properties: ["PUSH"] }], [{ type: "WALL", properties: ["WALL"] }] ],
-  [ [{ type: "WALL", properties: ["WALL"] }], [], [{ type: "CORGI", properties: ["YOU"] }], [], [], [], [{ type: "WALL", properties: ["WALL"] }] ],
-  [ [{ type: "WALL", properties: ["WALL"] }], [], [], [{ type: "TREAT", properties: ["COLLECTIBLE"] }], [], [], [{ type: "WALL", properties: ["WALL"] }] ],
-  [ [{ type: "WALL", properties: ["WALL"] }], [], [{ type: "BLOCK", properties: ["PUSH"] }], [], [], [], [{ type: "WALL", properties: ["WALL"] }] ],
-  [ [{ type: "WALL", properties: ["WALL"] }], [], [], [], [], [], [{ type: "WALL", properties: ["WALL"] }] ],
-  [ [{ type: "WALL", properties: ["WALL"] }], [], [], [], [], [{ type: "GOAL", properties: ["WIN"] }], [{ type: "WALL", properties: ["WALL"] }] ],
+  // Row 0 - top wall
+  Array(GRID_COLS).fill(null).map(() => [{ type: "WALL", properties: ["WALL"] }]),
+
+  // Row 1
+  [ [{ type: "WALL", properties: ["WALL"] }], [], [], [{ type: "BLOCK", properties: ["PUSH"] }], [], [], [{ type: "WALL", properties: ["WALL"] }] ],
+
+  // Row 2
+  [ [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }], [], [{ type: "WALL", properties: ["WALL"] }], [], [], [{ type: "WALL", properties: ["WALL"] }] ],
+
+  // Row 3
+  [ [{ type: "WALL", properties: ["WALL"] }], [], [], [], [], [{ type: "TREAT", properties: ["COLLECTIBLE"] }], [{ type: "WALL", properties: ["WALL"] }] ],
+
+  // Row 4
+  [ [{ type: "WALL", properties: ["WALL"] }], [], [{ type: "BLOCK", properties: ["PUSH"] }], [{ type: "WALL", properties: ["WALL"] }], [], [], [{ type: "WALL", properties: ["WALL"] }] ],
+
+  // Row 5
+  [ [{ type: "WALL", properties: ["WALL"] }], [], [], [], [{ type: "BLOCK", properties: ["PUSH"] }], [], [{ type: "WALL", properties: ["WALL"] }] ],
+
+  // Row 6 - bottom wall with corgi start and goal
+  [ [{ type: "WALL", properties: ["WALL"] }], [], [], [{ type: "CORGI", properties: ["YOU"] }], [], [{ type: "GOAL", properties: ["WIN"] }], [{ type: "WALL", properties: ["WALL"] }] ],
 ];
 
 const Game = () => {
@@ -21,8 +34,7 @@ const Game = () => {
   const findPlayer = () => {
     for (let y = 0; y < GRID_ROWS; y++) {
       for (let x = 0; x < GRID_COLS; x++) {
-        const cell = grid[y][x];
-        if (cell.some((obj) => obj.properties.includes("YOU"))) return { x, y };
+        if (grid[y][x].some(obj => obj.properties.includes("YOU"))) return { x, y };
       }
     }
     return null;
@@ -41,7 +53,7 @@ const Game = () => {
     const targetCell = grid[ny][nx];
     const newGrid = grid.map(row => row.map(cell => [...cell]));
 
-    // Cannot move into walls
+    // Blocked by walls
     if (targetCell.some(obj => obj.properties.includes("WALL"))) return;
 
     // Check pushable
@@ -98,14 +110,10 @@ const Game = () => {
   useEffect(() => {
     const handleKey = e => {
       switch(e.key) {
-        case "ArrowUp":
-          movePlayer(DIRECTIONS.UP); break;
-        case "ArrowDown":
-          movePlayer(DIRECTIONS.DOWN); break;
-        case "ArrowLeft":
-          movePlayer(DIRECTIONS.LEFT); break;
-        case "ArrowRight":
-          movePlayer(DIRECTIONS.RIGHT); break;
+        case "ArrowUp": movePlayer(DIRECTIONS.UP); break;
+        case "ArrowDown": movePlayer(DIRECTIONS.DOWN); break;
+        case "ArrowLeft": movePlayer(DIRECTIONS.LEFT); break;
+        case "ArrowRight": movePlayer(DIRECTIONS.RIGHT); break;
         default: break;
       }
     };
@@ -119,11 +127,7 @@ const Game = () => {
         {hasTreat ? "🦴 Treat collected!" : "Collect the treat 🦴 first"}
       </div>
       {hasWon && (
-        <div style={{
-          fontSize: "2rem",
-          color: "#00ff99",
-          textShadow: "0 2px 6px rgba(0,0,0,0.7)"
-        }}>
+        <div style={{ fontSize: "2rem", color: "#00ff99", textShadow: "0 2px 6px rgba(0,0,0,0.7)" }}>
           🎉 You Win! 🎉
         </div>
       )}
