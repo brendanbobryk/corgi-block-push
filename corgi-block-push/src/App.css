@@ -1,4 +1,3 @@
-/* Global dark theme */
 body {
   margin: 0;
   padding: 0;
@@ -11,7 +10,6 @@ body {
   height: 100vh;
 }
 
-/* App container */
 .App {
   text-align: center;
   display: flex;
@@ -20,7 +18,6 @@ body {
   gap: 2rem;
 }
 
-/* Game title */
 .App h1 {
   font-size: 2.5rem;
   color: #fff;
