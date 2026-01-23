@@ -7,7 +7,8 @@ export const EMOJIS = {
   CORGI: "🐶",
   BLOCK: "🟫",
   EMPTY: "⬜",
-  GOAL: "⭐", // Goal tile
+  GOAL: "⭐",   // Goal tile
+  TREAT: "🦴",  // Item to collect
 };
 
 export const DIRECTIONS = {
@@ -21,5 +22,6 @@ export const DIRECTIONS = {
 export const PROPERTIES = {
   YOU: "YOU",   // Controllable object
   PUSH: "PUSH", // Pushable object
-  WIN: "WIN",   // Reaching this triggers win
+  WIN: "WIN",   // Reaching this triggers win (if treat collected)
+  COLLECTIBLE: "COLLECTIBLE", // Item to pick up
 };

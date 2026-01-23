@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Cell from "./Cell";
-import { CELL_SIZE, GRID_ROWS, GRID_COLS, DIRECTIONS, EMOJIS } from "./constants";
+import { CELL_SIZE, GRID_ROWS, GRID_COLS, DIRECTIONS, EMOJIS, PROPERTIES } from "./constants";
 
-// Initial grid: 7x7, corgi, blocks, and goal
+// Initial grid: corgi, blocks, treat, and goal
 const initialGrid = [
   [[], [], [], [], [], [], []],
   [[], [{ type: "BLOCK", properties: ["PUSH"] }], [], [], [], [], []],
   [[], [], [{ type: "CORGI", properties: ["YOU"] }], [], [], [], []],
-  [[], [], [], [], [], [], []],
+  [[], [], [], [{ type: "TREAT", properties: ["COLLECTIBLE"] }], [], [], []],
   [[], [], [], [], [{ type: "BLOCK", properties: ["PUSH"] }], [], []],
   [[], [], [], [], [], [], []],
   [[], [], [], [], [], [{ type: "GOAL", properties: ["WIN"] }], []],
@@ -16,6 +16,7 @@ const initialGrid = [
 const Game = () => {
   const [grid, setGrid] = useState(initialGrid);
   const [hasWon, setHasWon] = useState(false);
+  const [hasTreat, setHasTreat] = useState(false);
 
   // Find the player object
   const findPlayer = () => {
@@ -43,13 +44,12 @@ const Game = () => {
     const targetCell = grid[ny][nx];
     const newGrid = grid.map((row) => row.map((cell) => [...cell]));
 
+    // Check for pushable object
     const pushable = targetCell.find((obj) => obj.properties.includes("PUSH"));
 
     if (pushable) {
-      // Attempt to push
       const pushX = nx + dir.x;
       const pushY = ny + dir.y;
-
       if (
         pushX >= 0 &&
         pushX < GRID_COLS &&
@@ -66,22 +66,36 @@ const Game = () => {
         newGrid[cy][cx] = newGrid[cy][cx].filter((o) => o !== player);
         newGrid[ny][nx].push(player);
         setGrid(newGrid);
+        checkPickup(newGrid, nx, ny);
         checkWin(newGrid, nx, ny);
       }
-    } else if (targetCell.length === 0) {
-      // Move player to empty cell
+    } else {
+      // Move player to empty or collectible cell
       const player = newGrid[cy][cx].find((obj) => obj.properties.includes("YOU"));
       newGrid[cy][cx] = newGrid[cy][cx].filter((o) => o !== player);
       newGrid[ny][nx].push(player);
+
       setGrid(newGrid);
+      checkPickup(newGrid, nx, ny);
       checkWin(newGrid, nx, ny);
     }
   };
 
-  // Check if player reached a WIN tile
+  // Check if player picked up treat
+  const checkPickup = (currentGrid, x, y) => {
+    const cell = currentGrid[y][x];
+    const treat = cell.find((obj) => obj.properties.includes("COLLECTIBLE"));
+    if (treat) {
+      // Remove treat from grid
+      currentGrid[y][x] = cell.filter((o) => o !== treat);
+      setHasTreat(true);
+    }
+  };
+
+  // Check if player reached a WIN tile with treat
   const checkWin = (currentGrid, x, y) => {
     const cell = currentGrid[y][x];
-    if (cell.some((obj) => obj.properties.includes("WIN"))) {
+    if (cell.some((obj) => obj.properties.includes("WIN")) && hasTreat) {
       setHasWon(true);
     }
   };
@@ -108,10 +122,13 @@ const Game = () => {
     };
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
-  }, [grid, hasWon]);
+  }, [grid, hasTreat, hasWon]);
 
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "20px" }}>
+      <div style={{ fontSize: "1.2rem", color: "#fff" }}>
+        {hasTreat ? "🦴 Treat collected!" : "Collect the treat 🦴 first"}
+      </div>
       {hasWon && (
         <div
           style={{
