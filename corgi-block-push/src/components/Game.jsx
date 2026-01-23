@@ -88,20 +88,24 @@ const Game = () => {
   }, [grid]);
 
   return (
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: `repeat(${GRID_COLS}, ${CELL_SIZE}px)`,
-        gridTemplateRows: `repeat(${GRID_ROWS}, ${CELL_SIZE}px)`,
-        gap: "0px",
-        justifyContent: "center",
-      }}
-    >
-      {grid.flat().map((cell, idx) => (
-        <Cell key={idx} content={cell} />
-      ))}
-    </div>
-  );
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: `repeat(${GRID_COLS}, 60px)`,
+      gridTemplateRows: `repeat(${GRID_ROWS}, 60px)`,
+      gap: "10px",
+      justifyContent: "center",
+      backgroundColor: "#1a1a1a",
+      padding: "20px",
+      borderRadius: "15px",
+      boxShadow: "0 5px 15px rgba(0,0,0,0.5)",
+    }}
+  >
+    {grid.flat().map((cell, idx) => (
+      <Cell key={idx} content={cell} />
+    ))}
+  </div>
+    );
 };
 
 export default Game;

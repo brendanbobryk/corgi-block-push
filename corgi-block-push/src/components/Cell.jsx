@@ -4,14 +4,19 @@ const Cell = ({ content }) => {
   return (
     <div
       style={{
-        width: "50px",
-        height: "50px",
+        width: "60px",
+        height: "60px",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        border: "1px solid #ccc",
+        borderRadius: "10px",
+        border: "2px solid #333",
+        backgroundColor: "#1e1e1e",
+        boxShadow: "0 2px 5px rgba(0,0,0,0.5)",
         fontSize: "2rem",
+        transition: "all 0.2s ease",
         userSelect: "none",
+        cursor: "default",
       }}
     >
       {content}
