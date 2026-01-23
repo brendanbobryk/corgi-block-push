@@ -1,4 +1,5 @@
 import React from "react";
+import { EMOJIS } from "./constants";
 
 const Cell = ({ content }) => {
   return (
@@ -19,7 +20,7 @@ const Cell = ({ content }) => {
         cursor: "default",
       }}
     >
-      {content}
+      {content.map((obj, idx) => EMOJIS[obj.type] || "")}
     </div>
   );
 };

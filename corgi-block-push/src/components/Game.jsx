@@ -1,30 +1,35 @@
 import React, { useState, useEffect } from "react";
 import Cell from "./Cell";
-import { CELL_SIZE, GRID_ROWS, GRID_COLS, EMOJIS, DIRECTIONS } from "./constants";
+import { CELL_SIZE, GRID_ROWS, GRID_COLS, DIRECTIONS } from "./constants";
 
+// Initial grid: each cell is an array of objects
 const initialGrid = [
-  [EMOJIS.EMPTY, EMOJIS.EMPTY, EMOJIS.EMPTY, EMOJIS.EMPTY, EMOJIS.EMPTY],
-  [EMOJIS.EMPTY, EMOJIS.BLOCK, EMOJIS.EMPTY, EMOJIS.EMPTY, EMOJIS.EMPTY],
-  [EMOJIS.EMPTY, EMOJIS.EMPTY, EMOJIS.CORGI, EMOJIS.EMPTY, EMOJIS.EMPTY],
-  [EMOJIS.EMPTY, EMOJIS.EMPTY, EMOJIS.EMPTY, EMOJIS.BLOCK, EMOJIS.EMPTY],
-  [EMOJIS.EMPTY, EMOJIS.EMPTY, EMOJIS.EMPTY, EMOJIS.EMPTY, EMOJIS.EMPTY],
+  [[], [], [], [], []],
+  [[], [{ type: "BLOCK", properties: ["PUSH"] }], [], [], []],
+  [[], [], [{ type: "CORGI", properties: ["YOU"] }], [], []],
+  [[], [], [], [{ type: "BLOCK", properties: ["PUSH"] }], []],
+  [[], [], [], [], []],
 ];
 
 const Game = () => {
   const [grid, setGrid] = useState(initialGrid);
 
-  // Track corgi position
-  const findCorgi = () => {
+  // Find the player object
+  const findPlayer = () => {
     for (let y = 0; y < GRID_ROWS; y++) {
       for (let x = 0; x < GRID_COLS; x++) {
-        if (grid[y][x] === EMOJIS.CORGI) return { x, y };
+        const cell = grid[y][x];
+        if (cell.some((obj) => obj.properties.includes("YOU"))) return { x, y };
       }
     }
-    return { x: 0, y: 0 };
+    return null;
   };
 
-  const moveCorgi = (dir) => {
-    const { x: cx, y: cy } = findCorgi();
+  // Move player and push objects
+  const movePlayer = (dir) => {
+    const pos = findPlayer();
+    if (!pos) return;
+    const { x: cx, y: cy } = pos;
     const nx = cx + dir.x;
     const ny = cy + dir.y;
 
@@ -32,34 +37,40 @@ const Game = () => {
     if (nx < 0 || nx >= GRID_COLS || ny < 0 || ny >= GRID_ROWS) return;
 
     const targetCell = grid[ny][nx];
+    const newGrid = grid.map((row) => row.map((cell) => [...cell]));
 
-    // If empty, move corgi
-    if (targetCell === EMOJIS.EMPTY) {
-      const newGrid = grid.map((row) => [...row]);
-      newGrid[cy][cx] = EMOJIS.EMPTY;
-      newGrid[ny][nx] = EMOJIS.CORGI;
-      setGrid(newGrid);
-    }
+    const pushable = targetCell.find((obj) => obj.properties.includes("PUSH"));
 
-    // If block, attempt to push
-    if (targetCell === EMOJIS.BLOCK) {
+    if (pushable) {
+      // Attempt to push
       const pushX = nx + dir.x;
       const pushY = ny + dir.y;
 
-      // Check if push target is valid
       if (
         pushX >= 0 &&
         pushX < GRID_COLS &&
         pushY >= 0 &&
         pushY < GRID_ROWS &&
-        grid[pushY][pushX] === EMOJIS.EMPTY
+        newGrid[pushY][pushX].length === 0
       ) {
-        const newGrid = grid.map((row) => [...row]);
-        newGrid[pushY][pushX] = EMOJIS.BLOCK;
-        newGrid[ny][nx] = EMOJIS.CORGI;
-        newGrid[cy][cx] = EMOJIS.EMPTY;
+        // Move pushable
+        newGrid[pushY][pushX].push(pushable);
+        // Remove from original cell
+        newGrid[ny][nx] = newGrid[ny][nx].filter((o) => o !== pushable);
+
+        // Move player
+        const player = newGrid[cy][cx].find((obj) => obj.properties.includes("YOU"));
+        newGrid[cy][cx] = newGrid[cy][cx].filter((o) => o !== player);
+        newGrid[ny][nx].push(player);
+
         setGrid(newGrid);
       }
+    } else if (targetCell.length === 0) {
+      // Move player to empty cell
+      const player = newGrid[cy][cx].find((obj) => obj.properties.includes("YOU"));
+      newGrid[cy][cx] = newGrid[cy][cx].filter((o) => o !== player);
+      newGrid[ny][nx].push(player);
+      setGrid(newGrid);
     }
   };
 
@@ -68,16 +79,16 @@ const Game = () => {
     const handleKey = (e) => {
       switch (e.key) {
         case "ArrowUp":
-          moveCorgi(DIRECTIONS.UP);
+          movePlayer(DIRECTIONS.UP);
           break;
         case "ArrowDown":
-          moveCorgi(DIRECTIONS.DOWN);
+          movePlayer(DIRECTIONS.DOWN);
           break;
         case "ArrowLeft":
-          moveCorgi(DIRECTIONS.LEFT);
+          movePlayer(DIRECTIONS.LEFT);
           break;
         case "ArrowRight":
-          moveCorgi(DIRECTIONS.RIGHT);
+          movePlayer(DIRECTIONS.RIGHT);
           break;
         default:
           break;
@@ -88,24 +99,24 @@ const Game = () => {
   }, [grid]);
 
   return (
-  <div
-    style={{
-      display: "grid",
-      gridTemplateColumns: `repeat(${GRID_COLS}, 60px)`,
-      gridTemplateRows: `repeat(${GRID_ROWS}, 60px)`,
-      gap: "10px",
-      justifyContent: "center",
-      backgroundColor: "#1a1a1a",
-      padding: "20px",
-      borderRadius: "15px",
-      boxShadow: "0 5px 15px rgba(0,0,0,0.5)",
-    }}
-  >
-    {grid.flat().map((cell, idx) => (
-      <Cell key={idx} content={cell} />
-    ))}
-  </div>
-    );
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: `repeat(${GRID_COLS}, ${CELL_SIZE}px)`,
+        gridTemplateRows: `repeat(${GRID_ROWS}, ${CELL_SIZE}px)`,
+        gap: "10px",
+        justifyContent: "center",
+        backgroundColor: "#1a1a1a",
+        padding: "20px",
+        borderRadius: "15px",
+        boxShadow: "0 5px 15px rgba(0,0,0,0.5)",
+      }}
+    >
+      {grid.flat().map((cell, idx) => (
+        <Cell key={idx} content={cell} />
+      ))}
+    </div>
+  );
 };
 
 export default Game;
