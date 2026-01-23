@@ -4,25 +4,12 @@ import { CELL_SIZE, GRID_ROWS, GRID_COLS, DIRECTIONS } from "./constants";
 
 // Maze layout: walls, pushable blocks, treat, goal
 const initialGrid = [
-  // Row 0 - top wall
   Array(GRID_COLS).fill(null).map(() => [{ type: "WALL", properties: ["WALL"] }]),
-
-  // Row 1
   [ [{ type: "WALL", properties: ["WALL"] }], [], [], [{ type: "BLOCK", properties: ["PUSH"] }], [], [], [{ type: "WALL", properties: ["WALL"] }] ],
-
-  // Row 2
   [ [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }], [], [{ type: "WALL", properties: ["WALL"] }], [], [], [{ type: "WALL", properties: ["WALL"] }] ],
-
-  // Row 3
   [ [{ type: "WALL", properties: ["WALL"] }], [], [], [], [], [{ type: "TREAT", properties: ["COLLECTIBLE"] }], [{ type: "WALL", properties: ["WALL"] }] ],
-
-  // Row 4
   [ [{ type: "WALL", properties: ["WALL"] }], [], [{ type: "BLOCK", properties: ["PUSH"] }], [{ type: "WALL", properties: ["WALL"] }], [], [], [{ type: "WALL", properties: ["WALL"] }] ],
-
-  // Row 5
   [ [{ type: "WALL", properties: ["WALL"] }], [], [], [], [{ type: "BLOCK", properties: ["PUSH"] }], [], [{ type: "WALL", properties: ["WALL"] }] ],
-
-  // Row 6 - bottom wall with corgi start and goal
   [ [{ type: "WALL", properties: ["WALL"] }], [], [], [{ type: "CORGI", properties: ["YOU"] }], [], [{ type: "GOAL", properties: ["WIN"] }], [{ type: "WALL", properties: ["WALL"] }] ],
 ];
 
@@ -53,10 +40,8 @@ const Game = () => {
     const targetCell = grid[ny][nx];
     const newGrid = grid.map(row => row.map(cell => [...cell]));
 
-    // Blocked by walls
     if (targetCell.some(obj => obj.properties.includes("WALL"))) return;
 
-    // Check pushable
     const pushable = targetCell.find(obj => obj.properties.includes("PUSH"));
     if (pushable) {
       const pushX = nx + dir.x;
@@ -107,6 +92,15 @@ const Game = () => {
     }
   };
 
+  // Reset function
+  const resetGame = () => {
+    // Deep copy to prevent mutation issues
+    const newGrid = initialGrid.map(row => row.map(cell => [...cell]));
+    setGrid(newGrid);
+    setHasTreat(false);
+    setHasWon(false);
+  };
+
   useEffect(() => {
     const handleKey = e => {
       switch(e.key) {
@@ -123,14 +117,32 @@ const Game = () => {
 
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "20px" }}>
-      <div style={{ fontSize: "1.2rem", color: "#fff" }}>
+      {/* Reset button */}
+      <button
+        onClick={resetGame}
+        style={{
+          padding: "10px 20px",
+          fontSize: "1rem",
+          fontWeight: "bold",
+          borderRadius: "10px",
+          border: "none",
+          backgroundColor: "#ffdd57",
+          color: "#121212",
+          cursor: "pointer",
+          boxShadow: "0 3px 6px rgba(0,0,0,0.3)",
+          transition: "all 0.2s ease",
+        }}
+        onMouseDown={e => e.currentTarget.style.transform = "scale(0.95)"}
+        onMouseUp={e => e.currentTarget.style.transform = "scale(1)"}
+      >
+        🔄 Reset Game
+      </button>
+
+      <div className="status">
         {hasTreat ? "🦴 Treat collected!" : "Collect the treat 🦴 first"}
       </div>
-      {hasWon && (
-        <div style={{ fontSize: "2rem", color: "#00ff99", textShadow: "0 2px 6px rgba(0,0,0,0.7)" }}>
-          🎉 You Win! 🎉
-        </div>
-      )}
+      {hasWon && <div className="win-message">🎉 You Win! 🎉</div>}
+
       <div style={{
         display: "grid",
         gridTemplateColumns: `repeat(${GRID_COLS}, ${CELL_SIZE}px)`,
