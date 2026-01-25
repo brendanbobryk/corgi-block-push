@@ -6,8 +6,8 @@ import { CELL_SIZE, GRID_ROWS, GRID_COLS, DIRECTIONS } from "./constants";
 const initialGrid = [
   Array(GRID_COLS).fill(null).map(() => [{ type: "WALL", properties: ["WALL"] }]),
   [ [{ type: "WALL", properties: ["WALL"] }], [{ type: "GOAL", properties: ["WIN"] }], [], [{ type: "BLOCK", properties: ["PUSH"] }], [], [], [{ type: "WALL", properties: ["WALL"] }] ],
-  [ [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }], [], [{ type: "WALL", properties: ["WALL"] }], [], [], [{ type: "WALL", properties: ["WALL"] }] ],
-  [ [{ type: "WALL", properties: ["WALL"] }], [], [], [], [], [{ type: "TREAT", properties: ["COLLECTIBLE"] }], [{ type: "WALL", properties: ["WALL"] }] ],
+  [ [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }], [], [{ type: "WALL", properties: ["WALL"] }], [], [{ type: "BLOCK", properties: ["PUSH"] }], [{ type: "WALL", properties: ["WALL"] }] ],
+  [ [{ type: "WALL", properties: ["WALL"] }], [], [], [{ type: "BLOCK", properties: ["PUSH"] }], [], [{ type: "TREAT", properties: ["COLLECTIBLE"] }], [{ type: "WALL", properties: ["WALL"] }] ],
   [ [{ type: "WALL", properties: ["WALL"] }], [], [{ type: "BLOCK", properties: ["PUSH"] }], [{ type: "WALL", properties: ["WALL"] }], [], [], [{ type: "WALL", properties: ["WALL"] }] ],
   [ [{ type: "WALL", properties: ["WALL"] }], [], [], [{ type: "CORGI", properties: ["YOU"] }], [{ type: "BLOCK", properties: ["PUSH"] }], [], [{ type: "WALL", properties: ["WALL"] }] ],
   [ [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }] ],
