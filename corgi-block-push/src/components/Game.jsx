@@ -17,7 +17,7 @@ const Game = () => {
   const [grid, setGrid] = useState(initialGrid);
   const [hasWon, setHasWon] = useState(false);
   const [hasTreat, setHasTreat] = useState(false);
-  const [moves, setMoves] = useState(0); // NEW
+  const [moves, setMoves] = useState(0);
 
   const findPlayer = () => {
     for (let y = 0; y < GRID_ROWS; y++) {
@@ -63,7 +63,7 @@ const Game = () => {
         newGrid[ny][nx].push(player);
 
         setGrid(newGrid);
-        setMoves(m => m + 1); // NEW
+        setMoves(m => m + 1);
         checkPickup(newGrid, nx, ny);
         checkWin(newGrid, nx, ny);
       }
@@ -73,7 +73,7 @@ const Game = () => {
       newGrid[ny][nx].push(player);
 
       setGrid(newGrid);
-      setMoves(m => m + 1); // NEW
+      setMoves(m => m + 1);
       checkPickup(newGrid, nx, ny);
       checkWin(newGrid, nx, ny);
     }
@@ -95,13 +95,12 @@ const Game = () => {
     }
   };
 
-  // Reset function
   const resetGame = () => {
     const newGrid = initialGrid.map(row => row.map(cell => [...cell]));
     setGrid(newGrid);
     setHasTreat(false);
     setHasWon(false);
-    setMoves(0); // NEW
+    setMoves(0);
   };
 
   useEffect(() => {
@@ -120,6 +119,15 @@ const Game = () => {
 
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "20px" }}>
+      <style>
+        {`
+          @keyframes winPop {
+            0% { opacity: 0; transform: scale(0.9); }
+            100% { opacity: 1; transform: scale(1); }
+          }
+        `}
+      </style>
+
       <button
         onClick={resetGame}
         style={{
@@ -144,7 +152,17 @@ const Game = () => {
       <div className="status">
         {hasTreat ? "🦴 Treat collected!" : "Collect the treat 🦴 first"}
       </div>
-      {hasWon && <div className="win-message">🎉 You Win! 🎉</div>}
+
+      {hasWon && (
+        <div
+          className="win-message"
+          style={{
+            animation: "winPop 0.3s ease-out",
+          }}
+        >
+          🎉 You Win! 🎉
+        </div>
+      )}
 
       <div style={{
         display: "grid",
