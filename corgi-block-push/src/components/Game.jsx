@@ -17,6 +17,7 @@ const Game = () => {
   const [grid, setGrid] = useState(initialGrid);
   const [hasWon, setHasWon] = useState(false);
   const [hasTreat, setHasTreat] = useState(false);
+  const [moves, setMoves] = useState(0); // NEW
 
   const findPlayer = () => {
     for (let y = 0; y < GRID_ROWS; y++) {
@@ -62,6 +63,7 @@ const Game = () => {
         newGrid[ny][nx].push(player);
 
         setGrid(newGrid);
+        setMoves(m => m + 1); // NEW
         checkPickup(newGrid, nx, ny);
         checkWin(newGrid, nx, ny);
       }
@@ -71,6 +73,7 @@ const Game = () => {
       newGrid[ny][nx].push(player);
 
       setGrid(newGrid);
+      setMoves(m => m + 1); // NEW
       checkPickup(newGrid, nx, ny);
       checkWin(newGrid, nx, ny);
     }
@@ -94,11 +97,11 @@ const Game = () => {
 
   // Reset function
   const resetGame = () => {
-    // Deep copy to prevent mutation issues
     const newGrid = initialGrid.map(row => row.map(cell => [...cell]));
     setGrid(newGrid);
     setHasTreat(false);
     setHasWon(false);
+    setMoves(0); // NEW
   };
 
   useEffect(() => {
@@ -117,7 +120,6 @@ const Game = () => {
 
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "20px" }}>
-      {/* Reset button */}
       <button
         onClick={resetGame}
         style={{
@@ -138,6 +140,7 @@ const Game = () => {
         🔄 Reset Game
       </button>
 
+      <div className="status">Moves: {moves}</div>
       <div className="status">
         {hasTreat ? "🦴 Treat collected!" : "Collect the treat 🦴 first"}
       </div>
