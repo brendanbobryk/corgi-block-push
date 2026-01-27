@@ -138,7 +138,27 @@ const Game = () => {
         `}
       </style>
 
-      <button onClick={resetGame}>🔄 Reset Game</button>
+      {/* ✅ Polished Reset Button */}
+      <button
+        onClick={resetGame}
+        style={{
+          padding: "12px 24px",
+          fontSize: "1.1rem",
+          fontWeight: "bold",
+          borderRadius: "12px",
+          border: "none",
+          background: "linear-gradient(135deg, #ffdd57, #ffb347)",
+          color: "#121212",
+          cursor: "pointer",
+          boxShadow: "0 5px 15px rgba(0,0,0,0.4)",
+          transition: "all 0.2s ease",
+        }}
+        onMouseDown={e => e.currentTarget.style.transform = "scale(0.95)"}
+        onMouseUp={e => e.currentTarget.style.transform = "scale(1)"}
+        onMouseLeave={e => e.currentTarget.style.transform = "scale(1)"}
+      >
+        🔄 Reset Game
+      </button>
 
       <div className="status">Moves: {moves}</div>
       <div className="status">
