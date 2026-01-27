@@ -2,19 +2,27 @@ import React, { useState, useEffect } from "react";
 import Cell from "./Cell";
 import { CELL_SIZE, GRID_ROWS, GRID_COLS, DIRECTIONS } from "./constants";
 
-// Maze layout
-const initialGrid = [
-  Array(GRID_COLS).fill(null).map(() => [{ type: "WALL", properties: ["WALL"] }]),
-  [ [{ type: "WALL", properties: ["WALL"] }], [{ type: "GOAL", properties: ["WIN"] }], [], [], [{ type: "WALL", properties: ["WALL"] }], [{ type: "BLOCK", properties: ["PUSH"] }], [{ type: "WALL", properties: ["WALL"] }] ],
-  [ [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }], [], [], [], [], [{ type: "WALL", properties: ["WALL"] }] ],
-  [ [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }], [], [{ type: "BLOCK", properties: ["PUSH"] }], [], [], [{ type: "WALL", properties: ["WALL"] }] ],
-  [ [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }], [{ type: "BLOCK", properties: ["PUSH"] }], [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }], [], [{ type: "WALL", properties: ["WALL"] }] ],
-  [ [{ type: "WALL", properties: ["WALL"] }], [], [], [{ type: "CORGI", properties: ["YOU"] }], [{ type: "WALL", properties: ["WALL"] }], [{ type: "TREAT", properties: ["COLLECTIBLE"] }], [{ type: "WALL", properties: ["WALL"] }] ],
-  Array(GRID_COLS).fill(null).map(() => [{ type: "WALL", properties: ["WALL"] }]),
+// Define levels as grids
+const LEVELS = [
+  {
+    name: "Level 1",
+    grid: [
+      Array(GRID_COLS).fill(null).map(() => [{ type: "WALL", properties: ["WALL"] }]),
+      [ [{ type: "WALL", properties: ["WALL"] }], [{ type: "GOAL", properties: ["WIN"] }], [], [], [{ type: "WALL", properties: ["WALL"] }], [{ type: "BLOCK", properties: ["PUSH"] }], [{ type: "WALL", properties: ["WALL"] }] ],
+      [ [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }], [], [], [], [], [{ type: "WALL", properties: ["WALL"] }] ],
+      [ [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }], [], [{ type: "BLOCK", properties: ["PUSH"] }], [], [], [{ type: "WALL", properties: ["WALL"] }] ],
+      [ [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }], [{ type: "BLOCK", properties: ["PUSH"] }], [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }], [], [{ type: "WALL", properties: ["WALL"] }] ],
+      [ [{ type: "WALL", properties: ["WALL"] }], [], [], [{ type: "CORGI", properties: ["YOU"] }], [{ type: "WALL", properties: ["WALL"] }], [{ type: "TREAT", properties: ["COLLECTIBLE"] }], [{ type: "WALL", properties: ["WALL"] }] ],
+      Array(GRID_COLS).fill(null).map(() => [{ type: "WALL", properties: ["WALL"] }]),
+    ]
+  },
+  // Future levels can be added here
+  // { name: "Level 2", grid: [ ... ] }
 ];
 
 const Game = () => {
-  const [grid, setGrid] = useState(initialGrid);
+  const [currentLevel, setCurrentLevel] = useState(0);
+  const [grid, setGrid] = useState(LEVELS[currentLevel].grid.map(r => r.map(c => [...c])));
   const [hasWon, setHasWon] = useState(false);
   const [hasTreat, setHasTreat] = useState(false);
   const [moves, setMoves] = useState(0);
@@ -25,12 +33,21 @@ const Game = () => {
     setTimeout(() => setShake(false), 250);
   };
 
+  // Change level
+  const changeLevel = (e) => {
+    const levelIndex = parseInt(e.target.value);
+    setCurrentLevel(levelIndex);
+    const newGrid = LEVELS[levelIndex].grid.map(r => r.map(c => [...c]));
+    setGrid(newGrid);
+    setHasWon(false);
+    setHasTreat(false);
+    setMoves(0);
+  };
+
   const findPlayer = () => {
     for (let y = 0; y < GRID_ROWS; y++) {
       for (let x = 0; x < GRID_COLS; x++) {
-        if (grid[y][x].some(o => o.properties.includes("YOU"))) {
-          return { x, y };
-        }
+        if (grid[y][x].some(o => o.properties.includes("YOU"))) return { x, y };
       }
     }
     return null;
@@ -38,10 +55,8 @@ const Game = () => {
 
   const movePlayer = (dir) => {
     if (hasWon) return;
-
     const pos = findPlayer();
     if (!pos) return;
-
     const { x: cx, y: cy } = pos;
     const nx = cx + dir.x;
     const ny = cy + dir.y;
@@ -104,9 +119,10 @@ const Game = () => {
   };
 
   const resetGame = () => {
-    setGrid(initialGrid.map(r => r.map(c => [...c])));
-    setHasTreat(false);
+    const newGrid = LEVELS[currentLevel].grid.map(r => r.map(c => [...c]));
+    setGrid(newGrid);
     setHasWon(false);
+    setHasTreat(false);
     setMoves(0);
   };
 
@@ -119,7 +135,7 @@ const Game = () => {
     };
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
-  }, [grid, hasTreat, hasWon]);
+  }, [grid, hasTreat, hasWon, currentLevel]);
 
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "20px" }}>
@@ -138,7 +154,27 @@ const Game = () => {
         `}
       </style>
 
-      {/* ✅ Polished Reset Button */}
+      {/* Level Selector */}
+      <select
+        value={currentLevel}
+        onChange={changeLevel}
+        style={{
+          padding: "8px 16px",
+          borderRadius: "8px",
+          border: "none",
+          fontWeight: "bold",
+          fontSize: "1rem",
+          cursor: "pointer",
+          marginBottom: "10px",
+          backgroundColor: "#ffdd57",
+          color: "#121212",
+          boxShadow: "0 3px 6px rgba(0,0,0,0.3)"
+        }}
+      >
+        {LEVELS.map((lvl, idx) => <option key={idx} value={idx}>{lvl.name}</option>)}
+      </select>
+
+      {/* Reset Button */}
       <button
         onClick={resetGame}
         style={{
