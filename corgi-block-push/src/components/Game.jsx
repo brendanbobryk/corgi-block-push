@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Cell from "./Cell";
 import { CELL_SIZE, GRID_ROWS, GRID_COLS, DIRECTIONS } from "./constants";
 
-// Maze layout: walls, pushable blocks, treat, goal
+// Maze layout
 const initialGrid = [
   Array(GRID_COLS).fill(null).map(() => [{ type: "WALL", properties: ["WALL"] }]),
   [ [{ type: "WALL", properties: ["WALL"] }], [{ type: "GOAL", properties: ["WIN"] }], [], [], [{ type: "WALL", properties: ["WALL"] }], [{ type: "BLOCK", properties: ["PUSH"] }], [{ type: "WALL", properties: ["WALL"] }] ],
@@ -28,7 +28,9 @@ const Game = () => {
   const findPlayer = () => {
     for (let y = 0; y < GRID_ROWS; y++) {
       for (let x = 0; x < GRID_COLS; x++) {
-        if (grid[y][x].some(obj => obj.properties.includes("YOU"))) return { x, y };
+        if (grid[y][x].some(o => o.properties.includes("YOU"))) {
+          return { x, y };
+        }
       }
     }
     return null;
@@ -36,6 +38,7 @@ const Game = () => {
 
   const movePlayer = (dir) => {
     if (hasWon) return;
+
     const pos = findPlayer();
     if (!pos) return;
 
@@ -51,29 +54,27 @@ const Game = () => {
     const targetCell = grid[ny][nx];
     const newGrid = grid.map(row => row.map(cell => [...cell]));
 
-    if (targetCell.some(obj => obj.properties.includes("WALL"))) {
+    if (targetCell.some(o => o.properties.includes("WALL"))) {
       triggerShake();
       return;
     }
 
-    const pushable = targetCell.find(obj => obj.properties.includes("PUSH"));
+    const pushable = targetCell.find(o => o.properties.includes("PUSH"));
     if (pushable) {
-      const pushX = nx + dir.x;
-      const pushY = ny + dir.y;
+      const px = nx + dir.x;
+      const py = ny + dir.y;
 
       if (
-        pushX < 0 ||
-        pushX >= GRID_COLS ||
-        pushY < 0 ||
-        pushY >= GRID_ROWS ||
-        newGrid[pushY][pushX].length !== 0 ||
-        newGrid[pushY][pushX].some(obj => obj.properties.includes("WALL"))
+        px < 0 || px >= GRID_COLS ||
+        py < 0 || py >= GRID_ROWS ||
+        newGrid[py][px].length !== 0 ||
+        newGrid[py][px].some(o => o.properties.includes("WALL"))
       ) {
         triggerShake();
         return;
       }
 
-      newGrid[pushY][pushX].push(pushable);
+      newGrid[py][px].push(pushable);
       newGrid[ny][nx] = newGrid[ny][nx].filter(o => o !== pushable);
     }
 
@@ -87,25 +88,23 @@ const Game = () => {
     checkWin(newGrid, nx, ny);
   };
 
-  const checkPickup = (currentGrid, x, y) => {
-    const cell = currentGrid[y][x];
-    const treat = cell.find(obj => obj.properties.includes("COLLECTIBLE"));
+  const checkPickup = (g, x, y) => {
+    const cell = g[y][x];
+    const treat = cell.find(o => o.properties.includes("COLLECTIBLE"));
     if (treat) {
-      currentGrid[y][x] = cell.filter(o => o !== treat);
+      g[y][x] = cell.filter(o => o !== treat);
       setHasTreat(true);
     }
   };
 
-  const checkWin = (currentGrid, x, y) => {
-    const cell = currentGrid[y][x];
-    if (cell.some(obj => obj.properties.includes("WIN")) && hasTreat) {
+  const checkWin = (g, x, y) => {
+    if (g[y][x].some(o => o.properties.includes("WIN")) && hasTreat) {
       setHasWon(true);
     }
   };
 
   const resetGame = () => {
-    const newGrid = initialGrid.map(row => row.map(cell => [...cell]));
-    setGrid(newGrid);
+    setGrid(initialGrid.map(r => r.map(c => [...c])));
     setHasTreat(false);
     setHasWon(false);
     setMoves(0);
@@ -113,13 +112,10 @@ const Game = () => {
 
   useEffect(() => {
     const handleKey = e => {
-      switch(e.key) {
-        case "ArrowUp": movePlayer(DIRECTIONS.UP); break;
-        case "ArrowDown": movePlayer(DIRECTIONS.DOWN); break;
-        case "ArrowLeft": movePlayer(DIRECTIONS.LEFT); break;
-        case "ArrowRight": movePlayer(DIRECTIONS.RIGHT); break;
-        default: break;
-      }
+      if (e.key === "ArrowUp") movePlayer(DIRECTIONS.UP);
+      if (e.key === "ArrowDown") movePlayer(DIRECTIONS.DOWN);
+      if (e.key === "ArrowLeft") movePlayer(DIRECTIONS.LEFT);
+      if (e.key === "ArrowRight") movePlayer(DIRECTIONS.RIGHT);
     };
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
@@ -127,7 +123,20 @@ const Game = () => {
 
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "20px" }}>
-      {/* existing styles unchanged */}
+      <style>
+        {`
+          @keyframes winPop {
+            0% { opacity: 0; transform: scale(0.8); }
+            60% { opacity: 1; transform: scale(1.15); }
+            100% { transform: scale(1); }
+          }
+
+          @keyframes glow {
+            from { box-shadow: 0 0 0 rgba(255,221,87,0); }
+            to { box-shadow: 0 0 20px rgba(255,221,87,0.8); }
+          }
+        `}
+      </style>
 
       <button onClick={resetGame}>🔄 Reset Game</button>
 
@@ -136,6 +145,21 @@ const Game = () => {
         {hasTreat ? "🦴 Treat collected!" : "Collect the treat 🦴 first"}
       </div>
 
+      {hasWon && (
+        <div
+          style={{
+            animation: "winPop 0.6s cubic-bezier(.34,1.56,.64,1), glow 0.6s ease-out",
+            background: "#ffdd57",
+            color: "#121212",
+            padding: "12px 20px",
+            borderRadius: "12px",
+            fontWeight: "bold",
+          }}
+        >
+          🎉 You Win! 🎉
+        </div>
+      )}
+
       <div
         className={shake ? "shake" : ""}
         style={{
@@ -143,14 +167,13 @@ const Game = () => {
           gridTemplateColumns: `repeat(${GRID_COLS}, ${CELL_SIZE}px)`,
           gridTemplateRows: `repeat(${GRID_ROWS}, ${CELL_SIZE}px)`,
           gap: "10px",
-          justifyContent: "center",
           backgroundColor: "#1a1a1a",
           padding: "20px",
           borderRadius: "15px",
           boxShadow: "0 5px 15px rgba(0,0,0,0.5)"
         }}
       >
-        {grid.flat().map((cell, idx) => <Cell key={idx} content={cell} />)}
+        {grid.flat().map((cell, i) => <Cell key={i} content={cell} />)}
       </div>
     </div>
   );
