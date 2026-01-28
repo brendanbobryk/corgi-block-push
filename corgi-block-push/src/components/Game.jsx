@@ -141,6 +141,21 @@ const Game = () => {
 
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "20px" }}>
+      <style>
+        {`
+          @keyframes winPop {
+            0% { opacity: 0; transform: scale(0.8); }
+            60% { opacity: 1; transform: scale(1.15); }
+            100% { transform: scale(1); }
+          }
+
+          @keyframes glow {
+            from { box-shadow: 0 0 0 rgba(255,221,87,0); }
+            to { box-shadow: 0 0 20px rgba(255,221,87,0.8); }
+          }
+        `}
+      </style>
+
       <select value={currentLevel} onChange={changeLevel}>
         {LEVELS.map((lvl, i) => (
           <option key={i} value={i}>{lvl.name}</option>
@@ -152,7 +167,20 @@ const Game = () => {
       <div>Moves: {moves}</div>
       <div>{hasTreat ? "🦴 Treat collected!" : "Collect the treat 🦴 first"}</div>
 
-      {hasWon && <div>🎉 You Win! 🎉</div>}
+      {hasWon && (
+        <div
+          style={{
+            animation: "winPop 0.6s cubic-bezier(.34,1.56,.64,1), glow 0.6s ease-out",
+            background: "#ffdd57",
+            color: "#121212",
+            padding: "12px 20px",
+            borderRadius: "12px",
+            fontWeight: "bold",
+          }}
+        >
+          🎉 You Win! 🎉
+        </div>
+      )}
 
       <div
         className={shake ? "shake" : ""}
