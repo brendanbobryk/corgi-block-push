@@ -18,33 +18,37 @@ const Game = () => {
   const hasTreatRef = useRef(hasTreat);
   const hasWonRef = useRef(hasWon);
 
-  useEffect(() => { gridRef.current = grid; }, [grid]);
-  useEffect(() => { hasTreatRef.current = hasTreat; }, [hasTreat]);
-  useEffect(() => { hasWonRef.current = hasWon; }, [hasWon]);
+  const updateRefs = (newGrid, newHasTreat, newHasWon) => {
+    gridRef.current = newGrid;
+    hasTreatRef.current = newHasTreat;
+    hasWonRef.current = newHasWon;
+  };
 
   const triggerShake = () => {
     setShake(true);
     setTimeout(() => setShake(false), 250);
   };
 
-  // Reset game logic
-  const resetGame = () => {
-    const newGrid = LEVELS[currentLevel].grid.map(row => row.map(cell => [...cell]));
+  // --- resetGame updated to accept optional levelIndex ---
+  const resetGame = (levelIndex = currentLevel) => {
+    const newGrid = LEVELS[levelIndex].grid.map(row => row.map(cell => [...cell]));
     setGrid(newGrid);
     setHasWon(false);
     setHasTreat(false);
     setMoves(0);
+    updateRefs(newGrid, false, false); // update refs immediately
   };
 
-  // Change level safely
+  // Change level — only updates currentLevel here
   const changeLevel = (e) => {
     const levelIndex = parseInt(e.target.value);
     setCurrentLevel(levelIndex);
-    // After setting currentLevel, fully reset the game to sync refs/state
-    setTimeout(() => {
-      resetGame();
-    }, 0);
   };
+
+  // --- automatically reset whenever currentLevel changes ---
+  useEffect(() => {
+    resetGame(currentLevel);
+  }, [currentLevel]);
 
   const findPlayerInGrid = (g) => {
     for (let y = 0; y < GRID_ROWS; y++) {
@@ -104,21 +108,26 @@ const Game = () => {
     newGrid[cy][cx] = newGrid[cy][cx].filter(o => o !== player);
     newGrid[ny][nx].push(player);
 
-    setGrid(newGrid);
-    setMoves(m => m + 1);
-
     // pickup logic
+    let newHasTreat = currentHasTreat;
     const cell = newGrid[ny][nx];
     const treat = cell.find(o => o.properties.includes("COLLECTIBLE"));
     if (treat) {
       newGrid[ny][nx] = cell.filter(o => o !== treat);
+      newHasTreat = true;
       setHasTreat(true);
     }
 
     // win check
+    let newHasWon = currentHasWon;
     if (cell.some(o => o.properties.includes("WIN")) && currentHasTreat) {
+      newHasWon = true;
       setHasWon(true);
     }
+
+    setGrid(newGrid);
+    setMoves(m => m + 1);
+    updateRefs(newGrid, newHasTreat, newHasWon);
   };
 
   // --- key listener runs only once ---
@@ -172,7 +181,7 @@ const Game = () => {
 
       {/* Reset Button */}
       <button
-        onClick={resetGame}
+        onClick={() => resetGame()}
         style={{
           padding: "12px 24px",
           fontSize: "1.1rem",
