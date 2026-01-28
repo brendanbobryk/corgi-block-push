@@ -1,22 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import Cell from "./Cell";
 import { CELL_SIZE, GRID_ROWS, GRID_COLS, DIRECTIONS } from "./constants";
-
-// Define levels as grids
-const LEVELS = [
-  {
-    name: "Level 1",
-    grid: [
-      Array(GRID_COLS).fill(null).map(() => [{ type: "WALL", properties: ["WALL"] }]),
-      [ [{ type: "WALL", properties: ["WALL"] }], [{ type: "GOAL", properties: ["WIN"] }], [], [], [{ type: "WALL", properties: ["WALL"] }], [{ type: "BLOCK", properties: ["PUSH"] }], [{ type: "WALL", properties: ["WALL"] }] ],
-      [ [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }], [], [], [], [], [{ type: "WALL", properties: ["WALL"] }] ],
-      [ [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }], [], [{ type: "BLOCK", properties: ["PUSH"] }], [], [], [{ type: "WALL", properties: ["WALL"] }] ],
-      [ [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }], [{ type: "BLOCK", properties: ["PUSH"] }], [{ type: "WALL", properties: ["WALL"] }], [{ type: "WALL", properties: ["WALL"] }], [], [{ type: "WALL", properties: ["WALL"] }] ],
-      [ [{ type: "WALL", properties: ["WALL"] }], [], [], [{ type: "CORGI", properties: ["YOU"] }], [{ type: "WALL", properties: ["WALL"] }], [{ type: "TREAT", properties: ["COLLECTIBLE"] }], [{ type: "WALL", properties: ["WALL"] }] ],
-      Array(GRID_COLS).fill(null).map(() => [{ type: "WALL", properties: ["WALL"] }]),
-    ]
-  }
-];
+import LEVELS from "../levels";
 
 const Game = () => {
   const [currentLevel, setCurrentLevel] = useState(0);
