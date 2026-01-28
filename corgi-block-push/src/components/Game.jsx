@@ -27,15 +27,23 @@ const Game = () => {
     setTimeout(() => setShake(false), 250);
   };
 
-  // Change level
-  const changeLevel = (e) => {
-    const levelIndex = parseInt(e.target.value);
-    setCurrentLevel(levelIndex);
-    const newGrid = LEVELS[levelIndex].grid.map(row => row.map(cell => [...cell]));
+  // Reset game logic
+  const resetGame = () => {
+    const newGrid = LEVELS[currentLevel].grid.map(row => row.map(cell => [...cell]));
     setGrid(newGrid);
     setHasWon(false);
     setHasTreat(false);
     setMoves(0);
+  };
+
+  // Change level safely
+  const changeLevel = (e) => {
+    const levelIndex = parseInt(e.target.value);
+    setCurrentLevel(levelIndex);
+    // After setting currentLevel, fully reset the game to sync refs/state
+    setTimeout(() => {
+      resetGame();
+    }, 0);
   };
 
   const findPlayerInGrid = (g) => {
@@ -111,14 +119,6 @@ const Game = () => {
     if (cell.some(o => o.properties.includes("WIN")) && currentHasTreat) {
       setHasWon(true);
     }
-  };
-
-  const resetGame = () => {
-    const newGrid = LEVELS[currentLevel].grid.map(row => row.map(cell => [...cell]));
-    setGrid(newGrid);
-    setHasWon(false);
-    setHasTreat(false);
-    setMoves(0);
   };
 
   // --- key listener runs only once ---
