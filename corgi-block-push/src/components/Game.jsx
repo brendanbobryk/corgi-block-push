@@ -15,7 +15,7 @@ const LEVELS = [
       [ [{ type: "WALL", properties: ["WALL"] }], [], [], [{ type: "CORGI", properties: ["YOU"] }], [{ type: "WALL", properties: ["WALL"] }], [{ type: "TREAT", properties: ["COLLECTIBLE"] }], [{ type: "WALL", properties: ["WALL"] }] ],
       Array(GRID_COLS).fill(null).map(() => [{ type: "WALL", properties: ["WALL"] }]),
     ]
-  },
+  }
 ];
 
 const Game = () => {
@@ -141,8 +141,32 @@ const Game = () => {
 
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "20px" }}>
-      {/* UI unchanged */}
-      {/* ... */}
+      <select value={currentLevel} onChange={changeLevel}>
+        {LEVELS.map((lvl, i) => (
+          <option key={i} value={i}>{lvl.name}</option>
+        ))}
+      </select>
+
+      <button onClick={resetGame}>🔄 Reset Game</button>
+
+      <div>Moves: {moves}</div>
+      <div>{hasTreat ? "🦴 Treat collected!" : "Collect the treat 🦴 first"}</div>
+
+      {hasWon && <div>🎉 You Win! 🎉</div>}
+
+      <div
+        className={shake ? "shake" : ""}
+        style={{
+          display: "grid",
+          gridTemplateColumns: `repeat(${GRID_COLS}, ${CELL_SIZE}px)`,
+          gridTemplateRows: `repeat(${GRID_ROWS}, ${CELL_SIZE}px)`,
+          gap: "10px",
+        }}
+      >
+        {grid.flat().map((cell, i) => (
+          <Cell key={i} content={cell} />
+        ))}
+      </div>
     </div>
   );
 };
