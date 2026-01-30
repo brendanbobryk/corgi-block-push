@@ -17,9 +17,13 @@ const Game = () => {
   const gridRef = useRef(grid);
   const hasTreatRef = useRef(hasTreat);
   const hasWonRef = useRef(hasWon);
-
-  // ✅ NEW: ref for level selector (Fix #1)
   const levelSelectRef = useRef(null);
+
+  // --- Track best moves per level, with localStorage persistence ---
+  const [bestMoves, setBestMoves] = useState(() => {
+    const saved = localStorage.getItem("bestMoves");
+    return saved ? JSON.parse(saved) : {};
+  });
 
   useEffect(() => {
     gridRef.current = grid;
@@ -46,7 +50,7 @@ const Game = () => {
     const levelIndex = parseInt(e.target.value, 10);
     setCurrentLevel(levelIndex);
 
-    // ✅ FIX #1: remove focus so arrow keys stop changing levels
+    // ✅ Fix #1: remove focus so arrow keys stop changing levels
     if (levelSelectRef.current) {
       levelSelectRef.current.blur();
     }
@@ -125,12 +129,25 @@ const Game = () => {
       setHasTreat(true);
     }
 
+    const nextMoveCount = moves + 1;
+
     if (cell.some(o => o.properties.includes("WIN")) && newHasTreat) {
       setHasWon(true);
+
+      // ✅ Update best moves for this level
+      setBestMoves(prev => {
+        const currentBest = prev[currentLevel] ?? Infinity;
+        if (nextMoveCount < currentBest) {
+          const updated = { ...prev, [currentLevel]: nextMoveCount };
+          localStorage.setItem("bestMoves", JSON.stringify(updated));
+          return updated;
+        }
+        return prev;
+      });
     }
 
     setGrid(newGrid);
-    setMoves(m => m + 1);
+    setMoves(nextMoveCount);
   };
 
   useEffect(() => {
@@ -209,6 +226,11 @@ const Game = () => {
       <div className="status">Moves: {moves}</div>
       <div className="status">
         {hasTreat ? "🦴 Treat collected!" : "Collect the treat 🦴 first"}
+      </div>
+
+      {/* Display best moves */}
+      <div className="status">
+        Best Moves: {bestMoves[currentLevel] ?? "-"}
       </div>
 
       {hasWon && (
