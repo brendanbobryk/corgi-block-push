@@ -3,24 +3,10 @@ import Cell from "./Cell";
 import { CELL_SIZE, GRID_ROWS, GRID_COLS, DIRECTIONS } from "./constants";
 import LEVELS from "../levels";
 
-/**
- * 🔧 FIX: Deep clone grid INCLUDING objects
- * This prevents cross-level object reference corruption
- */
-const cloneGrid = (grid) =>
-  grid.map(row =>
-    row.map(cell =>
-      cell.map(obj => ({
-        ...obj,
-        properties: [...obj.properties]
-      }))
-    )
-  );
-
 const Game = () => {
   const [currentLevel, setCurrentLevel] = useState(0);
   const [grid, setGrid] = useState(
-    () => cloneGrid(LEVELS[0].grid)
+    LEVELS[currentLevel].grid.map(row => row.map(cell => [...cell]))
   );
   const [hasWon, setHasWon] = useState(false);
   const [hasTreat, setHasTreat] = useState(false);
@@ -32,33 +18,32 @@ const Game = () => {
   const hasTreatRef = useRef(hasTreat);
   const hasWonRef = useRef(hasWon);
 
-  const updateRefs = (newGrid, newHasTreat, newHasWon) => {
-    gridRef.current = newGrid;
-    hasTreatRef.current = newHasTreat;
-    hasWonRef.current = newHasWon;
-  };
+  useEffect(() => {
+    gridRef.current = grid;
+    hasTreatRef.current = hasTreat;
+    hasWonRef.current = hasWon;
+  }, [grid, hasTreat, hasWon]);
 
   const triggerShake = () => {
     setShake(true);
     setTimeout(() => setShake(false), 250);
   };
 
-  // --- resetGame (only change is deep cloning) ---
   const resetGame = (levelIndex = currentLevel) => {
-    const newGrid = cloneGrid(LEVELS[levelIndex].grid);
+    const newGrid = LEVELS[levelIndex].grid.map(row =>
+      row.map(cell => [...cell])
+    );
     setGrid(newGrid);
     setHasWon(false);
     setHasTreat(false);
     setMoves(0);
-    updateRefs(newGrid, false, false);
   };
 
   const changeLevel = (e) => {
-    const levelIndex = parseInt(e.target.value);
+    const levelIndex = parseInt(e.target.value, 10);
     setCurrentLevel(levelIndex);
   };
 
-  // --- auto reset whenever level changes ---
   useEffect(() => {
     resetGame(currentLevel);
   }, [currentLevel]);
@@ -75,11 +60,10 @@ const Game = () => {
   };
 
   const movePlayerSafe = (dir) => {
+    if (hasWonRef.current) return;
+
     const currentGrid = gridRef.current;
     const currentHasTreat = hasTreatRef.current;
-    const currentHasWon = hasWonRef.current;
-
-    if (currentHasWon) return;
 
     const pos = findPlayerInGrid(currentGrid);
     if (!pos) return;
@@ -133,18 +117,14 @@ const Game = () => {
       setHasTreat(true);
     }
 
-    let newHasWon = currentHasWon;
-    if (cell.some(o => o.properties.includes("WIN")) && currentHasTreat) {
-      newHasWon = true;
+    if (cell.some(o => o.properties.includes("WIN")) && newHasTreat) {
       setHasWon(true);
     }
 
     setGrid(newGrid);
     setMoves(m => m + 1);
-    updateRefs(newGrid, newHasTreat, newHasWon);
   };
 
-  // --- key listener (unchanged) ---
   useEffect(() => {
     const handleKey = (e) => {
       if (e.key === "ArrowUp") movePlayerSafe(DIRECTIONS.UP);
