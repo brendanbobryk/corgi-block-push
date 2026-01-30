@@ -47,19 +47,34 @@ const LEVELS = [
   },
 
   {
-  name: "Level 3",
-  grid: [
-    Array(7).fill(null).map(WALL),
+    name: "Level 3",
+    grid: [
+      Array(7).fill(null).map(WALL),
 
-    [ WALL(), EMPTY(), EMPTY(), BLOCK(), EMPTY(), GOAL(), WALL() ],
-    [ WALL(), WALL(), EMPTY(), EMPTY(), WALL(), WALL(), WALL() ],
-    [ WALL(), TREAT(), EMPTY(), WALL(), BLOCK(), EMPTY(), WALL() ],
-    [ WALL(), EMPTY(), BLOCK(), EMPTY(), EMPTY(), EMPTY(), WALL() ],
-    [ WALL(), CORGI(), EMPTY(), EMPTY(), WALL(), EMPTY(), WALL() ],
+      [ WALL(), EMPTY(), EMPTY(), BLOCK(), EMPTY(), GOAL(), WALL() ],
+      [ WALL(), WALL(), EMPTY(), EMPTY(), WALL(), WALL(), WALL() ],
+      [ WALL(), TREAT(), EMPTY(), WALL(), BLOCK(), EMPTY(), WALL() ],
+      [ WALL(), EMPTY(), BLOCK(), EMPTY(), EMPTY(), EMPTY(), WALL() ],
+      [ WALL(), CORGI(), EMPTY(), EMPTY(), WALL(), EMPTY(), WALL() ],
 
-    Array(7).fill(null).map(WALL),
-  ],
-}
+      Array(7).fill(null).map(WALL),
+    ],
+  },
+
+  {
+    name: "Level 4",
+    grid: [
+      Array(7).fill(null).map(WALL),
+
+      [ WALL(), EMPTY(), WALL(), EMPTY(), EMPTY(), GOAL(), WALL() ],
+      [ WALL(), BLOCK(), WALL(), EMPTY(), BLOCK(), EMPTY(), WALL() ],
+      [ WALL(), EMPTY(), EMPTY(), TREAT(), EMPTY(), EMPTY(), WALL() ],
+      [ WALL(), EMPTY(), BLOCK(), EMPTY(), WALL(), EMPTY(), WALL() ],
+      [ WALL(), CORGI(), EMPTY(), EMPTY(), BLOCK(), EMPTY(), WALL() ],
+
+      Array(7).fill(null).map(WALL),
+    ],
+  }
 ];
 
 export default LEVELS;
