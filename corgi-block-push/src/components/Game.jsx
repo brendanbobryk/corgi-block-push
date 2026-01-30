@@ -18,6 +18,9 @@ const Game = () => {
   const hasTreatRef = useRef(hasTreat);
   const hasWonRef = useRef(hasWon);
 
+  // ✅ NEW: ref for level selector (Fix #1)
+  const levelSelectRef = useRef(null);
+
   useEffect(() => {
     gridRef.current = grid;
     hasTreatRef.current = hasTreat;
@@ -42,6 +45,11 @@ const Game = () => {
   const changeLevel = (e) => {
     const levelIndex = parseInt(e.target.value, 10);
     setCurrentLevel(levelIndex);
+
+    // ✅ FIX #1: remove focus so arrow keys stop changing levels
+    if (levelSelectRef.current) {
+      levelSelectRef.current.blur();
+    }
   };
 
   useEffect(() => {
@@ -155,6 +163,7 @@ const Game = () => {
 
       {/* Level Selector */}
       <select
+        ref={levelSelectRef}
         value={currentLevel}
         onChange={changeLevel}
         style={{
