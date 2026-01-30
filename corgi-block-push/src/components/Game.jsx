@@ -3,10 +3,24 @@ import Cell from "./Cell";
 import { CELL_SIZE, GRID_ROWS, GRID_COLS, DIRECTIONS } from "./constants";
 import LEVELS from "../levels";
 
+/**
+ * 🔧 FIX: Deep clone grid INCLUDING objects
+ * This prevents cross-level object reference corruption
+ */
+const cloneGrid = (grid) =>
+  grid.map(row =>
+    row.map(cell =>
+      cell.map(obj => ({
+        ...obj,
+        properties: [...obj.properties]
+      }))
+    )
+  );
+
 const Game = () => {
   const [currentLevel, setCurrentLevel] = useState(0);
   const [grid, setGrid] = useState(
-    LEVELS[currentLevel].grid.map(row => row.map(cell => [...cell]))
+    () => cloneGrid(LEVELS[0].grid)
   );
   const [hasWon, setHasWon] = useState(false);
   const [hasTreat, setHasTreat] = useState(false);
@@ -29,23 +43,22 @@ const Game = () => {
     setTimeout(() => setShake(false), 250);
   };
 
-  // --- resetGame updated to accept optional levelIndex ---
+  // --- resetGame (only change is deep cloning) ---
   const resetGame = (levelIndex = currentLevel) => {
-    const newGrid = LEVELS[levelIndex].grid.map(row => row.map(cell => [...cell]));
+    const newGrid = cloneGrid(LEVELS[levelIndex].grid);
     setGrid(newGrid);
     setHasWon(false);
     setHasTreat(false);
     setMoves(0);
-    updateRefs(newGrid, false, false); // update refs immediately
+    updateRefs(newGrid, false, false);
   };
 
-  // Change level — only updates currentLevel here
   const changeLevel = (e) => {
     const levelIndex = parseInt(e.target.value);
     setCurrentLevel(levelIndex);
   };
 
-  // --- automatically reset whenever currentLevel changes ---
+  // --- auto reset whenever level changes ---
   useEffect(() => {
     resetGame(currentLevel);
   }, [currentLevel]);
@@ -53,7 +66,9 @@ const Game = () => {
   const findPlayerInGrid = (g) => {
     for (let y = 0; y < GRID_ROWS; y++) {
       for (let x = 0; x < GRID_COLS; x++) {
-        if (g[y][x].some(o => o.properties.includes("YOU"))) return { x, y };
+        if (g[y][x].some(o => o.properties.includes("YOU"))) {
+          return { x, y };
+        }
       }
     }
     return null;
@@ -65,6 +80,7 @@ const Game = () => {
     const currentHasWon = hasWonRef.current;
 
     if (currentHasWon) return;
+
     const pos = findPlayerInGrid(currentGrid);
     if (!pos) return;
 
@@ -108,7 +124,6 @@ const Game = () => {
     newGrid[cy][cx] = newGrid[cy][cx].filter(o => o !== player);
     newGrid[ny][nx].push(player);
 
-    // pickup logic
     let newHasTreat = currentHasTreat;
     const cell = newGrid[ny][nx];
     const treat = cell.find(o => o.properties.includes("COLLECTIBLE"));
@@ -118,7 +133,6 @@ const Game = () => {
       setHasTreat(true);
     }
 
-    // win check
     let newHasWon = currentHasWon;
     if (cell.some(o => o.properties.includes("WIN")) && currentHasTreat) {
       newHasWon = true;
@@ -130,7 +144,7 @@ const Game = () => {
     updateRefs(newGrid, newHasTreat, newHasWon);
   };
 
-  // --- key listener runs only once ---
+  // --- key listener (unchanged) ---
   useEffect(() => {
     const handleKey = (e) => {
       if (e.key === "ArrowUp") movePlayerSafe(DIRECTIONS.UP);
@@ -176,7 +190,9 @@ const Game = () => {
           boxShadow: "0 3px 6px rgba(0,0,0,0.3)"
         }}
       >
-        {LEVELS.map((lvl, idx) => <option key={idx} value={idx}>{lvl.name}</option>)}
+        {LEVELS.map((lvl, idx) => (
+          <option key={idx} value={idx}>{lvl.name}</option>
+        ))}
       </select>
 
       {/* Reset Button */}
@@ -234,7 +250,9 @@ const Game = () => {
           boxShadow: "0 5px 15px rgba(0,0,0,0.5)"
         }}
       >
-        {grid.flat().map((cell, i) => <Cell key={i} content={cell} />)}
+        {grid.flat().map((cell, i) => (
+          <Cell key={i} content={cell} />
+        ))}
       </div>
     </div>
   );
