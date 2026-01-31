@@ -30,9 +30,7 @@ const Game = () => {
   }, [grid, hasTreat, hasWon]);
 
   const triggerShake = () => {
-    if (shakeTimeoutRef.current) {
-      clearTimeout(shakeTimeoutRef.current);
-    }
+    if (shakeTimeoutRef.current) clearTimeout(shakeTimeoutRef.current);
     setShake(true);
     shakeTimeoutRef.current = setTimeout(() => {
       setShake(false);
@@ -41,10 +39,7 @@ const Game = () => {
   };
 
   const resetGame = (levelIndex = currentLevel) => {
-    if (shakeTimeoutRef.current) {
-      clearTimeout(shakeTimeoutRef.current);
-      shakeTimeoutRef.current = null;
-    }
+    if (shakeTimeoutRef.current) clearTimeout(shakeTimeoutRef.current);
 
     const newGrid = LEVELS[levelIndex].grid.map(row =>
       row.map(cell => [...cell])
@@ -58,8 +53,7 @@ const Game = () => {
   };
 
   const changeLevel = (e) => {
-    const levelIndex = parseInt(e.target.value, 10);
-    setCurrentLevel(levelIndex);
+    setCurrentLevel(parseInt(e.target.value, 10));
     levelSelectRef.current?.blur();
   };
 
@@ -115,10 +109,7 @@ const Game = () => {
       const px = nx + dir.x;
       const py = ny + dir.y;
 
-      if (
-        px < 0 || px >= GRID_COLS ||
-        py < 0 || py >= GRID_ROWS
-      ) {
+      if (px < 0 || px >= GRID_COLS || py < 0 || py >= GRID_ROWS) {
         triggerShake();
         return;
       }
@@ -162,18 +153,22 @@ const Game = () => {
 
     setMoves(prev => {
       const next = prev + 1;
+      const levelKey = String(currentLevel);
+
       if (isWinCell && newHasTreat) {
         setHasWon(true);
-        setBestMoves(b => {
-          const best = b[currentLevel] ?? Infinity;
-          if (next < best) {
-            const updated = { ...b, [currentLevel]: next };
+
+        setBestMoves(prevBest => {
+          const prevBestForLevel = prevBest[levelKey] ?? Infinity;
+          if (next < prevBestForLevel) {
+            const updated = { ...prevBest, [levelKey]: next };
             localStorage.setItem("bestMoves", JSON.stringify(updated));
             return updated;
           }
-          return b;
+          return prevBest;
         });
       }
+
       return next;
     });
 
@@ -195,6 +190,8 @@ const Game = () => {
     return () => window.removeEventListener("keydown", handleKey);
   }, []);
 
+  const levelKey = String(currentLevel);
+
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "20px" }}>
       <style>{`
@@ -209,7 +206,6 @@ const Game = () => {
         }
       `}</style>
 
-      {/* Level Selector */}
       <select
         ref={levelSelectRef}
         value={currentLevel}
@@ -232,7 +228,6 @@ const Game = () => {
         ))}
       </select>
 
-      {/* Reset Button */}
       <button
         onClick={() => resetGame()}
         style={{
@@ -259,7 +254,7 @@ const Game = () => {
         {hasTreat ? "🦴 Treat collected!" : "Collect the treat 🦴 first"}
       </div>
       <div className="status">
-        Best Moves: {bestMoves[currentLevel] ?? "-"}
+        Best Moves: {bestMoves[levelKey] ?? "-"}
       </div>
 
       {hasWon && (
