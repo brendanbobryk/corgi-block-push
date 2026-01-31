@@ -80,7 +80,6 @@ const Game = () => {
 
     const currentGrid = gridRef.current;
     const currentHasTreat = hasTreatRef.current;
-
     const pos = findPlayerInGrid(currentGrid);
     if (!pos) return;
 
@@ -101,45 +100,32 @@ const Game = () => {
 
     const newGrid = currentGrid.map(row => row.map(cell => [...cell]));
 
-    const pushable = targetCell.find(o =>
-      o.properties.includes("PUSH")
-    );
-
+    const pushable = targetCell.find(o => o.properties.includes("PUSH"));
     if (pushable) {
       const px = nx + dir.x;
       const py = ny + dir.y;
-
       if (px < 0 || px >= GRID_COLS || py < 0 || py >= GRID_ROWS) {
         triggerShake();
         return;
       }
-
       const pushTarget = newGrid[py][px];
       if (pushTarget.some(o =>
-        o.properties.includes("WALL") ||
-        o.properties.includes("PUSH")
+        o.properties.includes("WALL") || o.properties.includes("PUSH")
       )) {
         triggerShake();
         return;
       }
-
       newGrid[py][px].push(pushable);
       newGrid[ny][nx] = newGrid[ny][nx].filter(o => o !== pushable);
     }
 
-    const player = newGrid[cy][cx].find(o =>
-      o.properties.includes("YOU")
-    );
-
+    const player = newGrid[cy][cx].find(o => o.properties.includes("YOU"));
     newGrid[cy][cx] = newGrid[cy][cx].filter(o => o !== player);
     newGrid[ny][nx].push(player);
 
     let newHasTreat = currentHasTreat;
     const landedCell = newGrid[ny][nx];
-
-    const treat = landedCell.find(o =>
-      o.properties.includes("COLLECTIBLE")
-    );
+    const treat = landedCell.find(o => o.properties.includes("COLLECTIBLE"));
 
     if (treat) {
       newGrid[ny][nx] = landedCell.filter(o => o !== treat);
@@ -147,31 +133,24 @@ const Game = () => {
       setHasTreat(true);
     }
 
-    const isWinCell = landedCell.some(o =>
-      o.properties.includes("WIN")
-    );
+    const isWinCell = landedCell.some(o => o.properties.includes("WIN"));
+    const nextMoves = moves + 1;
+    const levelKey = String(currentLevel);
 
-    setMoves(prev => {
-      const next = prev + 1;
-      const levelKey = String(currentLevel);
+    if (isWinCell && newHasTreat) {
+      setHasWon(true);
+      setBestMoves(prev => {
+        const best = prev[levelKey] ?? Infinity;
+        if (nextMoves < best) {
+          const updated = { ...prev, [levelKey]: nextMoves };
+          localStorage.setItem("bestMoves", JSON.stringify(updated));
+          return updated;
+        }
+        return prev;
+      });
+    }
 
-      if (isWinCell && newHasTreat) {
-        setHasWon(true);
-
-        setBestMoves(prevBest => {
-          const prevBestForLevel = prevBest[levelKey] ?? Infinity;
-          if (next < prevBestForLevel) {
-            const updated = { ...prevBest, [levelKey]: next };
-            localStorage.setItem("bestMoves", JSON.stringify(updated));
-            return updated;
-          }
-          return prevBest;
-        });
-      }
-
-      return next;
-    });
-
+    setMoves(nextMoves);
     setGrid(newGrid);
   };
 
@@ -179,16 +158,14 @@ const Game = () => {
     const handleKey = (e) => {
       const tag = document.activeElement?.tagName;
       if (["INPUT", "SELECT", "TEXTAREA"].includes(tag)) return;
-
       if (e.key === "ArrowUp") movePlayerSafe(DIRECTIONS.UP);
       if (e.key === "ArrowDown") movePlayerSafe(DIRECTIONS.DOWN);
       if (e.key === "ArrowLeft") movePlayerSafe(DIRECTIONS.LEFT);
       if (e.key === "ArrowRight") movePlayerSafe(DIRECTIONS.RIGHT);
     };
-
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
-  }, []);
+  }, [moves]);
 
   const levelKey = String(currentLevel);
 
