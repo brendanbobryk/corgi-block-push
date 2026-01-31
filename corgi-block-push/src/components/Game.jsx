@@ -233,6 +233,26 @@ const Game = () => {
         🔄 Reset Game
       </button>
 
+      <button
+        onClick={() => {
+        localStorage.removeItem("bestMoves");
+        setBestMoves({});
+        setShowNewBest(false); // optional
+        }}
+        style={{
+          padding: "8px 16px",
+          borderRadius: "8px",
+          border: "none",
+          backgroundColor: "#ff6b6b",
+          color: "#fff",
+          fontWeight: "bold",
+          cursor: "pointer",
+          marginTop: "5px"
+        }}
+      >
+        🗑️ Reset Best Scores
+      </button>
+
       {/* Moves display with New Best feedback */}
       <div className="status" style={{ position: "relative" }}>
         Moves: {moves}
