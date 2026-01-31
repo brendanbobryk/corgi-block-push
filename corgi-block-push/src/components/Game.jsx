@@ -51,10 +51,12 @@ const Game = () => {
     setHasTreat(false);
     setMoves(0);
     setShake(false);
+    setShowNewBest(false); // reset New Best
   };
 
   const changeLevel = (e) => {
     setCurrentLevel(parseInt(e.target.value, 10));
+    setShowNewBest(false); // reset New Best on level change
     levelSelectRef.current?.blur();
   };
 
@@ -148,7 +150,6 @@ const Game = () => {
 
           // --- NEW BEST FEEDBACK ---
           setShowNewBest(true);
-          setTimeout(() => setShowNewBest(false), 1200);
 
           return updated;
         }
