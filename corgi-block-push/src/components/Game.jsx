@@ -16,6 +16,7 @@ const Game = () => {
     const saved = localStorage.getItem("bestMoves");
     return saved ? JSON.parse(saved) : {};
   });
+  const [showNewBest, setShowNewBest] = useState(false); // NEW STATE
 
   const gridRef = useRef(grid);
   const hasTreatRef = useRef(hasTreat);
@@ -144,6 +145,11 @@ const Game = () => {
         if (nextMoves < best) {
           const updated = { ...prev, [levelKey]: nextMoves };
           localStorage.setItem("bestMoves", JSON.stringify(updated));
+
+          // --- NEW BEST FEEDBACK ---
+          setShowNewBest(true);
+          setTimeout(() => setShowNewBest(false), 1200);
+
           return updated;
         }
         return prev;
@@ -226,7 +232,21 @@ const Game = () => {
         🔄 Reset Game
       </button>
 
-      <div className="status">Moves: {moves}</div>
+      {/* Moves display with New Best feedback */}
+      <div className="status" style={{ position: "relative" }}>
+        Moves: {moves}
+        {showNewBest && (
+          <span style={{
+            marginLeft: "10px",
+            color: "#ffdd57",
+            fontWeight: "bold",
+            animation: "winPop 0.8s cubic-bezier(.34,1.56,.64,1)"
+          }}>
+            🎉 New Best!
+          </span>
+        )}
+      </div>
+
       <div className="status">
         {hasTreat ? "🦴 Treat collected!" : "Collect the treat 🦴 first"}
       </div>
