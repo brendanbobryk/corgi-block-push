@@ -17,13 +17,11 @@ const Game = () => {
     return saved ? JSON.parse(saved) : {};
   });
 
-  // --- Refs to hold latest state ---
   const gridRef = useRef(grid);
   const hasTreatRef = useRef(hasTreat);
   const hasWonRef = useRef(hasWon);
-
-  // ✅ Level selector ref to remove focus after change
   const levelSelectRef = useRef(null);
+  const shakeTimeoutRef = useRef(null);
 
   useEffect(() => {
     gridRef.current = grid;
@@ -32,28 +30,37 @@ const Game = () => {
   }, [grid, hasTreat, hasWon]);
 
   const triggerShake = () => {
+    if (shakeTimeoutRef.current) {
+      clearTimeout(shakeTimeoutRef.current);
+    }
     setShake(true);
-    setTimeout(() => setShake(false), 250);
+    shakeTimeoutRef.current = setTimeout(() => {
+      setShake(false);
+      shakeTimeoutRef.current = null;
+    }, 250);
   };
 
   const resetGame = (levelIndex = currentLevel) => {
+    if (shakeTimeoutRef.current) {
+      clearTimeout(shakeTimeoutRef.current);
+      shakeTimeoutRef.current = null;
+    }
+
     const newGrid = LEVELS[levelIndex].grid.map(row =>
       row.map(cell => [...cell])
     );
+
     setGrid(newGrid);
     setHasWon(false);
     setHasTreat(false);
     setMoves(0);
+    setShake(false);
   };
 
   const changeLevel = (e) => {
     const levelIndex = parseInt(e.target.value, 10);
     setCurrentLevel(levelIndex);
-
-    // ✅ Fix #1: remove focus so arrow keys stop changing levels
-    if (levelSelectRef.current) {
-      levelSelectRef.current.blur();
-    }
+    levelSelectRef.current?.blur();
   };
 
   useEffect(() => {
@@ -70,6 +77,9 @@ const Game = () => {
     }
     return null;
   };
+
+  const cellHas = (cell, prop) =>
+    cell.some(o => o.properties.includes(prop));
 
   const movePlayerSafe = (dir) => {
     if (hasWonRef.current) return;
@@ -90,24 +100,34 @@ const Game = () => {
     }
 
     const targetCell = currentGrid[ny][nx];
-    const newGrid = currentGrid.map(row => row.map(cell => [...cell]));
-
-    if (targetCell.some(o => o.properties.includes("WALL"))) {
+    if (cellHas(targetCell, "WALL")) {
       triggerShake();
       return;
     }
 
-    const pushable = targetCell.find(o => o.properties.includes("PUSH"));
+    const newGrid = currentGrid.map(row => row.map(cell => [...cell]));
+
+    const pushable = targetCell.find(o =>
+      o.properties.includes("PUSH")
+    );
+
     if (pushable) {
       const px = nx + dir.x;
       const py = ny + dir.y;
 
       if (
         px < 0 || px >= GRID_COLS ||
-        py < 0 || py >= GRID_ROWS ||
-        newGrid[py][px].length !== 0 ||
-        newGrid[py][px].some(o => o.properties.includes("WALL"))
+        py < 0 || py >= GRID_ROWS
       ) {
+        triggerShake();
+        return;
+      }
+
+      const pushTarget = newGrid[py][px];
+      if (pushTarget.some(o =>
+        o.properties.includes("WALL") ||
+        o.properties.includes("PUSH")
+      )) {
         triggerShake();
         return;
       }
@@ -116,38 +136,45 @@ const Game = () => {
       newGrid[ny][nx] = newGrid[ny][nx].filter(o => o !== pushable);
     }
 
-    const player = newGrid[cy][cx].find(o => o.properties.includes("YOU"));
+    const player = newGrid[cy][cx].find(o =>
+      o.properties.includes("YOU")
+    );
+
     newGrid[cy][cx] = newGrid[cy][cx].filter(o => o !== player);
     newGrid[ny][nx].push(player);
 
     let newHasTreat = currentHasTreat;
-    const cell = newGrid[ny][nx];
-    const treat = cell.find(o => o.properties.includes("COLLECTIBLE"));
+    const landedCell = newGrid[ny][nx];
+
+    const treat = landedCell.find(o =>
+      o.properties.includes("COLLECTIBLE")
+    );
+
     if (treat) {
-      newGrid[ny][nx] = cell.filter(o => o !== treat);
+      newGrid[ny][nx] = landedCell.filter(o => o !== treat);
       newHasTreat = true;
       setHasTreat(true);
     }
 
-    // ✅ Increment moves and update best moves if level is completed
-    setMoves(prevMoves => {
-      const newMoves = prevMoves + 1;
+    const isWinCell = landedCell.some(o =>
+      o.properties.includes("WIN")
+    );
 
-      if (cell.some(o => o.properties.includes("WIN")) && newHasTreat) {
+    setMoves(prev => {
+      const next = prev + 1;
+      if (isWinCell && newHasTreat) {
         setHasWon(true);
-
-        setBestMoves(prevBest => {
-          const prevLevelBest = prevBest[currentLevel] ?? Infinity;
-          if (newMoves < prevLevelBest) {
-            const updated = { ...prevBest, [currentLevel]: newMoves };
+        setBestMoves(b => {
+          const best = b[currentLevel] ?? Infinity;
+          if (next < best) {
+            const updated = { ...b, [currentLevel]: next };
             localStorage.setItem("bestMoves", JSON.stringify(updated));
             return updated;
           }
-          return prevBest;
+          return b;
         });
       }
-
-      return newMoves;
+      return next;
     });
 
     setGrid(newGrid);
@@ -155,31 +182,32 @@ const Game = () => {
 
   useEffect(() => {
     const handleKey = (e) => {
+      const tag = document.activeElement?.tagName;
+      if (["INPUT", "SELECT", "TEXTAREA"].includes(tag)) return;
+
       if (e.key === "ArrowUp") movePlayerSafe(DIRECTIONS.UP);
       if (e.key === "ArrowDown") movePlayerSafe(DIRECTIONS.DOWN);
       if (e.key === "ArrowLeft") movePlayerSafe(DIRECTIONS.LEFT);
       if (e.key === "ArrowRight") movePlayerSafe(DIRECTIONS.RIGHT);
     };
+
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
   }, []);
 
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "20px" }}>
-      <style>
-        {`
-          @keyframes winPop {
-            0% { opacity: 0; transform: scale(0.8); }
-            60% { opacity: 1; transform: scale(1.15); }
-            100% { transform: scale(1); }
-          }
-
-          @keyframes glow {
-            from { box-shadow: 0 0 0 rgba(255,221,87,0); }
-            to { box-shadow: 0 0 20px rgba(255,221,87,0.8); }
-          }
-        `}
-      </style>
+      <style>{`
+        @keyframes winPop {
+          0% { opacity: 0; transform: scale(0.8); }
+          60% { opacity: 1; transform: scale(1.15); }
+          100% { transform: scale(1); }
+        }
+        @keyframes glow {
+          from { box-shadow: 0 0 0 rgba(255,221,87,0); }
+          to { box-shadow: 0 0 20px rgba(255,221,87,0.8); }
+        }
+      `}</style>
 
       {/* Level Selector */}
       <select
@@ -230,22 +258,18 @@ const Game = () => {
       <div className="status">
         {hasTreat ? "🦴 Treat collected!" : "Collect the treat 🦴 first"}
       </div>
-
       <div className="status">
         Best Moves: {bestMoves[currentLevel] ?? "-"}
       </div>
 
       {hasWon && (
-        <div
-          style={{
-            animation: "winPop 0.6s cubic-bezier(.34,1.56,.64,1), glow 0.6s ease-out",
-            background: "#ffdd57",
-            color: "#121212",
-            padding: "12px 20px",
-            borderRadius: "12px",
-            fontWeight: "bold",
-          }}
-        >
+        <div style={{
+          animation: "winPop 0.6s cubic-bezier(.34,1.56,.64,1), glow 0.6s ease-out",
+          background: "#ffdd57",
+          padding: "12px 20px",
+          borderRadius: "12px",
+          fontWeight: "bold"
+        }}>
           🎉 You Win! 🎉
         </div>
       )}
@@ -263,9 +287,11 @@ const Game = () => {
           boxShadow: "0 5px 15px rgba(0,0,0,0.5)"
         }}
       >
-        {grid.flat().map((cell, i) => (
-          <Cell key={i} content={cell} />
-        ))}
+        {grid.map((row, y) =>
+          row.map((cell, x) => (
+            <Cell key={`${x}-${y}`} content={cell} />
+          ))
+        )}
       </div>
     </div>
   );
