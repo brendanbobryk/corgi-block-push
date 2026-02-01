@@ -252,7 +252,7 @@ const Game = () => {
           marginTop: "5px"
         }}
       >
-        🗑️ Reset Best Scores
+        🗑️ Reset All Progress
       </button>
 
       <div className="status" style={{ position: "relative" }}>
