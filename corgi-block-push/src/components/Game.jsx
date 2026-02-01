@@ -16,7 +16,7 @@ const Game = () => {
     const saved = localStorage.getItem("bestMoves");
     return saved ? JSON.parse(saved) : {};
   });
-  const [showNewBest, setShowNewBest] = useState(false); // NEW STATE
+  const [showNewBest, setShowNewBest] = useState(false);
 
   const gridRef = useRef(grid);
   const hasTreatRef = useRef(hasTreat);
@@ -51,12 +51,12 @@ const Game = () => {
     setHasTreat(false);
     setMoves(0);
     setShake(false);
-    setShowNewBest(false); // reset New Best
+    setShowNewBest(false);
   };
 
   const changeLevel = (e) => {
     setCurrentLevel(parseInt(e.target.value, 10));
-    setShowNewBest(false); // reset New Best on level change
+    setShowNewBest(false);
     levelSelectRef.current?.blur();
   };
 
@@ -147,10 +147,7 @@ const Game = () => {
         if (nextMoves < best) {
           const updated = { ...prev, [levelKey]: nextMoves };
           localStorage.setItem("bestMoves", JSON.stringify(updated));
-
-          // --- NEW BEST FEEDBACK ---
           setShowNewBest(true);
-
           return updated;
         }
         return prev;
@@ -175,6 +172,8 @@ const Game = () => {
   }, [moves]);
 
   const levelKey = String(currentLevel);
+  const isLevelCompleted = (idx) =>
+    bestMoves[String(idx)] !== undefined;
 
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "20px" }}>
@@ -190,6 +189,7 @@ const Game = () => {
         }
       `}</style>
 
+      {/* Level Selector with completion indicator */}
       <select
         ref={levelSelectRef}
         value={currentLevel}
@@ -208,7 +208,9 @@ const Game = () => {
         }}
       >
         {LEVELS.map((lvl, idx) => (
-          <option key={idx} value={idx}>{lvl.name}</option>
+          <option key={idx} value={idx}>
+            {lvl.name} {isLevelCompleted(idx) ? "✅" : ""}
+          </option>
         ))}
       </select>
 
@@ -235,9 +237,9 @@ const Game = () => {
 
       <button
         onClick={() => {
-        localStorage.removeItem("bestMoves");
-        setBestMoves({});
-        setShowNewBest(false); // optional
+          localStorage.removeItem("bestMoves");
+          setBestMoves({});
+          setShowNewBest(false);
         }}
         style={{
           padding: "8px 16px",
@@ -253,16 +255,17 @@ const Game = () => {
         🗑️ Reset Best Scores
       </button>
 
-      {/* Moves display with New Best feedback */}
       <div className="status" style={{ position: "relative" }}>
         Moves: {moves}
         {showNewBest && (
-          <span style={{
-            marginLeft: "10px",
-            color: "#ffdd57",
-            fontWeight: "bold",
-            animation: "winPop 0.8s cubic-bezier(.34,1.56,.64,1)"
-          }}>
+          <span
+            style={{
+              marginLeft: "10px",
+              color: "#ffdd57",
+              fontWeight: "bold",
+              animation: "winPop 0.8s cubic-bezier(.34,1.56,.64,1)"
+            }}
+          >
             🎉 New Best!
           </span>
         )}
@@ -271,18 +274,21 @@ const Game = () => {
       <div className="status">
         {hasTreat ? "🦴 Treat collected!" : "Collect the treat 🦴 first"}
       </div>
+
       <div className="status">
         Best Moves: {bestMoves[levelKey] ?? "-"}
       </div>
 
       {hasWon && (
-        <div style={{
-          animation: "winPop 0.6s cubic-bezier(.34,1.56,.64,1), glow 0.6s ease-out",
-          background: "#ffdd57",
-          padding: "12px 20px",
-          borderRadius: "12px",
-          fontWeight: "bold"
-        }}>
+        <div
+          style={{
+            animation: "winPop 0.6s cubic-bezier(.34,1.56,.64,1), glow 0.6s ease-out",
+            background: "#ffdd57",
+            padding: "12px 20px",
+            borderRadius: "12px",
+            fontWeight: "bold"
+          }}
+        >
           🎉 You Win! 🎉
         </div>
       )}
