@@ -37,10 +37,10 @@ const LEVELS = [
       Array(7).fill(null).map(WALL),
 
       [ WALL(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), GOAL(), WALL() ],
-      [ WALL(), WALL(), WALL(), EMPTY(), WALL(), WALL(), WALL() ],
-      [ WALL(), EMPTY(), BLOCK(), EMPTY(), EMPTY(), TREAT(), WALL() ],
-      [ WALL(), EMPTY(), WALL(), WALL(), BLOCK(), EMPTY(), WALL() ],
-      [ WALL(), CORGI(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), WALL() ],
+      [ WALL(), EMPTY(), WALL(), BLOCK(), WALL(), WALL(), WALL() ],
+      [ WALL(), EMPTY(), BLOCK(), EMPTY(), WALL(), EMPTY(), WALL() ],
+      [ WALL(), EMPTY(), BLOCK(), EMPTY(), EMPTY(), EMPTY(), WALL() ],
+      [ WALL(), EMPTY(), CORGI(), WALL(), EMPTY(), TREAT(), WALL() ],
 
       Array(7).fill(null).map(WALL),
     ],
