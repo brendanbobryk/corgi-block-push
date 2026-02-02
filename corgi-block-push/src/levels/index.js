@@ -77,6 +77,21 @@ const LEVELS = [
   },
 
   {
+    name: "Level 5",
+    grid: [
+      Array(7).fill(null).map(WALL),
+
+      [ WALL(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), WALL() ],
+      [ WALL(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), WALL() ],
+      [ WALL(), EMPTY(), CORGI(), TREAT(), GOAL(), EMPTY(), WALL() ],
+      [ WALL(), EMPTY(), EMPTY(), BLOCK(), EMPTY(), EMPTY(), WALL() ],
+      [ WALL(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), WALL() ],
+
+      Array(7).fill(null).map(WALL),
+    ],
+  },
+
+  {
     name: "Level X",
     grid: [
       Array(7).fill(null).map(WALL),
