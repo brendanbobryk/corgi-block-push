@@ -21,11 +21,11 @@ const LEVELS = [
     grid: [
       Array(7).fill(null).map(WALL),
 
-      [ WALL(), GOAL(), EMPTY(), EMPTY(), WALL(), BLOCK(), WALL() ],
-      [ WALL(), WALL(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), WALL() ],
-      [ WALL(), WALL(), EMPTY(), BLOCK(), EMPTY(), EMPTY(), WALL() ],
-      [ WALL(), WALL(), BLOCK(), WALL(), WALL(), EMPTY(), WALL() ],
-      [ WALL(), EMPTY(), EMPTY(), CORGI(), WALL(), TREAT(), WALL() ],
+      [ WALL(), CORGI(), WALL(), EMPTY(), EMPTY(), GOAL(), WALL() ],
+      [ WALL(), BLOCK(), EMPTY(), EMPTY(), WALL(), WALL(), WALL() ],
+      [ WALL(), EMPTY(), EMPTY(), WALL(), EMPTY(), TREAT(), WALL() ],
+      [ WALL(), WALL(), EMPTY(), WALL(), BLOCK(), EMPTY(), WALL() ],
+      [ WALL(), BLOCK(), EMPTY(), BLOCK(), EMPTY(), EMPTY(), WALL() ],
 
       Array(7).fill(null).map(WALL),
     ],
@@ -51,11 +51,11 @@ const LEVELS = [
     grid: [
       Array(7).fill(null).map(WALL),
 
-      [ WALL(), CORGI(), WALL(), EMPTY(), EMPTY(), GOAL(), WALL() ],
-      [ WALL(), BLOCK(), EMPTY(), EMPTY(), WALL(), WALL(), WALL() ],
-      [ WALL(), EMPTY(), EMPTY(), WALL(), EMPTY(), TREAT(), WALL() ],
-      [ WALL(), WALL(), EMPTY(), WALL(), BLOCK(), EMPTY(), WALL() ],
-      [ WALL(), BLOCK(), EMPTY(), BLOCK(), EMPTY(), EMPTY(), WALL() ],
+      [ WALL(), GOAL(), EMPTY(), EMPTY(), WALL(), BLOCK(), WALL() ],
+      [ WALL(), WALL(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), WALL() ],
+      [ WALL(), WALL(), EMPTY(), BLOCK(), EMPTY(), EMPTY(), WALL() ],
+      [ WALL(), WALL(), BLOCK(), WALL(), WALL(), EMPTY(), WALL() ],
+      [ WALL(), EMPTY(), EMPTY(), CORGI(), WALL(), TREAT(), WALL() ],
 
       Array(7).fill(null).map(WALL),
     ],
