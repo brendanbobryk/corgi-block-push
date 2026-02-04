@@ -41,6 +41,7 @@ const Game = () => {
     const newGrid = LEVELS[levelIndex].grid.map(row =>
       row.map(cell => [...cell])
     );
+
     setGrid(newGrid);
     setHasWon(false);
     setHasTreat(false);
@@ -83,10 +84,13 @@ const Game = () => {
     if (pushable) {
       const px = nx + dir.x;
       const py = ny + dir.y;
+
       if (px < 0 || py < 0 || px >= GRID_COLS || py >= GRID_ROWS) return triggerShake();
+
       if (newGrid[py][px].some(o =>
         o.properties.includes("WALL") || o.properties.includes("PUSH")
       )) return triggerShake();
+
       newGrid[py][px].push(pushable);
       newGrid[ny][nx] = newGrid[ny][nx].filter(o => o !== pushable);
     }
@@ -98,6 +102,7 @@ const Game = () => {
     let gotTreat = hasTreatRef.current;
     const landed = newGrid[ny][nx];
     const treat = landed.find(o => o.properties.includes("COLLECTIBLE"));
+
     if (treat) {
       newGrid[ny][nx] = landed.filter(o => o !== treat);
       gotTreat = true;
@@ -106,6 +111,7 @@ const Game = () => {
 
     const nextMoves = moves + 1;
     const win = landed.some(o => o.properties.includes("WIN"));
+
     if (win && gotTreat) {
       setHasWon(true);
       setBestMoves(prev => {
@@ -145,23 +151,21 @@ const Game = () => {
     return acc;
   }, {});
 
-  // Lock page scroll
-  useEffect(() => {
-    document.body.style.margin = "0";
-    document.body.style.overflow = "hidden";
-    document.documentElement.style.overflow = "hidden";
-  }, []);
-
   return (
-    <div style={{ width: "100vw", height: "100vh", display: "flex", background: "#121212" }}>
-      
+    <div style={{
+      width: "100vw",
+      height: "100%",
+      overflow: "hidden",
+      background: "#121212"
+    }}>
+
       {/* Sidebar */}
       <div style={{
         position: "fixed",
         left: 0,
         top: 0,
         width: SIDEBAR_WIDTH,
-        height: "100vh",
+        height: "100%",
         background: "#1a1a1a",
         padding: 16,
         overflowY: "auto",
@@ -174,6 +178,7 @@ const Game = () => {
             <div style={{ fontWeight: "bold", marginBottom: 6, color: "#ffdd57" }}>
               {difficulty}
             </div>
+
             {levels.map(lvl => (
               <button
                 key={lvl.index}
@@ -197,56 +202,54 @@ const Game = () => {
             ))}
           </div>
         ))}
+
         <button onClick={() => resetGame()}>🔄 Reset Game</button>
-        <button onClick={() => { localStorage.removeItem("bestMoves"); setBestMoves({}); }}>
+
+        <button onClick={() => {
+          localStorage.removeItem("bestMoves");
+          setBestMoves({});
+        }}>
           🗑️ Reset All Progress
         </button>
+
         <div>
-          Moves: {moves}<br/>
-          Best: {bestMoves[String(currentLevel)] ?? "-"}<br/>
+          Moves: {moves}<br />
+          Best: {bestMoves[String(currentLevel)] ?? "-"}<br />
           {hasTreat ? "🦴 Treat collected!" : "Collect the treat"}
         </div>
+
         {hasWon && <div>🎉 You Win!</div>}
       </div>
 
       {/* Game Area */}
       <div style={{
         marginLeft: SIDEBAR_WIDTH,
-        width: `calc(100vw - ${SIDEBAR_WIDTH}px)`,
-        height: "100vh",
+        height: "100%",
         display: "flex",
         justifyContent: "center",
         alignItems: "flex-start",
-        overflow: "hidden",
-        paddingTop: 20,
+        paddingTop: 80,
         boxSizing: "border-box"
       }}>
-        <div style={{
-          textAlign: "center",
-          maxHeight: "100%",
-          overflowY: "auto",
-          paddingBottom: 20
-        }}>
-          <h1 style={{ color: "#ffdd57", margin: "0 0 20px 0" }}>🐾 Corgi Pop 🐾</h1>
-          <div
-            className={shake ? "shake" : ""}
-            style={{
-              display: "grid",
-              gridTemplateColumns: `repeat(${GRID_COLS}, ${CELL_SIZE}px)`,
-              gap: 10,
-              background: "#1a1a1a",
-              padding: 20,
-              borderRadius: 15
-            }}
-          >
-            {grid.map((row, y) =>
-              row.map((cell, x) => (
-                <Cell key={`${x}-${y}`} content={cell} />
-              ))
-            )}
-          </div>
+        <div
+          className={shake ? "shake" : ""}
+          style={{
+            display: "grid",
+            gridTemplateColumns: `repeat(${GRID_COLS}, ${CELL_SIZE}px)`,
+            gap: 10,
+            background: "#1a1a1a",
+            padding: 20,
+            borderRadius: 15
+          }}
+        >
+          {grid.map((row, y) =>
+            row.map((cell, x) => (
+              <Cell key={`${x}-${y}`} content={cell} />
+            ))
+          )}
         </div>
       </div>
+
     </div>
   );
 };
