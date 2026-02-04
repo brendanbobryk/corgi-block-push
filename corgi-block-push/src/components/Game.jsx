@@ -3,6 +3,8 @@ import Cell from "./Cell";
 import { CELL_SIZE, GRID_ROWS, GRID_COLS, DIRECTIONS } from "./constants";
 import LEVELS from "../levels";
 
+const SIDEBAR_WIDTH = 260;
+
 const Game = () => {
   const [currentLevel, setCurrentLevel] = useState(0);
   const [grid, setGrid] = useState(
@@ -150,26 +152,31 @@ const Game = () => {
   }, {});
 
   return (
-    <div style={{ display: "flex", height: "100vh", padding: 20, gap: 24 }}>
+    <div style={{
+      height: "100vh",
+      width: "100vw",
+      overflow: "hidden",
+      background: "#121212"
+    }}>
 
       {/* Sidebar */}
       <div style={{
-        width: 260,
-        flexShrink: 0,
+        position: "fixed",
+        left: 0,
+        top: 0,
+        height: "100vh",
+        width: SIDEBAR_WIDTH,
         background: "#1a1a1a",
         padding: 16,
-        borderRadius: 16,
-        overflowY: "auto"
+        overflowY: "auto",
+        display: "flex",
+        flexDirection: "column",
+        gap: 14
       }}>
 
         {Object.entries(grouped).map(([difficulty, levels]) => (
-          <div key={difficulty} style={{ marginBottom: 14 }}>
-
-            <div style={{
-              fontWeight: "bold",
-              marginBottom: 6,
-              color: "#ffdd57"
-            }}>
+          <div key={difficulty}>
+            <div style={{ fontWeight: "bold", marginBottom: 6, color: "#ffdd57" }}>
               {difficulty}
             </div>
 
@@ -194,55 +201,47 @@ const Game = () => {
                 {lvl.name} {isCompleted(lvl.index) ? "✅" : ""}
               </button>
             ))}
-
           </div>
         ))}
 
-        <button onClick={() => resetGame()} style={{ width: "100%", marginTop: 10 }}>
-          🔄 Reset Game
-        </button>
+        <button onClick={() => resetGame()}>🔄 Reset Game</button>
 
-        <button
-          style={{ width: "100%", marginTop: 6 }}
-          onClick={() => {
-            localStorage.removeItem("bestMoves");
-            setBestMoves({});
-          }}
-        >
+        <button onClick={() => {
+          localStorage.removeItem("bestMoves");
+          setBestMoves({});
+        }}>
           🗑️ Reset All Progress
         </button>
 
-        <div style={{ marginTop: 12 }}>
+        <div>
           Moves: {moves}<br />
           Best: {bestMoves[String(currentLevel)] ?? "-"}<br />
           {hasTreat ? "🦴 Treat collected!" : "Collect the treat"}
         </div>
 
-        {hasWon && <div style={{ marginTop: 10 }}>🎉 You Win!</div>}
+        {hasWon && <div>🎉 You Win!</div>}
       </div>
 
-      {/* Grid wrapper (independent sizing) */}
+      {/* Game Area */}
       <div style={{
-        flex: 1,
+        marginLeft: SIDEBAR_WIDTH,
+        height: "100vh",
         display: "flex",
         justifyContent: "center",
         alignItems: "center"
       }}>
-
         <div className={shake ? "shake" : ""} style={{
           display: "grid",
           gridTemplateColumns: `repeat(${GRID_COLS}, ${CELL_SIZE}px)`,
           gap: 10,
           background: "#1a1a1a",
           padding: 20,
-          borderRadius: 15,
-          flexShrink: 0
+          borderRadius: 15
         }}>
           {grid.map((row,y)=>row.map((cell,x)=>(
             <Cell key={`${x}-${y}`} content={cell}/>
           )))}
         </div>
-
       </div>
 
     </div>
