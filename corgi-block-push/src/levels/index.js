@@ -18,6 +18,7 @@ const EMPTY = () => [];
 const LEVELS = [
   {
     name: "Level 1",
+    difficulty: "Easy",
     grid: [
       Array(7).fill(null).map(WALL),
 
@@ -33,6 +34,7 @@ const LEVELS = [
 
   {
     name: "Level 2",
+    difficulty: "Easy",
     grid: [
       Array(7).fill(null).map(WALL),
 
@@ -48,6 +50,7 @@ const LEVELS = [
 
   {
     name: "Level 3",
+    difficulty: "Medium",
     grid: [
       Array(7).fill(null).map(WALL),
 
@@ -63,6 +66,7 @@ const LEVELS = [
 
   {
     name: "Level 4",
+    difficulty: "Medium",
     grid: [
       Array(7).fill(null).map(WALL),
 
@@ -78,6 +82,7 @@ const LEVELS = [
 
   {
     name: "Level 5",
+    difficulty: "Hard",
     grid: [
       Array(7).fill(null).map(WALL),
 
@@ -93,6 +98,7 @@ const LEVELS = [
 
   {
     name: "Level 6",
+    difficulty: "Hard",
     grid: [
       Array(7).fill(null).map(WALL),
 
@@ -108,6 +114,7 @@ const LEVELS = [
 
   {
     name: "Level X",
+    difficulty: "Expert",
     grid: [
       Array(7).fill(null).map(WALL),
 
