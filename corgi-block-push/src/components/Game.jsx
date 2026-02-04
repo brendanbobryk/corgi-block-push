@@ -3,6 +3,8 @@ import Cell from "./Cell";
 import { CELL_SIZE, GRID_ROWS, GRID_COLS, DIRECTIONS } from "./constants";
 import LEVELS from "../levels";
 
+const DIFFICULTIES = ["Easy", "Medium", "Hard", "Expert"];
+
 const Game = () => {
   const [currentLevel, setCurrentLevel] = useState(0);
   const [grid, setGrid] = useState(
@@ -189,7 +191,7 @@ const Game = () => {
         }
       `}</style>
 
-      {/* Level Selector with completion indicator */}
+      {/* Difficulty-grouped Level Selector */}
       <select
         ref={levelSelectRef}
         value={currentLevel}
@@ -207,10 +209,16 @@ const Game = () => {
           boxShadow: "0 3px 6px rgba(0,0,0,0.3)"
         }}
       >
-        {LEVELS.map((lvl, idx) => (
-          <option key={idx} value={idx}>
-            {lvl.name} {isLevelCompleted(idx) ? "✅" : ""}
-          </option>
+        {DIFFICULTIES.map(diff => (
+          <optgroup key={diff} label={diff}>
+            {LEVELS.map((lvl, idx) =>
+              lvl.difficulty === diff ? (
+                <option key={idx} value={idx}>
+                  {lvl.name} {isLevelCompleted(idx) ? "✅" : ""}
+                </option>
+              ) : null
+            )}
+          </optgroup>
         ))}
       </select>
 
@@ -258,14 +266,12 @@ const Game = () => {
       <div className="status" style={{ position: "relative" }}>
         Moves: {moves}
         {showNewBest && (
-          <span
-            style={{
-              marginLeft: "10px",
-              color: "#ffdd57",
-              fontWeight: "bold",
-              animation: "winPop 0.8s cubic-bezier(.34,1.56,.64,1)"
-            }}
-          >
+          <span style={{
+            marginLeft: "10px",
+            color: "#ffdd57",
+            fontWeight: "bold",
+            animation: "winPop 0.8s cubic-bezier(.34,1.56,.64,1)"
+          }}>
             🎉 New Best!
           </span>
         )}
@@ -280,15 +286,13 @@ const Game = () => {
       </div>
 
       {hasWon && (
-        <div
-          style={{
-            animation: "winPop 0.6s cubic-bezier(.34,1.56,.64,1), glow 0.6s ease-out",
-            background: "#ffdd57",
-            padding: "12px 20px",
-            borderRadius: "12px",
-            fontWeight: "bold"
-          }}
-        >
+        <div style={{
+          animation: "winPop 0.6s cubic-bezier(.34,1.56,.64,1), glow 0.6s ease-out",
+          background: "#ffdd57",
+          padding: "12px 20px",
+          borderRadius: "12px",
+          fontWeight: "bold"
+        }}>
           🎉 You Win! 🎉
         </div>
       )}
