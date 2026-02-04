@@ -23,7 +23,6 @@ const Game = () => {
   const gridRef = useRef(grid);
   const hasTreatRef = useRef(hasTreat);
   const hasWonRef = useRef(hasWon);
-  const levelSelectRef = useRef(null);
   const shakeTimeoutRef = useRef(null);
 
   useEffect(() => {
@@ -32,14 +31,8 @@ const Game = () => {
     hasWonRef.current = hasWon;
   }, [grid, hasTreat, hasWon]);
 
-  const triggerShake = () => {
-    if (shakeTimeoutRef.current) clearTimeout(shakeTimeoutRef.current);
-    setShake(true);
-    shakeTimeoutRef.current = setTimeout(() => {
-      setShake(false);
-      shakeTimeoutRef.current = null;
-    }, 250);
-  };
+  const isLevelCompleted = (idx) =>
+    bestMoves[String(idx)] !== undefined;
 
   const resetGame = (levelIndex = currentLevel) => {
     if (shakeTimeoutRef.current) clearTimeout(shakeTimeoutRef.current);
@@ -56,15 +49,15 @@ const Game = () => {
     setShowNewBest(false);
   };
 
-  const changeLevel = (e) => {
-    setCurrentLevel(parseInt(e.target.value, 10));
-    setShowNewBest(false);
-    levelSelectRef.current?.blur();
-  };
-
   useEffect(() => {
     resetGame(currentLevel);
   }, [currentLevel]);
+
+  const triggerShake = () => {
+    if (shakeTimeoutRef.current) clearTimeout(shakeTimeoutRef.current);
+    setShake(true);
+    shakeTimeoutRef.current = setTimeout(() => setShake(false), 250);
+  };
 
   const findPlayerInGrid = (g) => {
     for (let y = 0; y < GRID_ROWS; y++) {
@@ -109,17 +102,12 @@ const Game = () => {
     if (pushable) {
       const px = nx + dir.x;
       const py = ny + dir.y;
-      if (px < 0 || px >= GRID_COLS || py < 0 || py >= GRID_ROWS) {
-        triggerShake();
-        return;
-      }
+      if (px < 0 || px >= GRID_COLS || py < 0 || py >= GRID_ROWS) return triggerShake();
+
       const pushTarget = newGrid[py][px];
-      if (pushTarget.some(o =>
-        o.properties.includes("WALL") || o.properties.includes("PUSH")
-      )) {
-        triggerShake();
-        return;
-      }
+      if (pushTarget.some(o => o.properties.includes("WALL") || o.properties.includes("PUSH")))
+        return triggerShake();
+
       newGrid[py][px].push(pushable);
       newGrid[ny][nx] = newGrid[ny][nx].filter(o => o !== pushable);
     }
@@ -162,8 +150,7 @@ const Game = () => {
 
   useEffect(() => {
     const handleKey = (e) => {
-      const tag = document.activeElement?.tagName;
-      if (["INPUT", "SELECT", "TEXTAREA"].includes(tag)) return;
+      if (["INPUT", "TEXTAREA"].includes(document.activeElement?.tagName)) return;
       if (e.key === "ArrowUp") movePlayerSafe(DIRECTIONS.UP);
       if (e.key === "ArrowDown") movePlayerSafe(DIRECTIONS.DOWN);
       if (e.key === "ArrowLeft") movePlayerSafe(DIRECTIONS.LEFT);
@@ -173,148 +160,96 @@ const Game = () => {
     return () => window.removeEventListener("keydown", handleKey);
   }, [moves]);
 
-  const levelKey = String(currentLevel);
-  const isLevelCompleted = (idx) =>
-    bestMoves[String(idx)] !== undefined;
-
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "20px" }}>
-      <style>{`
-        @keyframes winPop {
-          0% { opacity: 0; transform: scale(0.8); }
-          60% { opacity: 1; transform: scale(1.15); }
-          100% { transform: scale(1); }
-        }
-        @keyframes glow {
-          from { box-shadow: 0 0 0 rgba(255,221,87,0); }
-          to { box-shadow: 0 0 20px rgba(255,221,87,0.8); }
-        }
-      `}</style>
 
-      {/* Difficulty-grouped Level Selector */}
-      <select
-        ref={levelSelectRef}
-        value={currentLevel}
-        onChange={changeLevel}
-        style={{
-          padding: "8px 16px",
-          borderRadius: "8px",
-          border: "none",
-          fontWeight: "bold",
-          fontSize: "1rem",
-          cursor: "pointer",
-          marginBottom: "10px",
-          backgroundColor: "#ffdd57",
-          color: "#121212",
-          boxShadow: "0 3px 6px rgba(0,0,0,0.3)"
-        }}
-      >
+      {/* LEVEL SELECTOR */}
+      <div style={{
+        background: "#1a1a1a",
+        padding: "12px 16px",
+        borderRadius: "14px",
+        boxShadow: "0 5px 15px rgba(0,0,0,.4)",
+        width: "100%",
+        maxWidth: "420px"
+      }}>
         {DIFFICULTIES.map(diff => (
-          <optgroup key={diff} label={diff}>
-            {LEVELS.map((lvl, idx) =>
-              lvl.difficulty === diff ? (
-                <option key={idx} value={idx}>
-                  {lvl.name} {isLevelCompleted(idx) ? "✅" : ""}
-                </option>
-              ) : null
-            )}
-          </optgroup>
-        ))}
-      </select>
+          <div key={diff} style={{ marginBottom: "10px" }}>
+            <div style={{ color: "#ffdd57", fontWeight: "bold", marginBottom: "6px" }}>
+              {diff}
+            </div>
 
-      <button
-        onClick={() => resetGame()}
-        style={{
-          padding: "12px 24px",
-          fontSize: "1.1rem",
-          fontWeight: "bold",
-          borderRadius: "12px",
-          border: "none",
-          background: "linear-gradient(135deg, #ffdd57, #ffb347)",
-          color: "#121212",
-          cursor: "pointer",
-          boxShadow: "0 5px 15px rgba(0,0,0,0.4)",
-          transition: "all 0.2s ease",
-        }}
-        onMouseDown={e => e.currentTarget.style.transform = "scale(0.95)"}
-        onMouseUp={e => e.currentTarget.style.transform = "scale(1)"}
-        onMouseLeave={e => e.currentTarget.style.transform = "scale(1)"}
-      >
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+              {LEVELS.map((lvl, idx) =>
+                lvl.difficulty === diff ? (
+                  <button
+                    key={idx}
+                    onClick={() => setCurrentLevel(idx)}
+                    style={{
+                      padding: "6px 12px",
+                      borderRadius: "10px",
+                      border: "none",
+                      cursor: "pointer",
+                      fontWeight: "bold",
+                      background: idx === currentLevel
+                        ? "linear-gradient(135deg,#ffdd57,#ffb347)"
+                        : "#333",
+                      color: idx === currentLevel ? "#121212" : "#fff",
+                      boxShadow: isLevelCompleted(idx)
+                        ? "0 0 8px rgba(255,221,87,.7)"
+                        : "none"
+                    }}
+                  >
+                    {lvl.name} {isLevelCompleted(idx) ? "✅" : ""}
+                  </button>
+                ) : null
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <button onClick={() => resetGame()} style={{
+        padding: "12px 24px",
+        fontSize: "1.1rem",
+        fontWeight: "bold",
+        borderRadius: "12px",
+        border: "none",
+        background: "linear-gradient(135deg,#ffdd57,#ffb347)",
+        cursor: "pointer"
+      }}>
         🔄 Reset Game
       </button>
 
-      <button
-        onClick={() => {
-          localStorage.removeItem("bestMoves");
-          setBestMoves({});
-          setShowNewBest(false);
-        }}
-        style={{
-          padding: "8px 16px",
-          borderRadius: "8px",
-          border: "none",
-          backgroundColor: "#ff6b6b",
-          color: "#fff",
-          fontWeight: "bold",
-          cursor: "pointer",
-          marginTop: "5px"
-        }}
-      >
+      <button onClick={() => {
+        localStorage.removeItem("bestMoves");
+        setBestMoves({});
+        setShowNewBest(false);
+      }} style={{
+        padding: "8px 16px",
+        borderRadius: "8px",
+        border: "none",
+        backgroundColor: "#ff6b6b",
+        color: "#fff",
+        fontWeight: "bold"
+      }}>
         🗑️ Reset All Progress
       </button>
 
-      <div className="status" style={{ position: "relative" }}>
-        Moves: {moves}
-        {showNewBest && (
-          <span style={{
-            marginLeft: "10px",
-            color: "#ffdd57",
-            fontWeight: "bold",
-            animation: "winPop 0.8s cubic-bezier(.34,1.56,.64,1)"
-          }}>
-            🎉 New Best!
-          </span>
-        )}
-      </div>
+      <div>Moves: {moves} {showNewBest && "🎉 New Best!"}</div>
+      <div>{hasTreat ? "🦴 Treat collected!" : "Collect the treat 🦴 first"}</div>
+      <div>Best Moves: {bestMoves[String(currentLevel)] ?? "-"}</div>
 
-      <div className="status">
-        {hasTreat ? "🦴 Treat collected!" : "Collect the treat 🦴 first"}
-      </div>
+      {hasWon && <div style={{ background:"#ffdd57", padding:12, borderRadius:10 }}>🎉 You Win!</div>}
 
-      <div className="status">
-        Best Moves: {bestMoves[levelKey] ?? "-"}
-      </div>
-
-      {hasWon && (
-        <div style={{
-          animation: "winPop 0.6s cubic-bezier(.34,1.56,.64,1), glow 0.6s ease-out",
-          background: "#ffdd57",
-          padding: "12px 20px",
-          borderRadius: "12px",
-          fontWeight: "bold"
-        }}>
-          🎉 You Win! 🎉
-        </div>
-      )}
-
-      <div
-        className={shake ? "shake" : ""}
-        style={{
-          display: "grid",
-          gridTemplateColumns: `repeat(${GRID_COLS}, ${CELL_SIZE}px)`,
-          gridTemplateRows: `repeat(${GRID_ROWS}, ${CELL_SIZE}px)`,
-          gap: "10px",
-          backgroundColor: "#1a1a1a",
-          padding: "20px",
-          borderRadius: "15px",
-          boxShadow: "0 5px 15px rgba(0,0,0,0.5)"
-        }}
-      >
-        {grid.map((row, y) =>
-          row.map((cell, x) => (
-            <Cell key={`${x}-${y}`} content={cell} />
-          ))
-        )}
+      <div className={shake ? "shake" : ""} style={{
+        display: "grid",
+        gridTemplateColumns: `repeat(${GRID_COLS}, ${CELL_SIZE}px)`,
+        gap: "10px",
+        backgroundColor: "#1a1a1a",
+        padding: "20px",
+        borderRadius: "15px"
+      }}>
+        {grid.map((row,y)=>row.map((cell,x)=><Cell key={`${x}-${y}`} content={cell}/>))}
       </div>
     </div>
   );
