@@ -18,8 +18,6 @@ const Game = () => {
     return saved ? JSON.parse(saved) : {};
   });
 
-  const [showNewBest, setShowNewBest] = useState(false);
-
   const gridRef = useRef(grid);
   const hasTreatRef = useRef(hasTreat);
   const hasWonRef = useRef(hasWon);
@@ -47,7 +45,6 @@ const Game = () => {
     setHasTreat(false);
     setMoves(0);
     setShake(false);
-    setShowNewBest(false);
   };
 
   useEffect(() => resetGame(currentLevel), [currentLevel]);
@@ -77,7 +74,6 @@ const Game = () => {
     const ny = pos.y + dir.y;
 
     if (nx < 0 || ny < 0 || nx >= GRID_COLS || ny >= GRID_ROWS) return triggerShake();
-
     if (cellHas(g[ny][nx], "WALL")) return triggerShake();
 
     const newGrid = g.map(r => r.map(c => [...c]));
@@ -122,7 +118,6 @@ const Game = () => {
         if (nextMoves < best) {
           const updated = { ...prev, [key]: nextMoves };
           localStorage.setItem("bestMoves", JSON.stringify(updated));
-          setShowNewBest(true);
           return updated;
         }
         return prev;
@@ -147,6 +142,14 @@ const Game = () => {
 
   const isCompleted = i => bestMoves[String(i)] !== undefined;
 
+  // Group levels by difficulty
+  const grouped = LEVELS.reduce((acc, lvl, idx) => {
+    const diff = lvl.difficulty || "Other";
+    if (!acc[diff]) acc[diff] = [];
+    acc[diff].push({ ...lvl, index: idx });
+    return acc;
+  }, {});
+
   return (
     <div style={{ display: "flex", gap: 24, padding: 20 }}>
 
@@ -158,27 +161,45 @@ const Game = () => {
         borderRadius: 16,
         display: "flex",
         flexDirection: "column",
-        gap: 14
+        gap: 14,
+        overflowY: "auto",
+        maxHeight: "90vh"
       }}>
 
-        {LEVELS.map((lvl, i) => (
-          <button
-            key={i}
-            onClick={() => setCurrentLevel(i)}
-            style={{
-              padding: "8px",
-              borderRadius: 10,
-              border: "none",
-              cursor: "pointer",
+        {Object.entries(grouped).map(([difficulty, levels]) => (
+          <div key={difficulty}>
+
+            <div style={{
               fontWeight: "bold",
-              background: i === currentLevel
-                ? "linear-gradient(135deg,#ffdd57,#ffb347)"
-                : "#333",
-              color: i === currentLevel ? "#121212" : "#fff"
-            }}
-          >
-            {lvl.name} {isCompleted(i) ? "✅" : ""}
-          </button>
+              marginBottom: 6,
+              color: "#ffdd57"
+            }}>
+              {difficulty}
+            </div>
+
+            {levels.map(lvl => (
+              <button
+                key={lvl.index}
+                onClick={() => setCurrentLevel(lvl.index)}
+                style={{
+                  width: "100%",
+                  marginBottom: 6,
+                  padding: 8,
+                  borderRadius: 10,
+                  border: "none",
+                  cursor: "pointer",
+                  fontWeight: "bold",
+                  background: lvl.index === currentLevel
+                    ? "linear-gradient(135deg,#ffdd57,#ffb347)"
+                    : "#333",
+                  color: lvl.index === currentLevel ? "#121212" : "#fff"
+                }}
+              >
+                {lvl.name} {isCompleted(lvl.index) ? "✅" : ""}
+              </button>
+            ))}
+
+          </div>
         ))}
 
         <button onClick={() => resetGame()}>🔄 Reset Game</button>
@@ -199,7 +220,7 @@ const Game = () => {
         {hasWon && <div>🎉 You Win!</div>}
       </div>
 
-      {/* Game */}
+      {/* Game Grid */}
       <div className={shake ? "shake" : ""} style={{
         display: "grid",
         gridTemplateColumns: `repeat(${GRID_COLS}, ${CELL_SIZE}px)`,
