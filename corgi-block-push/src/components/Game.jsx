@@ -142,7 +142,6 @@ const Game = () => {
 
   const isCompleted = i => bestMoves[String(i)] !== undefined;
 
-  // Group levels by difficulty
   const grouped = LEVELS.reduce((acc, lvl, idx) => {
     const diff = lvl.difficulty || "Other";
     if (!acc[diff]) acc[diff] = [];
@@ -151,23 +150,20 @@ const Game = () => {
   }, {});
 
   return (
-    <div style={{ display: "flex", gap: 24, padding: 20 }}>
+    <div style={{ display: "flex", height: "100vh", padding: 20, gap: 24 }}>
 
       {/* Sidebar */}
       <div style={{
         width: 260,
+        flexShrink: 0,
         background: "#1a1a1a",
         padding: 16,
         borderRadius: 16,
-        display: "flex",
-        flexDirection: "column",
-        gap: 14,
-        overflowY: "auto",
-        maxHeight: "90vh"
+        overflowY: "auto"
       }}>
 
         {Object.entries(grouped).map(([difficulty, levels]) => (
-          <div key={difficulty}>
+          <div key={difficulty} style={{ marginBottom: 14 }}>
 
             <div style={{
               fontWeight: "bold",
@@ -202,36 +198,51 @@ const Game = () => {
           </div>
         ))}
 
-        <button onClick={() => resetGame()}>🔄 Reset Game</button>
+        <button onClick={() => resetGame()} style={{ width: "100%", marginTop: 10 }}>
+          🔄 Reset Game
+        </button>
 
-        <button onClick={() => {
-          localStorage.removeItem("bestMoves");
-          setBestMoves({});
-        }}>
+        <button
+          style={{ width: "100%", marginTop: 6 }}
+          onClick={() => {
+            localStorage.removeItem("bestMoves");
+            setBestMoves({});
+          }}
+        >
           🗑️ Reset All Progress
         </button>
 
-        <div>
+        <div style={{ marginTop: 12 }}>
           Moves: {moves}<br />
           Best: {bestMoves[String(currentLevel)] ?? "-"}<br />
           {hasTreat ? "🦴 Treat collected!" : "Collect the treat"}
         </div>
 
-        {hasWon && <div>🎉 You Win!</div>}
+        {hasWon && <div style={{ marginTop: 10 }}>🎉 You Win!</div>}
       </div>
 
-      {/* Game Grid */}
-      <div className={shake ? "shake" : ""} style={{
-        display: "grid",
-        gridTemplateColumns: `repeat(${GRID_COLS}, ${CELL_SIZE}px)`,
-        gap: 10,
-        background: "#1a1a1a",
-        padding: 20,
-        borderRadius: 15
+      {/* Grid wrapper (independent sizing) */}
+      <div style={{
+        flex: 1,
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center"
       }}>
-        {grid.map((row,y)=>row.map((cell,x)=>(
-          <Cell key={`${x}-${y}`} content={cell}/>
-        )))}
+
+        <div className={shake ? "shake" : ""} style={{
+          display: "grid",
+          gridTemplateColumns: `repeat(${GRID_COLS}, ${CELL_SIZE}px)`,
+          gap: 10,
+          background: "#1a1a1a",
+          padding: 20,
+          borderRadius: 15,
+          flexShrink: 0
+        }}>
+          {grid.map((row,y)=>row.map((cell,x)=>(
+            <Cell key={`${x}-${y}`} content={cell}/>
+          )))}
+        </div>
+
       </div>
 
     </div>
