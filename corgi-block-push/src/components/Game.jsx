@@ -241,21 +241,32 @@ const Game = () => {
         }}
       >
         <div
-          className={shake ? "shake" : ""}
           style={{
-            display: "grid",
-            gridTemplateColumns: `repeat(${GRID_COLS}, ${CELL_SIZE}px)`,
-            gap: 10,
-            background: "#1a1a1a",
-            padding: 20,
-            borderRadius: 15
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: 16
           }}
         >
-          {grid.map((row, y) =>
-            row.map((cell, x) => (
-              <Cell key={`${x}-${y}`} content={cell} />
-            ))
-          )}
+          <h1 style={{ margin: 0 }}>🐕 Corgi Push</h1>
+
+          <div
+            className={shake ? "shake" : ""}
+            style={{
+              display: "grid",
+              gridTemplateColumns: `repeat(${GRID_COLS}, ${CELL_SIZE}px)`,
+              gap: 10,
+              background: "#1a1a1a",
+              padding: 20,
+              borderRadius: 15
+            }}
+          >
+            {grid.map((row, y) =>
+              row.map((cell, x) => (
+                <Cell key={`${x}-${y}`} content={cell} />
+              ))
+            )}
+          </div>
         </div>
       </div>
     </div>
