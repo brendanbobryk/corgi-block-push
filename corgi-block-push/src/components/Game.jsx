@@ -237,8 +237,7 @@ const Game = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          boxSizing: "border-box",
-          paddingTop: 20,
+          boxSizing: "border-box"
         }}
       >
         {/* Banner / Title */}
@@ -248,8 +247,9 @@ const Game = () => {
             textAlign: "center",
             padding: "20px 0",
             background: "linear-gradient(90deg, #ffdd57, #ffb347)",
-            borderRadius: 12,
-            boxShadow: "0 2px 8px rgba(0,0,0,0.4)"
+            borderRadius: 0,
+            boxShadow: "0 2px 8px rgba(0,0,0,0.4)",
+            marginBottom: 20
           }}
         >
           <h1 style={{ margin: 0, color: "#121212" }}>🐕 Corgi Push</h1>
