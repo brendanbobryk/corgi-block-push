@@ -152,27 +152,30 @@ const Game = () => {
   }, {});
 
   return (
-    <div style={{
-      width: "100vw",
-      height: "100%",
-      overflow: "hidden",
-      background: "#121212"
-    }}>
-
+    <div
+      style={{
+        width: "100vw",
+        height: "100vh",
+        overflow: "hidden",
+        background: "#121212"
+      }}
+    >
       {/* Sidebar */}
-      <div style={{
-        position: "fixed",
-        left: 0,
-        top: 0,
-        width: SIDEBAR_WIDTH,
-        height: "100%",
-        background: "#1a1a1a",
-        padding: 16,
-        overflowY: "auto",
-        display: "flex",
-        flexDirection: "column",
-        gap: 14
-      }}>
+      <div
+        style={{
+          position: "fixed",
+          left: 0,
+          top: 0,
+          width: SIDEBAR_WIDTH,
+          height: "100vh",
+          background: "#1a1a1a",
+          padding: 16,
+          overflowY: "auto",
+          display: "flex",
+          flexDirection: "column",
+          gap: 14
+        }}
+      >
         {Object.entries(grouped).map(([difficulty, levels]) => (
           <div key={difficulty}>
             <div style={{ fontWeight: "bold", marginBottom: 6, color: "#ffdd57" }}>
@@ -191,9 +194,10 @@ const Game = () => {
                   border: "none",
                   cursor: "pointer",
                   fontWeight: "bold",
-                  background: lvl.index === currentLevel
-                    ? "linear-gradient(135deg,#ffdd57,#ffb347)"
-                    : "#333",
+                  background:
+                    lvl.index === currentLevel
+                      ? "linear-gradient(135deg,#ffdd57,#ffb347)"
+                      : "#333",
                   color: lvl.index === currentLevel ? "#121212" : "#fff"
                 }}
               >
@@ -205,16 +209,20 @@ const Game = () => {
 
         <button onClick={() => resetGame()}>🔄 Reset Game</button>
 
-        <button onClick={() => {
-          localStorage.removeItem("bestMoves");
-          setBestMoves({});
-        }}>
+        <button
+          onClick={() => {
+            localStorage.removeItem("bestMoves");
+            setBestMoves({});
+          }}
+        >
           🗑️ Reset All Progress
         </button>
 
         <div>
-          Moves: {moves}<br />
-          Best: {bestMoves[String(currentLevel)] ?? "-"}<br />
+          Moves: {moves}
+          <br />
+          Best: {bestMoves[String(currentLevel)] ?? "-"}
+          <br />
           {hasTreat ? "🦴 Treat collected!" : "Collect the treat"}
         </div>
 
@@ -222,15 +230,16 @@ const Game = () => {
       </div>
 
       {/* Game Area */}
-      <div style={{
-        marginLeft: SIDEBAR_WIDTH,
-        height: "100%",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "flex-start",
-        paddingTop: 80,
-        boxSizing: "border-box"
-      }}>
+      <div
+        style={{
+          marginLeft: SIDEBAR_WIDTH,
+          height: "100vh",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          boxSizing: "border-box"
+        }}
+      >
         <div
           className={shake ? "shake" : ""}
           style={{
@@ -249,7 +258,6 @@ const Game = () => {
           )}
         </div>
       </div>
-
     </div>
   );
 };
