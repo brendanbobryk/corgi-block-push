@@ -252,7 +252,7 @@ const Game = () => {
             marginBottom: 20
           }}
         >
-          <h1 style={{ margin: 0, color: "#121212" }}>🐕 Corgi Push</h1>
+          <h1 style={{ margin: 0, color: "#121212" }}>🐕 Corgi Block Push</h1>
         </div>
 
         {/* Centered Game Grid */}
