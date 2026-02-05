@@ -235,21 +235,35 @@ const Game = () => {
           marginLeft: SIDEBAR_WIDTH,
           height: "100vh",
           display: "flex",
-          justifyContent: "center",
+          flexDirection: "column",
           alignItems: "center",
-          boxSizing: "border-box"
+          boxSizing: "border-box",
+          paddingTop: 20,
         }}
       >
+        {/* Banner / Title */}
         <div
           style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: 16
+            width: "100%",
+            textAlign: "center",
+            padding: "20px 0",
+            background: "linear-gradient(90deg, #ffdd57, #ffb347)",
+            borderRadius: 12,
+            boxShadow: "0 2px 8px rgba(0,0,0,0.4)"
           }}
         >
-          <h1 style={{ margin: 0 }}>🐕 Corgi Push</h1>
+          <h1 style={{ margin: 0, color: "#121212" }}>🐕 Corgi Push</h1>
+        </div>
 
+        {/* Centered Game Grid */}
+        <div
+          style={{
+            flexGrow: 1,
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center"
+          }}
+        >
           <div
             className={shake ? "shake" : ""}
             style={{

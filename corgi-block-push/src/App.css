@@ -21,6 +21,11 @@ body {
   color: #ffdd57;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
   margin-bottom: 1rem;
+
+  /* NEW: align title with game grid */
+  width: calc(100vw - 260px); /* full width minus sidebar */
+  margin-left: 260px;          /* push it right by sidebar width */
+  text-align: center;
 }
 
 .status {
