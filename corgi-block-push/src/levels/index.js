@@ -50,7 +50,7 @@ const LEVELS = [
 
   {
     name: "Level 3",
-    difficulty: "Medium",
+    difficulty: "Easy",
     grid: [
       Array(7).fill(null).map(WALL),
 
@@ -82,7 +82,7 @@ const LEVELS = [
 
   {
     name: "Level 5",
-    difficulty: "Hard",
+    difficulty: "Medium",
     grid: [
       Array(7).fill(null).map(WALL),
 
@@ -98,7 +98,7 @@ const LEVELS = [
 
   {
     name: "Level 6",
-    difficulty: "Hard",
+    difficulty: "Medium",
     grid: [
       Array(7).fill(null).map(WALL),
 
