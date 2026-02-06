@@ -152,14 +152,7 @@ const Game = () => {
   }, {});
 
   return (
-    <div
-      style={{
-        width: "100vw",
-        height: "100vh",
-        overflow: "hidden",
-        background: "#121212"
-      }}
-    >
+    <div style={{ width: "100vw", height: "100vh", overflow: "hidden", background: "#121212" }}>
       {/* Sidebar */}
       <div
         style={{
@@ -217,16 +210,6 @@ const Game = () => {
         >
           🗑️ Reset All Progress
         </button>
-
-        <div>
-          Moves: {moves}
-          <br />
-          Best: {bestMoves[String(currentLevel)] ?? "-"}
-          <br />
-          {hasTreat ? "🦴 Treat collected!" : "Collect the treat"}
-        </div>
-
-        {hasWon && <div>🎉 You Win!</div>}
       </div>
 
       {/* Game Area */}
@@ -236,18 +219,15 @@ const Game = () => {
           height: "100vh",
           display: "flex",
           flexDirection: "column",
-          alignItems: "center",
-          boxSizing: "border-box"
+          alignItems: "center"
         }}
       >
-        {/* Banner / Title */}
         <div
           style={{
             width: "100%",
             textAlign: "center",
             padding: "20px 0",
-            background: "linear-gradient(90deg, #ffdd57, #ffb347)",
-            borderRadius: 0,
+            background: "linear-gradient(90deg,#ffdd57,#ffb347)",
             boxShadow: "0 2px 8px rgba(0,0,0,0.4)",
             marginBottom: 20
           }}
@@ -255,16 +235,7 @@ const Game = () => {
           <h1 style={{ margin: 0, color: "#121212" }}>🐕 Corgi Block Push</h1>
         </div>
 
-        {/* Centered Game Grid */}
-        <div
-          style={{
-            flexGrow: 1,
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            position: "relative"
-          }}
-        >
+        <div style={{ flexGrow: 1, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", gap: 16 }}>
           <div
             className={shake ? "shake" : ""}
             style={{
@@ -273,8 +244,7 @@ const Game = () => {
               gap: 10,
               background: "#1a1a1a",
               padding: 20,
-              borderRadius: 15,
-              position: "relative"
+              borderRadius: 15
             }}
           >
             {grid.map((row, y) =>
@@ -282,23 +252,23 @@ const Game = () => {
                 <Cell key={`${x}-${y}`} content={cell} />
               ))
             )}
-
-            {hasWon && (
-              <div
-                className="win-message"
-                style={{
-                  position: "absolute",
-                  inset: 0,
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  pointerEvents: "none"
-                }}
-              >
-                🎉 Level Complete!
-              </div>
-            )}
           </div>
+
+          {hasWon && (
+            <div
+              className="win-message"
+              style={{
+                padding: "12px 28px",
+                borderRadius: 12,
+                background: "linear-gradient(135deg,#00ff99,#00cc77)",
+                color: "#121212",
+                fontWeight: "800",
+                boxShadow: "0 6px 16px rgba(0,0,0,.4)"
+              }}
+            >
+              🎉 LEVEL COMPLETE!
+            </div>
+          )}
         </div>
       </div>
     </div>
