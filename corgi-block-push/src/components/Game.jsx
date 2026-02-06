@@ -203,18 +203,20 @@ const Game = () => {
             {grid.map((row, y) => row.map((cell, x) => <Cell key={`${x}-${y}`} content={cell} />))}
           </div>
 
-          <div style={{ height: 60, marginTop: 20, display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <div style={{ height: 80, marginTop: 20, display: "flex", alignItems: "center", justifyContent: "center" }}>
             <div
               style={{
+                transform: hasWon ? "scale(1)" : "scale(0.5)",
                 opacity: hasWon ? 1 : 0,
                 pointerEvents: "none",
-                padding: "12px 28px",
-                borderRadius: 12,
+                padding: "16px 32px",
+                borderRadius: 16,
                 background: "linear-gradient(135deg,#00ff99,#00cc77)",
                 color: "#121212",
-                fontWeight: 800,
+                fontWeight: 900,
+                fontSize: "1.8rem",
                 boxShadow: "0 6px 16px rgba(0,0,0,.4)",
-                transition: "opacity .3s ease"
+                transition: "opacity 0.5s ease, transform 0.5s ease"
               }}
             >
               🎉 LEVEL COMPLETE!
