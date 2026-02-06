@@ -152,35 +152,11 @@ const Game = () => {
   }, {});
 
   return (
-    <div
-      style={{
-        width: "100vw",
-        height: "100vh",
-        overflow: "hidden",
-        background: "#121212"
-      }}
-    >
-      {/* Sidebar */}
-      <div
-        style={{
-          position: "fixed",
-          left: 0,
-          top: 0,
-          width: SIDEBAR_WIDTH,
-          height: "100vh",
-          background: "#1a1a1a",
-          padding: 16,
-          overflowY: "auto",
-          display: "flex",
-          flexDirection: "column",
-          gap: 14
-        }}
-      >
+    <div style={{ width: "100vw", height: "100vh", overflow: "hidden", background: "#121212" }}>
+      <div style={{ position: "fixed", left: 0, top: 0, width: SIDEBAR_WIDTH, height: "100vh", background: "#1a1a1a", padding: 16, overflowY: "auto", display: "flex", flexDirection: "column", gap: 14 }}>
         {Object.entries(grouped).map(([difficulty, levels]) => (
           <div key={difficulty}>
-            <div style={{ fontWeight: "bold", marginBottom: 6, color: "#ffdd57" }}>
-              {difficulty}
-            </div>
+            <div style={{ fontWeight: "bold", marginBottom: 6, color: "#ffdd57" }}>{difficulty}</div>
 
             {levels.map(lvl => (
               <button
@@ -194,10 +170,7 @@ const Game = () => {
                   border: "none",
                   cursor: "pointer",
                   fontWeight: "bold",
-                  background:
-                    lvl.index === currentLevel
-                      ? "linear-gradient(135deg,#ffdd57,#ffb347)"
-                      : "#333",
+                  background: lvl.index === currentLevel ? "linear-gradient(135deg,#ffdd57,#ffb347)" : "#333",
                   color: lvl.index === currentLevel ? "#121212" : "#fff"
                 }}
               >
@@ -209,86 +182,29 @@ const Game = () => {
 
         <button onClick={() => resetGame()}>🔄 Reset Game</button>
 
-        <button
-          onClick={() => {
-            localStorage.removeItem("bestMoves");
-            setBestMoves({});
-          }}
-        >
+        <button onClick={() => { localStorage.removeItem("bestMoves"); setBestMoves({}); }}>
           🗑️ Reset All Progress
         </button>
 
         <div>
-          Moves: {moves}
-          <br />
-          Best: {bestMoves[String(currentLevel)] ?? "-"}
-          <br />
+          Moves: {moves}<br />
+          Best: {bestMoves[String(currentLevel)] ?? "-"}<br />
           {hasTreat ? "🦴 Treat collected!" : "Collect the treat"}
         </div>
       </div>
 
-      {/* Game Area */}
-      <div
-        style={{
-          marginLeft: SIDEBAR_WIDTH,
-          height: "100vh",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          boxSizing: "border-box"
-        }}
-      >
-        <div
-          style={{
-            width: "100%",
-            textAlign: "center",
-            padding: "20px 0",
-            background: "linear-gradient(90deg, #ffdd57, #ffb347)",
-            boxShadow: "0 2px 8px rgba(0,0,0,0.4)",
-            marginBottom: 20
-          }}
-        >
+      <div style={{ marginLeft: SIDEBAR_WIDTH, height: "100vh", display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <div style={{ width: "100%", textAlign: "center", padding: "20px 0", background: "linear-gradient(90deg,#ffdd57,#ffb347)", boxShadow: "0 2px 8px rgba(0,0,0,.4)", marginBottom: 20 }}>
           <h1 style={{ margin: 0, color: "#121212" }}>🐕 Corgi Block Push</h1>
         </div>
 
-        <div
-          style={{
-            flexGrow: 1,
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center"
-          }}
-        >
-          <div
-            className={shake ? "shake" : ""}
-            style={{
-              display: "grid",
-              gridTemplateColumns: `repeat(${GRID_COLS}, ${CELL_SIZE}px)`,
-              gap: 10,
-              background: "#1a1a1a",
-              padding: 20,
-              borderRadius: 15
-            }}
-          >
-            {grid.map((row, y) =>
-              row.map((cell, x) => (
-                <Cell key={`${x}-${y}`} content={cell} />
-              ))
-            )}
+        <div style={{ flexGrow: 1, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+          <div className={shake ? "shake" : ""} style={{ display: "grid", gridTemplateColumns: `repeat(${GRID_COLS}, ${CELL_SIZE}px)`, gap: 10, background: "#1a1a1a", padding: 20, borderRadius: 15 }}>
+            {grid.map((row, y) => row.map((cell, x) => <Cell key={`${x}-${y}`} content={cell} />))}
           </div>
 
-          {/* Reserved Win Message Slot (prevents grid movement) */}
-          <div
-            style={{
-              height: 60,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center"
-            }}
-          >
+          <div style={{ height: 60, marginTop: 20, display: "flex", alignItems: "center", justifyContent: "center" }}>
             <div
-              className={hasWon ? "win-message" : ""}
               style={{
                 opacity: hasWon ? 1 : 0,
                 pointerEvents: "none",
@@ -296,7 +212,7 @@ const Game = () => {
                 borderRadius: 12,
                 background: "linear-gradient(135deg,#00ff99,#00cc77)",
                 color: "#121212",
-                fontWeight: "800",
+                fontWeight: 800,
                 boxShadow: "0 6px 16px rgba(0,0,0,.4)",
                 transition: "opacity .3s ease"
               }}
