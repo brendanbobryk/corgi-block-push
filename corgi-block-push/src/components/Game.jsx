@@ -197,32 +197,33 @@ const Game = () => {
           <h1 style={{ margin: 0, color: "#121212" }}>🐕 Corgi Block Push</h1>
         </div>
 
-        {/* Treat Instruction Above Grid */}
-        <div style={{ height: 60, marginBottom: 16, display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <div
-            style={{
-              transform: "scale(1)",
-              opacity: 1,
-              pointerEvents: "none",
-              padding: "12px 28px",
-              borderRadius: 12,
-              background: "linear-gradient(135deg,#ffaa00,#ffdd57)",
-              color: "#121212",
-              fontWeight: 800,
-              fontSize: "1.4rem",
-              boxShadow: "0 6px 16px rgba(0,0,0,.4)",
-              transition: "transform 0.3s ease, opacity 0.3s ease"
-            }}
-          >
-            {hasTreat ? "🦴 Treat collected!" : "Collect the treat"}
-          </div>
-        </div>
-
         <div style={{ flexGrow: 1, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+          {/* Treat Instruction Above Grid */}
+          <div style={{ height: 60, marginBottom: 20, display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <div
+              style={{
+                transform: "scale(1)",
+                opacity: 1,
+                pointerEvents: "none",
+                padding: "12px 28px",
+                borderRadius: 12,
+                background: "linear-gradient(135deg,#ffaa00,#ffdd57)",
+                color: "#121212",
+                fontWeight: 800,
+                fontSize: "1.4rem",
+                boxShadow: "0 6px 16px rgba(0,0,0,.4)",
+                transition: "transform 0.3s ease, opacity 0.3s ease"
+              }}
+            >
+              {hasTreat ? "🦴 Treat collected!" : "Collect the treat"}
+            </div>
+          </div>
+
           <div className={shake ? "shake" : ""} style={{ display: "grid", gridTemplateColumns: `repeat(${GRID_COLS}, ${CELL_SIZE}px)`, gap: 10, background: "#1a1a1a", padding: 20, borderRadius: 15 }}>
             {grid.map((row, y) => row.map((cell, x) => <Cell key={`${x}-${y}`} content={cell} />))}
           </div>
 
+          {/* Win Notification Below Grid */}
           <div style={{ height: 80, marginTop: 20, display: "flex", alignItems: "center", justifyContent: "center" }}>
             <div
               style={{
