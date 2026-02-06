@@ -187,8 +187,8 @@ const Game = () => {
         </button>
 
         <div>
-          Moves: {moves}<br />
-          Best: {bestMoves[String(currentLevel)] ?? "-"}
+          Move Count: {moves}<br />
+          🏆 Record Moves: {bestMoves[String(currentLevel)] ?? "-"}
         </div>
       </div>
 
