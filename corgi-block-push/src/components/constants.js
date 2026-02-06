@@ -8,7 +8,7 @@ export const EMOJIS = {
   BLOCK: "🟫",
   WALL: "⬛",   // Impassable obstacle
   EMPTY: "⬜",
-  GOAL: "⭐",
+  GOAL: "🚩",
   TREAT: "🦴",
 };
 
