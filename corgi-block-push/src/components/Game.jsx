@@ -261,7 +261,8 @@ const Game = () => {
             flexGrow: 1,
             display: "flex",
             justifyContent: "center",
-            alignItems: "center"
+            alignItems: "center",
+            position: "relative"
           }}
         >
           <div
@@ -272,13 +273,30 @@ const Game = () => {
               gap: 10,
               background: "#1a1a1a",
               padding: 20,
-              borderRadius: 15
+              borderRadius: 15,
+              position: "relative"
             }}
           >
             {grid.map((row, y) =>
               row.map((cell, x) => (
                 <Cell key={`${x}-${y}`} content={cell} />
               ))
+            )}
+
+            {hasWon && (
+              <div
+                className="win-message"
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  pointerEvents: "none"
+                }}
+              >
+                🎉 Level Complete!
+              </div>
             )}
           </div>
         </div>
