@@ -215,7 +215,7 @@ const Game = () => {
                 transition: "transform 0.3s ease, opacity 0.3s ease"
               }}
             >
-              {hasTreat ? "Get to the goal 🚩" : "Collect the treat 🦴"}
+              {hasTreat ? "Get to the goal! 🚩" : "Collect the treat! 🦴"}
             </div>
           </div>
 
