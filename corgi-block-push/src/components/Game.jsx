@@ -183,7 +183,7 @@ const Game = () => {
         <button onClick={() => resetGame()}>🔄 Reset Level 🔄</button>
 
         <button onClick={() => { localStorage.removeItem("bestMoves"); setBestMoves({}); }}>
-          🗑️ Reset All Progress
+          🗑️ Reset All Progress 🗑️
         </button>
 
         <div>
