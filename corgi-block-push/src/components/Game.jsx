@@ -240,7 +240,7 @@ const Game = () => {
                 transition: "opacity 0.5s ease, transform 0.5s ease"
               }}
             >
-              🎉 LEVEL COMPLETE!
+              🎉 LEVEL COMPLETE! 🎉
             </div>
           </div>
         </div>
