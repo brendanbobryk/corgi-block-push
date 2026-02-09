@@ -261,7 +261,7 @@ const Game = () => {
                 transition: "opacity 0.4s ease, transform 0.4s ease"
               }}
             >
-              🏆 NEW RECORD!
+              🏆 NEW RECORD! 🏆
             </div>
           </div>
         </div>
