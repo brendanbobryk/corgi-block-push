@@ -14,6 +14,7 @@ const Game = () => {
   const [hasTreat, setHasTreat] = useState(false);
   const [moves, setMoves] = useState(0);
   const [shake, setShake] = useState(false);
+  const [isNewRecord, setIsNewRecord] = useState(false);
 
   const [bestMoves, setBestMoves] = useState(() => {
     const saved = localStorage.getItem("bestMoves");
@@ -47,6 +48,7 @@ const Game = () => {
     setHasTreat(false);
     setMoves(0);
     setShake(false);
+    setIsNewRecord(false);
   };
 
   useEffect(() => resetGame(currentLevel), [currentLevel]);
@@ -120,8 +122,10 @@ const Game = () => {
         if (nextMoves < best) {
           const updated = { ...prev, [key]: nextMoves };
           localStorage.setItem("bestMoves", JSON.stringify(updated));
+          setIsNewRecord(true);
           return updated;
         }
+        setIsNewRecord(false);
         return prev;
       });
     }
@@ -198,33 +202,11 @@ const Game = () => {
         </div>
 
         <div style={{ flexGrow: 1, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-          {/* Treat Instruction Above Grid */}
-          <div style={{ height: 60, marginBottom: 20, display: "flex", alignItems: "center", justifyContent: "center" }}>
-            <div
-              style={{
-                transform: "scale(1)",
-                opacity: 1,
-                pointerEvents: "none",
-                padding: "12px 28px",
-                borderRadius: 12,
-                background: "linear-gradient(135deg,#ffaa00,#ffdd57)",
-                color: "#121212",
-                fontWeight: 800,
-                fontSize: "1.4rem",
-                boxShadow: "0 6px 16px rgba(0,0,0,.4)",
-                transition: "transform 0.3s ease, opacity 0.3s ease"
-              }}
-            >
-              {hasTreat ? "Get to the goal! 🚩" : "Collect the treat! 🦴"}
-            </div>
-          </div>
-
           <div className={shake ? "shake" : ""} style={{ display: "grid", gridTemplateColumns: `repeat(${GRID_COLS}, ${CELL_SIZE}px)`, gap: 10, background: "#1a1a1a", padding: 20, borderRadius: 15 }}>
             {grid.map((row, y) => row.map((cell, x) => <Cell key={`${x}-${y}`} content={cell} />))}
           </div>
 
-          {/* Win Notification Below Grid */}
-          <div style={{ height: 80, marginTop: 20, display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <div style={{ height: 80, marginTop: 20, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 10 }}>
             <div
               style={{
                 transform: hasWon ? "scale(1)" : "scale(0.5)",
@@ -241,6 +223,24 @@ const Game = () => {
               }}
             >
               🎉 LEVEL COMPLETE! 🎉
+            </div>
+
+            <div
+              style={{
+                transform: isNewRecord ? "scale(1)" : "scale(0.5)",
+                opacity: isNewRecord ? 1 : 0,
+                pointerEvents: "none",
+                padding: "10px 24px",
+                borderRadius: 12,
+                background: "linear-gradient(135deg,#ffd700,#ffb700)",
+                color: "#121212",
+                fontWeight: 800,
+                fontSize: "1.2rem",
+                boxShadow: "0 4px 12px rgba(0,0,0,.4)",
+                transition: "opacity 0.4s ease, transform 0.4s ease"
+              }}
+            >
+              🏆 NEW RECORD!
             </div>
           </div>
         </div>
