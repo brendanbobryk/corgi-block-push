@@ -15,6 +15,7 @@ const Game = () => {
   const [moves, setMoves] = useState(0);
   const [shake, setShake] = useState(false);
   const [isNewRecord, setIsNewRecord] = useState(false);
+  const [instructionPulse, setInstructionPulse] = useState(false);
 
   const [bestMoves, setBestMoves] = useState(() => {
     const saved = localStorage.getItem("bestMoves");
@@ -31,6 +32,12 @@ const Game = () => {
     hasTreatRef.current = hasTreat;
     hasWonRef.current = hasWon;
   }, [grid, hasTreat, hasWon]);
+
+  useEffect(() => {
+    setInstructionPulse(true);
+    const t = setTimeout(() => setInstructionPulse(false), 300);
+    return () => clearTimeout(t);
+  }, [hasTreat]);
 
   const triggerShake = () => {
     if (shakeTimeoutRef.current) clearTimeout(shakeTimeoutRef.current);
@@ -206,7 +213,7 @@ const Game = () => {
           <div style={{ height: 60, marginBottom: 20, display: "flex", alignItems: "center", justifyContent: "center" }}>
             <div
               style={{
-                transform: "scale(1)",
+                transform: instructionPulse ? "scale(1.1)" : "scale(1)",
                 opacity: 1,
                 pointerEvents: "none",
                 padding: "12px 28px",
