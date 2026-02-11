@@ -235,7 +235,7 @@ const Game = () => {
           </div>
 
           {/* Win Notification Area */}
-          <div style={{ height: 80, marginTop: 20, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 10 }}>
+          <div style={{ height: 100, marginTop: 20, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 10 }}>
             <div
               style={{
                 transform: hasWon ? "scale(1)" : "scale(0.5)",
