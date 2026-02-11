@@ -234,6 +234,7 @@ const Game = () => {
             {grid.map((row, y) => row.map((cell, x) => <Cell key={`${x}-${y}`} content={cell} />))}
           </div>
 
+          {/* Win Notification Area */}
           <div style={{ height: 80, marginTop: 20, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 10 }}>
             <div
               style={{
