@@ -27,6 +27,7 @@ const Game = () => {
   const hasTreatRef = useRef(hasTreat);
   const hasWonRef = useRef(hasWon);
   const shakeTimeoutRef = useRef(null);
+  const winBannerRef = useRef(null);
 
   useEffect(() => {
     gridRef.current = grid;
@@ -34,14 +35,19 @@ const Game = () => {
     hasWonRef.current = hasWon;
   }, [grid, hasTreat, hasWon]);
 
-  // 🎉 Step 3: Confetti on win
+  // 🎉 Confetti on win (originates from win banner)
   useEffect(() => {
-    if (!hasWon) return;
+    if (!hasWon || !winBannerRef.current) return;
+
+    const rect = winBannerRef.current.getBoundingClientRect();
+
+    const x = (rect.left + rect.width / 2) / window.innerWidth;
+    const y = (rect.top + rect.height / 2) / window.innerHeight;
 
     confetti({
       particleCount: 150,
       spread: 80,
-      origin: { y: 0.6 }
+      origin: { x, y }
     });
   }, [hasWon]);
 
@@ -249,6 +255,7 @@ const Game = () => {
           {/* Win Notification Area */}
           <div style={{ height: 100, marginTop: 39, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 10 }}>
             <div
+              ref={winBannerRef}
               style={{
                 transform: hasWon ? "scale(1)" : "scale(0.5)",
                 opacity: hasWon ? 1 : 0,
