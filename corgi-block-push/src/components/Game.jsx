@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Cell from "./Cell";
 import { CELL_SIZE, GRID_ROWS, GRID_COLS, DIRECTIONS } from "./constants";
 import LEVELS from "../levels";
+import confetti from "canvas-confetti";
 
 const SIDEBAR_WIDTH = 260;
 
