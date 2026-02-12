@@ -34,6 +34,17 @@ const Game = () => {
     hasWonRef.current = hasWon;
   }, [grid, hasTreat, hasWon]);
 
+  // 🎉 Step 3: Confetti on win
+  useEffect(() => {
+    if (!hasWon) return;
+
+    confetti({
+      particleCount: 150,
+      spread: 80,
+      origin: { y: 0.6 }
+    });
+  }, [hasWon]);
+
   useEffect(() => {
     setInstructionPulse(true);
     const t = setTimeout(() => setInstructionPulse(false), 300);
