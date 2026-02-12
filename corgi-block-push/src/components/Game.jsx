@@ -45,7 +45,7 @@ const Game = () => {
     const y = (rect.top + rect.height / 2) / window.innerHeight;
 
     confetti({
-      particleCount: 150,
+      particleCount: 200,
       spread: 80,
       origin: { x, y },
       scalar: 1.3
