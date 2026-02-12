@@ -47,7 +47,8 @@ const Game = () => {
     confetti({
       particleCount: 150,
       spread: 80,
-      origin: { x, y }
+      origin: { x, y },
+      scalar: 1.3
     });
   }, [hasWon]);
 
