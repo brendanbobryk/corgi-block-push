@@ -46,7 +46,7 @@ const Game = () => {
 
     confetti({
       particleCount: 200,
-      spread: 80,
+      spread: 70,
       origin: { x, y },
       scalar: 1.3
     });
