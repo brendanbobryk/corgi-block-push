@@ -71,7 +71,7 @@ const Game = () => {
     startVelocity: 35,
     gravity: 0.9,
     scalar: 0.9,
-    origin: { x: 0.95, y: 0.95 }
+    origin: { x: 0.99, y: 0.99 }
     });
   }, [hasWon]);
 
