@@ -44,11 +44,23 @@ const Game = () => {
     const x = (rect.left + rect.width / 2) / window.innerWidth;
     const y = (rect.top + rect.height / 2) / window.innerHeight;
 
+    // Main cannon (from win banner area)
     confetti({
       particleCount: 200,
       spread: 70,
       origin: { x, y },
       scalar: 1.3
+    });
+
+    // Bottom left mini cannon
+    confetti({
+    particleCount: 60,
+    angle: 60,
+    spread: 55,
+    startVelocity: 35,
+    gravity: 0.9,
+    scalar: 0.9,
+    origin: { x: 0.05, y: 0.95 }
     });
   }, [hasWon]);
 
