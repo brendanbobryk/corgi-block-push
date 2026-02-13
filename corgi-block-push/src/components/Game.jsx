@@ -62,6 +62,17 @@ const Game = () => {
     scalar: 0.9,
     origin: { x: 0.01, y: 0.99 }
     });
+
+    // Bottom right mini cannon
+    confetti({
+    particleCount: 60,
+    angle: 120,
+    spread: 55,
+    startVelocity: 35,
+    gravity: 0.9,
+    scalar: 0.9,
+    origin: { x: 0.95, y: 0.95 }
+    });
   }, [hasWon]);
 
   useEffect(() => {
