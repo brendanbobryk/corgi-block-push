@@ -243,23 +243,30 @@ const Game = () => {
       </div>
 
       {/* RIGHT CONTROLS PANEL */}
-      <div style={{ position: "fixed", right: 0, top: 0, width: SIDEBAR_WIDTH, height: "100vh", background: "#1a1a1a", padding: 16, overflowY: "auto", display: "flex", flexDirection: "column", gap: 14 }}>
-        <div style={{ fontWeight: "bold", marginBottom: 6, color: "#ffdd57" }}>Instructions</div>
+<div style={{ position: "fixed", right: 0, top: 0, width: SIDEBAR_WIDTH, height: "100vh", background: "#1a1a1a", padding: 16, overflowY: "auto", display: "flex", flexDirection: "column", gap: 14 }}>
 
-        <div style={{ background: "#333", borderRadius: 10, padding: 8, color: "#fff", fontWeight: "bold", lineHeight: 1.8 }}>
-          🦴 Collect Treat 🦴<br />
-          🚩 Reach Goal 🚩
-        </div>
+  <div>
+    <div style={{ fontWeight: "bold", marginBottom: 6, color: "#ffdd57" }}>Instructions</div>
 
-        <div style={{ fontWeight: "bold", marginBottom: 6, color: "#ffdd57" }}>Controls</div>
+    <div style={{ background: "#333", borderRadius: 10, padding: 8, color: "#fff", fontWeight: "bold", lineHeight: 1.8 }}>
+      🦴 Collect Treat 🦴<br />
+      🚩 Reach Goal 🚩
+    </div>
+  </div>
 
-        <div style={{ background: "#333", borderRadius: 10, padding: 8, color: "#fff", fontWeight: "bold", lineHeight: 1.8 }}>
-          ⬆️: Move Up<br />
-          ⬇️: Move Down<br />
-          ⬅️: Move Left<br />
-          ➡️: Move Right<br />
-        </div>
-      </div>
+  <div>
+    <div style={{ fontWeight: "bold", marginBottom: 6, color: "#ffdd57" }}>Controls</div>
+
+    <div style={{ background: "#333", borderRadius: 10, padding: 8, color: "#fff", fontWeight: "bold", lineHeight: 1.8 }}>
+      ⬆️: Move Up<br />
+      ⬇️: Move Down<br />
+      ⬅️: Move Left<br />
+      ➡️: Move Right<br />
+    </div>
+  </div>
+
+</div>
+
 
       {/* MAIN AREA */}
       <div style={{ marginLeft: SIDEBAR_WIDTH, marginRight: SIDEBAR_WIDTH, height: "100vh", display: "flex", flexDirection: "column", alignItems: "center" }}>
