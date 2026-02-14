@@ -35,7 +35,6 @@ const Game = () => {
     hasWonRef.current = hasWon;
   }, [grid, hasTreat, hasWon]);
 
-  // 🎉 Confetti on win (originates from win banner)
   useEffect(() => {
     if (!hasWon || !winBannerRef.current) return;
 
@@ -44,7 +43,6 @@ const Game = () => {
     const x = (rect.left + rect.width / 2) / window.innerWidth;
     const y = (rect.top + rect.height / 2) / window.innerHeight;
 
-    // Main cannon (from win banner area)
     confetti({
       particleCount: 200,
       spread: 70,
@@ -52,26 +50,24 @@ const Game = () => {
       scalar: 1.3
     });
 
-    // Bottom left mini cannon
     confetti({
-    particleCount: 60,
-    angle: 60,
-    spread: 55,
-    startVelocity: 35,
-    gravity: 0.9,
-    scalar: 0.9,
-    origin: { x: 0.01, y: 0.99 }
+      particleCount: 60,
+      angle: 60,
+      spread: 55,
+      startVelocity: 35,
+      gravity: 0.9,
+      scalar: 0.9,
+      origin: { x: 0.01, y: 0.99 }
     });
 
-    // Bottom right mini cannon
     confetti({
-    particleCount: 60,
-    angle: 120,
-    spread: 55,
-    startVelocity: 35,
-    gravity: 0.9,
-    scalar: 0.9,
-    origin: { x: 0.99, y: 0.99 }
+      particleCount: 60,
+      angle: 120,
+      spread: 55,
+      startVelocity: 35,
+      gravity: 0.9,
+      scalar: 0.9,
+      origin: { x: 0.99, y: 0.99 }
     });
   }, [hasWon]);
 
@@ -206,6 +202,7 @@ const Game = () => {
 
   return (
     <div style={{ width: "100vw", height: "100vh", overflow: "hidden", background: "#121212" }}>
+      {/* LEFT SIDEBAR */}
       <div style={{ position: "fixed", left: 0, top: 0, width: SIDEBAR_WIDTH, height: "100vh", background: "#1a1a1a", padding: 16, overflowY: "auto", display: "flex", flexDirection: "column", gap: 14 }}>
         {Object.entries(grouped).map(([difficulty, levels]) => (
           <div key={difficulty}>
@@ -245,13 +242,28 @@ const Game = () => {
         </div>
       </div>
 
-      <div style={{ marginLeft: SIDEBAR_WIDTH, height: "100vh", display: "flex", flexDirection: "column", alignItems: "center" }}>
+      {/* RIGHT CONTROLS PANEL */}
+      <div style={{ position: "fixed", right: 0, top: 0, width: SIDEBAR_WIDTH, height: "100vh", background: "#1a1a1a", padding: 16, display: "flex", flexDirection: "column", gap: 14 }}>
+        <div style={{ fontWeight: "bold", marginBottom: 6, color: "#ffdd57" }}>Controls</div>
+
+        <div style={{ background: "#333", borderRadius: 12, padding: 12, color: "#fff", fontWeight: "bold", lineHeight: 1.8 }}>
+          ⬆️ Move Up<br />
+          ⬇️ Move Down<br />
+          ⬅️ Move Left<br />
+          ➡️ Move Right<br />
+          <br />
+          🦴 Collect Treat<br />
+          🚩 Reach Goal
+        </div>
+      </div>
+
+      {/* MAIN AREA */}
+      <div style={{ marginLeft: SIDEBAR_WIDTH, marginRight: SIDEBAR_WIDTH, height: "100vh", display: "flex", flexDirection: "column", alignItems: "center" }}>
         <div style={{ width: "100%", textAlign: "center", padding: "20px 0", background: "linear-gradient(90deg,#ffdd57,#ffb347)", boxShadow: "0 2px 8px rgba(0,0,0,.4)", marginBottom: 20 }}>
           <h1 style={{ margin: 0, color: "#121212" }}>🟫🐕 Corgi Block Push 🦴🚩</h1>
         </div>
 
         <div style={{ flexGrow: 1, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-          {/* Treat Instruction Above Grid */}
           <div style={{ height: 60, marginBottom: 20, display: "flex", alignItems: "center", justifyContent: "center" }}>
             <div
               style={{
@@ -276,7 +288,6 @@ const Game = () => {
             {grid.map((row, y) => row.map((cell, x) => <Cell key={`${x}-${y}`} content={cell} />))}
           </div>
 
-          {/* Win Notification Area */}
           <div style={{ height: 100, marginTop: 39, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 10 }}>
             <div
               ref={winBannerRef}
