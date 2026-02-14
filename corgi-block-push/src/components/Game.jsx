@@ -254,10 +254,10 @@ const Game = () => {
         <div style={{ fontWeight: "bold", marginBottom: 6, color: "#ffdd57" }}>Controls</div>
 
         <div style={{ background: "#333", borderRadius: 12, padding: 12, color: "#fff", fontWeight: "bold", lineHeight: 1.8 }}>
-          ⬆️ Move Up<br />
-          ⬇️ Move Down<br />
-          ⬅️ Move Left<br />
-          ➡️ Move Right<br />
+          ⬆️: Move Up<br />
+          ⬇️: Move Down<br />
+          ⬅️: Move Left<br />
+          ➡️: Move Right<br />
         </div>
       </div>
 
