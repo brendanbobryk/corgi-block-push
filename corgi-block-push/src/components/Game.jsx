@@ -251,8 +251,12 @@ const Game = () => {
           ⬇️ Move Down<br />
           ⬅️ Move Left<br />
           ➡️ Move Right<br />
-          <br />
-          🦴 Collect Treat<br />
+        </div>
+
+        <div style={{ fontWeight: "bold", marginBottom: 6, color: "#ffdd57" }}>Instructions</div>
+
+        <div style={{ background: "#333", borderRadius: 12, padding: 12, color: "#fff", fontWeight: "bold", lineHeight: 1.8 }}>
+          🦴 Collect Treat
           🚩 Reach Goal
         </div>
       </div>
