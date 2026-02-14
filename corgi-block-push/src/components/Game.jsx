@@ -243,7 +243,7 @@ const Game = () => {
       </div>
 
       {/* RIGHT CONTROLS PANEL */}
-      <div style={{ position: "fixed", right: 0, top: 0, width: SIDEBAR_WIDTH, height: "100vh", background: "#1a1a1a", padding: 16, display: "flex", flexDirection: "column", gap: 14 }}>
+      <div style={{ position: "fixed", right: 0, top: 0, width: SIDEBAR_WIDTH, height: "100vh", background: "#1a1a1a", padding: 16, overflowY: "auto", display: "flex", flexDirection: "column", gap: 14 }}>
         <div style={{ fontWeight: "bold", marginBottom: 6, color: "#ffdd57" }}>Instructions</div>
 
         <div style={{ background: "#333", borderRadius: 12, padding: 12, color: "#fff", fontWeight: "bold", lineHeight: 1.8 }}>
