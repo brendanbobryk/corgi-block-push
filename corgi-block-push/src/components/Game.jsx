@@ -247,35 +247,34 @@ const Game = () => {
               boxShadow: "0 4px 10px rgba(0,0,0,.4)"
             }}
           >
-          <div style={{ fontSize: "0.8rem", color: "#ffdd57", fontWeight: "bold" }}>
-            🐾 MOVES
+            <div style={{ fontSize: "0.8rem", color: "#ffdd57", fontWeight: "bold" }}>
+              🐾 MOVES
+            </div>
+
+            <div style={{ fontSize: "1.6rem", fontWeight: 900, color: "#fff" }}>
+              {moves}
+            </div>
           </div>
 
-          <div style={{ fontSize: "1.6rem", fontWeight: 900, color: "#fff" }}>
-            {moves}
+          <div
+            style={{
+              flex: 1,
+              background: "#333",
+              borderRadius: 12,
+              padding: "10px 6px",
+              textAlign: "center",
+              boxShadow: "0 4px 10px rgba(0,0,0,.4)"
+            }}
+          >
+            <div style={{ fontSize: "0.8rem", color: "#ffdd57", fontWeight: "bold" }}>
+              🏆 RECORD
+            </div>
+
+            <div style={{ fontSize: "1.6rem", fontWeight: 900, color: "#fff" }}>
+              {bestMoves[String(currentLevel)] ?? "-"}
+            </div>
           </div>
         </div>
-
-        <div
-          style={{
-            flex: 1,
-            background: "#333",
-            borderRadius: 12,
-            padding: "10px 6px",
-            textAlign: "center",
-            boxShadow: "0 4px 10px rgba(0,0,0,.4)"
-          }}
-        >
-        <div style={{ fontSize: "0.8rem", color: "#ffdd57", fontWeight: "bold" }}>
-          🏆 RECORD
-        </div>
-
-        <div style={{ fontSize: "1.6rem", fontWeight: 900, color: "#fff" }}>
-          {bestMoves[String(currentLevel)] ?? "-"}
-        </div>
-      </div>
-    </div>
-
       </div>
 
       {/* RIGHT CONTROLS PANEL */}
@@ -285,8 +284,8 @@ const Game = () => {
           <div style={{ fontWeight: "bold", marginBottom: 6, color: "#ffdd57" }}>Instructions</div>
 
           <div style={{ background: "#333", borderRadius: 10, padding: 8, marginBottom: 6, color: "#fff", fontWeight: "bold", lineHeight: 1.8 }}>
-          1️⃣: Collect Treat 🦴<br />
-          2️⃣: Reach Goal 🚩
+            1️⃣: Collect Treat 🦴<br />
+            2️⃣: Reach Goal 🚩
           </div>
         </div>
 
@@ -294,10 +293,10 @@ const Game = () => {
           <div style={{ fontWeight: "bold", marginBottom: 6, color: "#ffdd57" }}>Controls</div>
 
           <div style={{ background: "#333", borderRadius: 10, padding: 8, marginBottom: 6, color: "#fff", fontWeight: "bold", lineHeight: 1.8 }}>
-          ⬆️: Move Up<br />
-          ⬇️: Move Down<br />
-          ⬅️: Move Left<br />
-          ➡️: Move Right<br />
+            ⬆️: Move Up<br />
+            ⬇️: Move Down<br />
+            ⬅️: Move Left<br />
+            ➡️: Move Right<br />
           </div>
         </div>
 
