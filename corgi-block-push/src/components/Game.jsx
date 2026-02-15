@@ -248,7 +248,7 @@ const Game = () => {
             }}
           >
             <div style={{ fontSize: "0.8rem", color: "#ffdd57", fontWeight: "bold" }}>
-              🐾 MOVES
+              🐾 MOVES 🐾
             </div>
 
             <div style={{ fontSize: "1.6rem", fontWeight: 900, color: "#fff" }}>
@@ -267,7 +267,7 @@ const Game = () => {
             }}
           >
             <div style={{ fontSize: "0.8rem", color: "#ffdd57", fontWeight: "bold" }}>
-              🏆 RECORD
+              🏆 RECORD 🏆
             </div>
 
             <div style={{ fontSize: "1.6rem", fontWeight: 900, color: "#fff" }}>
