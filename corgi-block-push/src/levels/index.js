@@ -178,7 +178,7 @@ const LEVELS = [
 
   {
     name: "Level X",
-    difficulty: "Expert",
+    difficulty: "Dev Levels",
     grid: [
       Array(7).fill(null).map(WALL),
 
