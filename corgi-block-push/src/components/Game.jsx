@@ -230,11 +230,15 @@ const Game = () => {
           </div>
         ))}
 
+        <div style={{ height: 1, background: "#333", margin: "6px 0" }} />
+
         <button onClick={() => resetGame()}>🔄 Reset Level 🔄</button>
 
         <button onClick={() => { localStorage.removeItem("bestMoves"); setBestMoves({}); }}>
           🗑️ Reset All Progress 🗑️
         </button>
+
+        <div style={{ height: 1, background: "#333", margin: "6px 0" }} />
 
         <div style={{ display: "flex", gap: 10 }}>
           <div
