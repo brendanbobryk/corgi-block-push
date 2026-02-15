@@ -230,14 +230,18 @@ const Game = () => {
           </div>
         ))}
 
+        {/* Dividing line */}
         <div style={{ height: 1, background: "#333", margin: "6px 0" }} />
 
+        {/* Reset Button */}
         <button onClick={() => resetGame()}>🔄 Reset Level 🔄</button>
 
+        {/* Record Reset Button */}
         <button onClick={() => { localStorage.removeItem("bestMoves"); setBestMoves({}); }}>
           🗑️ Reset All Progress 🗑️
         </button>
 
+        {/* Dividing line */}
         <div style={{ height: 1, background: "#333", margin: "6px 0" }} />
 
         <div style={{ display: "flex", gap: 10 }}>
