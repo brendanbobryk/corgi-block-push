@@ -236,10 +236,46 @@ const Game = () => {
           🗑️ Reset All Progress 🗑️
         </button>
 
-        <div>
-          🐾 Move Count: {moves}<br />
-          🏆 Record Moves: {bestMoves[String(currentLevel)] ?? "-"}
-        </div>
+        <div style={{ display: "flex", gap: 10 }}>
+  <div
+    style={{
+      flex: 1,
+      background: "#333",
+      borderRadius: 12,
+      padding: "10px 6px",
+      textAlign: "center",
+      boxShadow: "0 4px 10px rgba(0,0,0,.4)"
+    }}
+  >
+    <div style={{ fontSize: "0.8rem", color: "#ffdd57", fontWeight: "bold" }}>
+      🐾 MOVES
+    </div>
+
+    <div style={{ fontSize: "1.6rem", fontWeight: 900, color: "#fff" }}>
+      {moves}
+    </div>
+  </div>
+
+  <div
+    style={{
+      flex: 1,
+      background: "#333",
+      borderRadius: 12,
+      padding: "10px 6px",
+      textAlign: "center",
+      boxShadow: "0 4px 10px rgba(0,0,0,.4)"
+    }}
+  >
+    <div style={{ fontSize: "0.8rem", color: "#ffdd57", fontWeight: "bold" }}>
+      🏆 RECORD
+    </div>
+
+    <div style={{ fontSize: "1.6rem", fontWeight: 900, color: "#fff" }}>
+      {bestMoves[String(currentLevel)] ?? "-"}
+    </div>
+  </div>
+</div>
+
       </div>
 
       {/* RIGHT CONTROLS PANEL */}
