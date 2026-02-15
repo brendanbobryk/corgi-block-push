@@ -269,7 +269,7 @@ const Game = () => {
 
       {/* MAIN AREA */}
       <div style={{ marginLeft: SIDEBAR_WIDTH, marginRight: SIDEBAR_WIDTH, height: "100vh", display: "flex", flexDirection: "column", alignItems: "center" }}>
-        <div style={{ width: `calc(100vw - ${SIDEBAR_WIDTH * 2}px)`, textAlign: "center", padding: "20px 0", background: "linear-gradient(90deg,#ffdd57,#ffb347)", boxShadow: "0 2px 8px rgba(0,0,0,.4)", marginBottom: 20 }}>
+        <div style={{ textAlign: "center", padding: "20px 0", background: "linear-gradient(90deg,#ffdd57,#ffb347)", boxShadow: "0 2px 8px rgba(0,0,0,.4)", marginBottom: 20 }}>
           <h1 style={{ margin: 0, color: "#121212" }}>🟫🐕 Corgi Block Push 🦴🚩</h1>
         </div>
 
