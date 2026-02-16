@@ -298,6 +298,9 @@ const Game = () => {
           </div>
         </div>
 
+        {/* Dividing line */}
+        <div style={{ height: 1, background: "#333", margin: "6px 0" }} />
+
         <div>
           <div style={{ fontWeight: "bold", marginBottom: 6, color: "#ffdd57" }}>Controls</div>
 
