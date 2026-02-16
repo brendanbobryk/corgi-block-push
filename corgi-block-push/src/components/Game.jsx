@@ -297,32 +297,30 @@ const Game = () => {
         🔄 Reset Level 🔄
         </button>
 
-
         {/* Record Reset Button */}
         <button
-  onClick={() => {
-    localStorage.removeItem("bestMoves");
-    setBestMoves({});
-  }}
-  style={{
-    width: "100%",
-    padding: "10px",
-    borderRadius: 12,
-    border: "none",
-    cursor: "pointer",
-    fontWeight: 800,
-    background: "linear-gradient(135deg,#ff6666,#ff3333)",
-    color: "#121212",
-    boxShadow: "0 4px 10px rgba(0,0,0,.4)",
-    transition: "transform .15s ease, box-shadow .15s ease"
-  }}
-  onMouseDown={e => (e.currentTarget.style.transform = "scale(.96)")}
-  onMouseUp={e => (e.currentTarget.style.transform = "scale(1)")}
->
-  🗑️ Reset All Progress 🗑️
-</button>
+          onClick={() => {
+            localStorage.removeItem("bestMoves");
+            setBestMoves({});
+          }}
+          style={{
+            width: "100%",
+            padding: "10px",
+            borderRadius: 12,
+            border: "none",
+            cursor: "pointer",
+            fontWeight: 800,
+            background: "linear-gradient(135deg,#ff6666,#ff3333)",
+            color: "#121212",
+            boxShadow: "0 4px 10px rgba(0,0,0,.4)",
+            transition: "transform .15s ease, box-shadow .15s ease"
+          }}
+          onMouseDown={e => (e.currentTarget.style.transform = "scale(.96)")}
+          onMouseUp={e => (e.currentTarget.style.transform = "scale(1)")}
+        >
+        🗑️ Reset All Progress 🗑️
+        </button>
 
-        
       </div>
 
       {/* RIGHT CONTROLS PANEL */}
