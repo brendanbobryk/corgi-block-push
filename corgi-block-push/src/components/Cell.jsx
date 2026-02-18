@@ -1,5 +1,6 @@
 import React from "react";
 import { EMOJIS } from "./constants";
+import corgi from "../assets/corgi.png";
 
 const Cell = ({ content }) => {
   // Determine background color
@@ -25,9 +26,34 @@ const Cell = ({ content }) => {
         transition: "all 0.2s ease",
         userSelect: "none",
         cursor: content.some(obj => obj.properties.includes("YOU")) ? "grab" : "default",
+        position: "relative"
       }}
     >
-      {content.map((obj, idx) => EMOJIS[obj.type] || "")}
+      {content.map((obj, idx) => {
+        // PLAYER = CORGI
+        if (obj.properties.includes("YOU")) {
+          return (
+            <img
+              key={idx}
+              src={corgi}
+              alt="corgi"
+              style={{
+                width: "90%",
+                height: "90%",
+                imageRendering: "pixelated",
+                pointerEvents: "none"
+              }}
+            />
+          );
+        }
+
+        // Everything else uses emojis
+        return (
+          <span key={idx}>
+            {EMOJIS[obj.type] || ""}
+          </span>
+        );
+      })}
     </div>
   );
 };
