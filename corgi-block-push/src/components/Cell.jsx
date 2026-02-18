@@ -1,14 +1,25 @@
 import React from "react";
 import { EMOJIS } from "./constants";
-import corgi from "../assets/corgi.png";
+import corgi_up from "../assets/corgi-up.png";
+import corgi_down from "../assets/corgi-down.png";
+import corgi_left from "../assets/corgi-left.png";
+import corgi_right from "../assets/corgi-right.png";
 
-const Cell = ({ content }) => {
+const Cell = ({ content, direction = "down" }) => {
   // Determine background color
   let bgColor = "#1e1e1e"; // default
   if (content.some(obj => obj.properties.includes("WALL"))) bgColor = "#333";
   if (content.some(obj => obj.properties.includes("PUSH"))) bgColor = "#795548";
   if (content.some(obj => obj.properties.includes("COLLECTIBLE"))) bgColor = "#ffcc00";
   if (content.some(obj => obj.properties.includes("WIN"))) bgColor = "#00aaff";
+
+  // Map directions to images
+  const playerImages = {
+    up: corgi_up,
+    down: corgi_down,
+    left: corgi_left,
+    right: corgi_right
+  };
 
   return (
     <div
@@ -35,7 +46,7 @@ const Cell = ({ content }) => {
           return (
             <img
               key={idx}
-              src={corgi}
+              src={playerImages[direction] || corgi_down}
               alt="corgi"
               style={{
                 width: "90%",
