@@ -287,7 +287,7 @@ const Game = () => {
             cursor: "pointer",
             fontWeight: 800,
             background: "linear-gradient(135deg,#66ccff,#3399ff)",
-            color: "#121212",
+            color: "#fff",
             boxShadow: "0 4px 10px rgba(0,0,0,.4)",
             transition: "transform .15s ease, box-shadow .15s ease"
           }}
