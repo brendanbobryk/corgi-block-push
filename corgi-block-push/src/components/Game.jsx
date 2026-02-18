@@ -18,6 +18,9 @@ const Game = () => {
   const [isNewRecord, setIsNewRecord] = useState(false);
   const [instructionPulse, setInstructionPulse] = useState(false);
 
+  // NEW: Track player direction
+  const [playerDirection, setPlayerDirection] = useState("down");
+
   const [bestMoves, setBestMoves] = useState(() => {
     const saved = localStorage.getItem("bestMoves");
     return saved ? JSON.parse(saved) : {};
@@ -114,6 +117,12 @@ const Game = () => {
 
   const movePlayerSafe = dir => {
     if (hasWonRef.current) return;
+
+    // NEW: Update player direction on move
+    if (dir === DIRECTIONS.UP) setPlayerDirection("up");
+    else if (dir === DIRECTIONS.DOWN) setPlayerDirection("down");
+    else if (dir === DIRECTIONS.LEFT) setPlayerDirection("left");
+    else if (dir === DIRECTIONS.RIGHT) setPlayerDirection("right");
 
     const g = gridRef.current;
     const pos = findPlayerInGrid(g);
