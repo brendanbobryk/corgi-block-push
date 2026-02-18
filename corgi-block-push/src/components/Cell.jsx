@@ -1,9 +1,9 @@
 import React from "react";
 import { EMOJIS } from "./constants";
-import corgi_up from "../assets/corgi-up.png";
-import corgi_down from "../assets/corgi-down.png";
-import corgi_left from "../assets/corgi-left.png";
-import corgi_right from "../assets/corgi-right.png";
+import corgi_up from "../assets/corgi_up.png";
+import corgi_down from "../assets/corgi_down.png";
+import corgi_left from "../assets/corgi_left.png";
+import corgi_right from "../assets/corgi_right.png";
 
 const Cell = ({ content, direction = "down" }) => {
   // Determine background color
