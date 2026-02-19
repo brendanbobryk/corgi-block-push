@@ -166,11 +166,11 @@ const LEVELS = [
     grid: [
       Array(7).fill(null).map(WALL),
 
-      [ WALL(), EMPTY(), BLOCK(), EMPTY(), GOAL(), EMPTY(), WALL() ],
-      [ WALL(), WALL(), EMPTY(), WALL(), EMPTY(), WALL(), WALL() ],
-      [ WALL(), EMPTY(), EMPTY(), BLOCK(), EMPTY(), EMPTY(), WALL() ],
-      [ WALL(), EMPTY(), WALL(), EMPTY(), WALL(), TREAT(), WALL() ],
-      [ WALL(), CORGI(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), WALL() ],
+      [ WALL(), TREAT(), BLOCK(), EMPTY(), WALL(), GOAL(), WALL() ],
+      [ WALL(), WALL(), EMPTY(), BLOCK(), EMPTY(), EMPTY(), WALL() ],
+      [ WALL(), EMPTY(), BLOCK(), EMPTY(), BLOCK(), WALL(), WALL() ],
+      [ WALL(), WALL(), WALL(), EMPTY(), WALL(), EMPTY(), WALL() ],
+      [ WALL(), CORGI(), EMPTY(), EMPTY(), BLOCK(), EMPTY(), WALL() ],
 
       Array(7).fill(null).map(WALL),
     ],
