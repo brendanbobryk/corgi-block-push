@@ -163,14 +163,6 @@ const Game = () => {
     let gotTreat = hasTreatRef.current;
     const landed = newGrid[ny][nx];
 
-    // DEFEAT CONDITION (stepped in poop 💩)
-    if (landed.some(o => o.properties.includes("DEFEAT"))) {
-    setHasLost(true);
-    triggerShake();
-    hasLostRef.current = true;
-    return;
-    }
-
     const treat = landed.find(o => o.properties.includes("COLLECTIBLE"));
 
     if (treat) {
@@ -200,6 +192,14 @@ const Game = () => {
 
     setMoves(nextMoves);
     setGrid(newGrid);
+
+    // DEFEAT CONDITION (stepped in poop 💩)
+    if (landed.some(o => o.properties.includes("DEFEAT"))) {
+    setHasLost(true);
+    triggerShake();
+    hasLostRef.current = true;
+    return;
+    }
   };
 
   useEffect(() => {
