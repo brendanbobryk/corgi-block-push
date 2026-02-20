@@ -10,7 +10,7 @@ const BLOCK = () => [{ type: "BLOCK", properties: ["PUSH"] }];
 const CORGI = () => [{ type: "CORGI", properties: ["YOU"] }];
 const TREAT = () => [{ type: "TREAT", properties: ["COLLECTIBLE"] }];
 const GOAL = () => [{ type: "GOAL", properties: ["WIN"] }];
-const POOP = () => [{type: "POOP", properties: ["DEFEAT"] }];
+const POOP = () => [{type: "POOP", properties: ["DEFEAT", "STOP"] }];
 const EMPTY = () => [];
 
 // Grid size is still controlled by constants in Game

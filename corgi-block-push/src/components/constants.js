@@ -28,4 +28,5 @@ export const PROPERTIES = {
   COLLECTIBLE: "COLLECTIBLE", // Items to pick up
   BLOCK: "BLOCK",      // Normal block
   WALL: "WALL",        // Impassable
+  DEFEAT: "DEFEAT",    // Reaching this triggers loss
 };

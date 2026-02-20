@@ -148,7 +148,9 @@ const Game = () => {
       if (px < 0 || py < 0 || px >= GRID_COLS || py >= GRID_ROWS) return triggerShake();
 
       if (newGrid[py][px].some(o =>
-        o.properties.includes("WALL") || o.properties.includes("PUSH")
+        o.properties.includes("WALL") ||
+        o.properties.includes("PUSH") ||
+        o.properties.includes("DEFEAT")
       )) return triggerShake();
 
       newGrid[py][px].push(pushable);
