@@ -5,12 +5,12 @@
 // No hooks, no state, no event logic.
 // This keeps the game stable and future-proof.
 
-const WALL = () => [{ type: "WALL", properties: ["WALL"] }];
+const WALL = () => [{ type: "WALL", properties: ["WALL", "NO_PUSH"] }];
 const BLOCK = () => [{ type: "BLOCK", properties: ["PUSH"] }];
 const CORGI = () => [{ type: "CORGI", properties: ["YOU"] }];
-const TREAT = () => [{ type: "TREAT", properties: ["COLLECTIBLE"] }];
-const GOAL = () => [{ type: "GOAL", properties: ["WIN"] }];
-const POOP = () => [{type: "POOP", properties: ["DEFEAT", "STOP"] }];
+const TREAT = () => [{ type: "TREAT", properties: ["COLLECTIBLE", "NO_PUSH"] }];
+const GOAL = () => [{ type: "GOAL", properties: ["WIN", "NO_PUSH"] }];
+const POOP = () => [{type: "POOP", properties: ["DEFEAT", "NO_PUSH"] }];
 const EMPTY = () => [];
 
 // Grid size is still controlled by constants in Game
