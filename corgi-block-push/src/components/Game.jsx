@@ -151,7 +151,8 @@ const Game = () => {
         o.properties.includes("WALL") ||
         o.properties.includes("PUSH") ||
         o.properties.includes("DEFEAT") ||
-        o.properties.includes("COLLECTIBLE")
+        o.properties.includes("COLLECTIBLE") ||
+        o.properties.includes("WIN")
       )) return triggerShake();
 
       newGrid[py][px].push(pushable);
