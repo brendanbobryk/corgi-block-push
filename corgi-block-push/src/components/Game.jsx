@@ -17,6 +17,8 @@ const Game = () => {
   const [shake, setShake] = useState(false);
   const [isNewRecord, setIsNewRecord] = useState(false);
   const [instructionPulse, setInstructionPulse] = useState(false);
+  const [hasLost, setHasLost] = useState(false);
+  const hasLostRef = useRef(false);
 
   // NEW: Track player direction
   const [playerDirection, setPlayerDirection] = useState("down");
@@ -160,8 +162,9 @@ const Game = () => {
 
     // DEFEAT CONDITION (stepped in poop 💩)
     if (landed.some(o => o.properties.includes("DEFEAT"))) {
+    setHasLost(true);
     triggerShake();
-    resetGame();
+    hasLostRef.current = true;
     return;
     }
 
