@@ -118,7 +118,7 @@ const Game = () => {
     cell.some(o => o.properties.includes(prop));
 
   const movePlayerSafe = dir => {
-    if (hasWonRef.current) return;
+    if (hasWonRef.current || hasLostRef.current) return;
 
     // NEW: Update player direction on move
     if (dir === DIRECTIONS.UP) setPlayerDirection("up");
