@@ -99,6 +99,8 @@ const Game = () => {
     setMoves(0);
     setShake(false);
     setIsNewRecord(false);
+    setHasLost(false);
+    hasLostRef.current = false;
   };
 
   useEffect(() => resetGame(currentLevel), [currentLevel]);
