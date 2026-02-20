@@ -379,7 +379,7 @@ const Game = () => {
         <div style={{ textAlign: "center", padding: "20px 0", background: "linear-gradient(90deg,#ffdd57,#ffb347)", boxShadow: "0 2px 8px rgba(0,0,0,.4)", marginBottom: 20 }}>
           <h1 style={{ margin: 0, color: "#121212" }}>🟫🐕 Corgi Block Push 🦴🚩</h1>
         </div>
-
+        
         <div style={{ flexGrow: 1, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
           <div style={{ height: 60, marginBottom: 20, display: "flex", alignItems: "center", justifyContent: "center" }}>
             <div

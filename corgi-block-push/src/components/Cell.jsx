@@ -5,6 +5,8 @@ import corgi_down from "../assets/corgi_down.png";
 import corgi_left from "../assets/corgi_left.png";
 import corgi_right from "../assets/corgi_right.png";
 
+const CELL_SIZE = 60; // keep consistent with your grid
+
 const Cell = ({ content, direction = "down" }) => {
   // Determine background color
   let bgColor = "#1e1e1e"; // default
@@ -25,35 +27,37 @@ const Cell = ({ content, direction = "down" }) => {
   return (
     <div
       style={{
-        width: "60px",
-        height: "60px",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
+        width: `${CELL_SIZE}px`,
+        height: `${CELL_SIZE}px`,
         borderRadius: "12px",
         border: "2px solid #444",
         backgroundColor: bgColor,
         boxShadow: "inset 0 -3px 5px rgba(0,0,0,0.3), 0 2px 5px rgba(0,0,0,0.4)",
-        fontSize: "2rem",
-        transition: "all 0.2s ease",
+        position: "relative", // container for stacking
         userSelect: "none",
         cursor: content.some(obj => obj.properties.includes("YOU")) ? "grab" : "default",
-        position: "relative"
       }}
     >
       {content.map((obj, idx) => {
-        // PLAYER = CORGI
-        if (obj.properties.includes("YOU")) {
+        const isPlayer = obj.properties.includes("YOU");
+        const zIndex = isPlayer ? 10 : 1; // corgi on top
+        const size = isPlayer ? "90%" : "80%"; // slightly smaller for others
+        const offset = isPlayer ? 0 : "10%"; // center others
+        if (isPlayer) {
           return (
             <img
               key={idx}
               src={playerImages[direction] || corgi_down}
               alt="corgi"
               style={{
-                width: "90%",
-                height: "90%",
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: size,
+                height: size,
                 imageRendering: "pixelated",
-                pointerEvents: "none"
+                pointerEvents: "none",
+                zIndex
               }}
             />
           );
@@ -61,7 +65,22 @@ const Cell = ({ content, direction = "down" }) => {
 
         // Everything else uses emojis
         return (
-          <span key={idx}>
+          <span
+            key={idx}
+            style={{
+              position: "absolute",
+              top: offset,
+              left: offset,
+              width: size,
+              height: size,
+              fontSize: "2rem",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              pointerEvents: "none",
+              zIndex
+            }}
+          >
             {EMOJIS[obj.type] || ""}
           </span>
         );
