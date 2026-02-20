@@ -157,6 +157,14 @@ const Game = () => {
 
     let gotTreat = hasTreatRef.current;
     const landed = newGrid[ny][nx];
+
+    // DEFEAT CONDITION (stepped in poop 💩)
+    if (landed.some(o => o.properties.includes("DEFEAT"))) {
+    triggerShake();
+    resetGame();
+    return;
+    }
+
     const treat = landed.find(o => o.properties.includes("COLLECTIBLE"));
 
     if (treat) {
