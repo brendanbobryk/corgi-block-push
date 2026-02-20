@@ -405,13 +405,12 @@ const Game = () => {
             {grid.map((row, y) => row.map((cell, x) => <Cell key={`${x}-${y}`} content={cell} direction={playerDirection}/>))}
           </div>
 
-          <div style={{ height: 100, marginTop: 39, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 10 }}>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", gap: 10, marginBottom:10, pointerEvents: "none" }}>
             <div
               ref={winBannerRef}
               style={{
                 transform: hasWon ? "scale(1)" : "scale(0.5)",
                 opacity: hasWon ? 1 : 0,
-                pointerEvents: "none",
                 padding: "16px 32px",
                 borderRadius: 16,
                 background: "linear-gradient(135deg,#00ff99,#00cc77)",
@@ -429,7 +428,6 @@ const Game = () => {
               style={{
                 transform: hasLost ? "scale(1)" : "scale(0.5)",
                 opacity: hasLost ? 1 : 0,
-                pointerEvents: "none",
                 padding: "16px 32px",
                 borderRadius: 16,
                 background: "linear-gradient(135deg,#8b4513,#5a2d0c)",
@@ -447,7 +445,6 @@ const Game = () => {
               style={{
                 transform: isNewRecord ? "scale(1)" : "scale(0.5)",
                 opacity: isNewRecord ? 1 : 0,
-                pointerEvents: "none",
                 padding: "10px 24px",
                 borderRadius: 12,
                 background: "linear-gradient(135deg,#ffd700,#ffb700)",
