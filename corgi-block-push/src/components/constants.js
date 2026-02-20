@@ -10,6 +10,7 @@ export const EMOJIS = {
   EMPTY: "⬜",
   GOAL: "🚩",
   TREAT: "🦴",
+  POOP: "💩",
 };
 
 export const DIRECTIONS = {
