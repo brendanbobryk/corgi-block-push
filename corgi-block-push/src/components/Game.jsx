@@ -426,6 +426,24 @@ const Game = () => {
 
             <div
               style={{
+                transform: hasLost ? "scale(1)" : "scale(0.5)",
+                opacity: hasLost ? 1 : 0,
+                pointerEvents: "none",
+                padding: "16px 32px",
+                borderRadius: 16,
+                background: "linear-gradient(135deg,#8b4513,#5a2d0c)",
+                color: "#ffffff",
+                fontWeight: 900,
+                fontSize: "1.8rem",
+                boxShadow: "0 6px 16px rgba(0,0,0,.4)",
+                transition: "opacity 0.5s ease, transform 0.5s ease"
+              }}
+            >
+              💩 OH NO! YOU STEPPED IN POOP! 💩
+            </div>
+
+            <div
+              style={{
                 transform: isNewRecord ? "scale(1)" : "scale(0.5)",
                 opacity: isNewRecord ? 1 : 0,
                 pointerEvents: "none",
