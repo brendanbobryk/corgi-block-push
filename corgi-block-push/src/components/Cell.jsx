@@ -12,6 +12,7 @@ const Cell = ({ content, direction = "down" }) => {
   if (content.some(obj => obj.properties.includes("PUSH"))) bgColor = "#795548";
   if (content.some(obj => obj.properties.includes("COLLECTIBLE"))) bgColor = "#ffcc00";
   if (content.some(obj => obj.properties.includes("WIN"))) bgColor = "#00aaff";
+  if (content.some(obj => obj.properties.includes("DEFEAT"))) bgColor = "#cc3333";
 
   // Map directions to images
   const playerImages = {
