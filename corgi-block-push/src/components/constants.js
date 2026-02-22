@@ -30,3 +30,10 @@ export const PROPERTIES = {
   WALL: "WALL",        // Impassable
   DEFEAT: "DEFEAT",    // Reaching this triggers loss
 };
+
+/*
+POSSIBLE ADDITIONS:
+
+- Change goal from flag to house ~ 'get the puppy home' vibe
+
+*/
