@@ -36,9 +36,10 @@ export const PROPERTIES = {
 POSSIBLE ADDITIONS:
 
 __Mechanics__
-- Water/river that makes the corgi dirty ~ can't go home while dirty
+- Things to make the corgi dirty: Mud
+    ~ can't go home while dirty
 
-- Sprinkler to clean the corgi
+- Things to clean the corgi: Sprinkler, river, rain
 
 __Assets__
 - Grass background
