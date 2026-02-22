@@ -36,4 +36,6 @@ POSSIBLE ADDITIONS:
 
 - Change goal from flag to house ~ 'get the puppy home' vibe
 
+- Water/river that makes the corgi dirty ~ can't go home while dirty
+
 */
