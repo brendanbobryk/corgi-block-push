@@ -34,10 +34,18 @@ export const PROPERTIES = {
 /*
 POSSIBLE ADDITIONS:
 
+__Mechanics__
 - Change goal from flag to house ~ 'get the puppy home' vibe
 
 - Water/river that makes the corgi dirty ~ can't go home while dirty
 
 - Sprinkler to clean the corgi
+
+__Assets__
+- Grass background
+
+- Bush/tree walls
+
+- Toy balls/sticks as pushable blocks
 
 */
