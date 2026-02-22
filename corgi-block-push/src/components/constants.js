@@ -38,4 +38,6 @@ POSSIBLE ADDITIONS:
 
 - Water/river that makes the corgi dirty ~ can't go home while dirty
 
+- Sprinkler to clean the corgi
+
 */
