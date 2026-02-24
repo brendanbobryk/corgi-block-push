@@ -7,7 +7,7 @@ This project was built to practice React state management, grid logic, and inter
 
 - Maze-style grid with walls and corridors
 - Pushable blocks to solve puzzles and open paths
-- Collect a treat 🦴 before reaching the goal ⭐
+- Collect a treat 🦴 before reaching the goal 🚩
 - Win message when the goal is reached with the treat
 - Reset button to restart the level at any time
 - Clean, modern, game-like UI with friendly, lighthearted visuals
