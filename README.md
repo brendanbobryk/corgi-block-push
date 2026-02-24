@@ -17,7 +17,8 @@ This project was built to practice React state management, grid logic, and inter
 
 - React (with hooks)
 - JavaScript
-- CSS (inline styling and global styles)
+- CSS (inline styling, transitions, and animations)
+- Custom sprite assets for the corgi character
 
 ## How to Run
 
