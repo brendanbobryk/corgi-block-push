@@ -33,10 +33,8 @@ export const PROPERTIES = {
 };
 
 /*
-POSSIBLE ADDITIONS:
-
 __Mechanics__
-- Things to make the corgi dirty: Mud
+- Things to make the corgi dirty: Mud, puddle
     ~ can't go home while dirty
 
 - Things to clean the corgi: Sprinkler, river, rain
@@ -49,5 +47,4 @@ __Assets__
 - Toy balls/sticks as pushable blocks
 
 - Ambient birds flying away when corgi passes by
-
 */
