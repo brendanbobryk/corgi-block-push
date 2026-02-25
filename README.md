@@ -13,14 +13,11 @@ This project was built to practice React state management, grid logic, and inter
 - Defeat state if the corgi steps in poop 💩
 - Blocks cannot be pushed into poop, the goal, or treat tiles
 - Layered tile rendering (corgi visually appears on top of other objects)
-- Maze-style grid with walls and corridors
-- Directional corgi sprite (faces up, down, left, right based on movement)
-- Pushable blocks to solve puzzles and open paths
-- Collect a treat 🦴 before reaching the goal 🚩
-- Win state when the goal is reached with the treat
-- Defeat state if the corgi steps in poop 💩
-- Blocks cannot be pushed into poop, the goal, or treat tiles
-- Layered tile rendering (corgi visually appears on top of other objects)
+- Animated win and defeat notifications
+- New Record 🏆 notification when a better move count is achieved
+- Reset button to restart the level at any time
+- Clean, modern, game-like UI with friendly, lighthearted visuals
+- Keyboard controls: arrow keys to move the corgi
 
 ## Technologies Used
 
