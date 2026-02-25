@@ -121,7 +121,7 @@ const LEVELS = [
 
       [ WALL(), EMPTY(), GOAL(), WALL(), EMPTY(), EMPTY(), WALL() ],
       [ WALL(), BLOCK(), EMPTY(), WALL(), EMPTY(), BLOCK(), WALL() ],
-      [ WALL(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), WALL() ],
+      [ WALL(), POOP(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), WALL() ],
       [ WALL(), WALL(), BLOCK(), WALL(), WALL(), EMPTY(), WALL() ],
       [ WALL(), TREAT(), EMPTY(), CORGI(), EMPTY(), EMPTY(), WALL() ],
 
