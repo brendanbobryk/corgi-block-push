@@ -1,9 +1,6 @@
-// src/levels/index.js
-
-// IMPORTANT:
-// Levels are PURE DATA.
-// No hooks, no state, no event logic.
-// This keeps the game stable and future-proof.
+// Levels are pure data
+// No hooks, no state, no event logic
+// Designed to keep the game stable and future-proof
 
 const WALL = () => [{ type: "WALL", properties: ["WALL", "NO_PUSH"] }];
 const BLOCK = () => [{ type: "BLOCK", properties: ["PUSH"] }];
