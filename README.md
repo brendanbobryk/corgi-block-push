@@ -1,7 +1,6 @@
 # Corgi Block Push 🐶🟦
 
-A fun React puzzle game where you guide a corgi through a maze, push blocks, collect a treat, and reach the goal!  
-This project was built to practice React state management, grid logic, and interactive UI behavior in a lighthearted, game-like way.
+A Sokoban-style puzzle game built with React where you guide a corgi 🐕 through block-pushing challenges, collect treats 🦴, reach the goal 🚩, and avoid hazards 💩.
 
 ## Features
 
