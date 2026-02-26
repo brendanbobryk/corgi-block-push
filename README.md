@@ -1,6 +1,6 @@
 # Corgi Block Push 🐶🟦
 
-A Sokoban-style puzzle game built with React where you guide a corgi 🐕 through block-pushing challenges, collect treats 🦴, reach the goal 🚩, and avoid hazards 💩.
+A Sokoban-style puzzle game built with React where you guide a corgi 🐕 through block-pushing challenges, collect treats 🦴, avoid hazards 💩, and reach the goal 🚩!
 
 ## Features
 
