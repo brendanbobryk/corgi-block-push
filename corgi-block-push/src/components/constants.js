@@ -1,4 +1,3 @@
-// Game constants
 export const CELL_SIZE = 60; // px
 export const GRID_ROWS = 7;
 export const GRID_COLS = 7;
@@ -6,7 +5,7 @@ export const GRID_COLS = 7;
 export const EMOJIS = {
   CORGI: "🐶",
   BLOCK: "🟫",
-  WALL: "🌳",   // Impassable obstacle
+  WALL: "🌳",
   EMPTY: "⬜",
   GOAL: "🏡",
   TREAT: "🦴",
@@ -22,13 +21,13 @@ export const DIRECTIONS = {
 
 // Properties for objects
 export const PROPERTIES = {
-  YOU: "YOU",          // Controllable object
-  PUSH: "PUSH",        // Pushable object
-  WIN: "WIN",          // Reaching this triggers win
+  YOU: "YOU",                 // Controllable object
+  PUSH: "PUSH",               // Pushable object
+  WIN: "WIN",                 // Reaching this triggers win
   COLLECTIBLE: "COLLECTIBLE", // Items to pick up
-  BLOCK: "BLOCK",      // Normal block
-  WALL: "WALL",        // Impassable
-  DEFEAT: "DEFEAT",    // Reaching this triggers loss
+  BLOCK: "BLOCK",             // Normal block
+  WALL: "WALL",               // Impassable obstacle
+  DEFEAT: "DEFEAT",           // Reaching this triggers loss
 };
 
 /*
