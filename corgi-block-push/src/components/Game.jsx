@@ -20,7 +20,7 @@ const Game = () => {
   const [hasLost, setHasLost] = useState(false);
   const hasLostRef = useRef(false);
 
-  // NEW: Track player direction
+  // Track player direction
   const [playerDirection, setPlayerDirection] = useState("down");
 
   const [bestMoves, setBestMoves] = useState(() => {
@@ -48,6 +48,7 @@ const Game = () => {
     const x = (rect.left + rect.width / 2) / window.innerWidth;
     const y = (rect.top + rect.height / 2) / window.innerHeight;
 
+    // Centre confetti
     confetti({
       particleCount: 200,
       spread: 70,
@@ -55,6 +56,7 @@ const Game = () => {
       scalar: 1.3
     });
 
+    // Bottom-left confetti
     confetti({
       particleCount: 60,
       angle: 60,
@@ -65,6 +67,7 @@ const Game = () => {
       origin: { x: 0.01, y: 0.99 }
     });
 
+    // Bottom-right confetti
     confetti({
       particleCount: 60,
       angle: 120,
@@ -122,7 +125,7 @@ const Game = () => {
   const movePlayerSafe = dir => {
     if (hasWonRef.current || hasLostRef.current) return;
 
-    // NEW: Update player direction on move
+    // Update player direction on move
     if (dir === DIRECTIONS.UP) setPlayerDirection("up");
     else if (dir === DIRECTIONS.DOWN) setPlayerDirection("down");
     else if (dir === DIRECTIONS.LEFT) setPlayerDirection("left");
@@ -193,7 +196,7 @@ const Game = () => {
     setMoves(nextMoves);
     setGrid(newGrid);
 
-    // DEFEAT CONDITION (stepped in poop 💩)
+    // DEFEAT CONDITION
     if (landed.some(o => o.properties.includes("DEFEAT"))) {
     setHasLost(true);
     triggerShake();
