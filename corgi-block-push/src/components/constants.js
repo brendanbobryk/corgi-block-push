@@ -38,6 +38,7 @@ __Mechanics__
     ~ can't go home while dirty
 
 - Things to clean the corgi: Sprinkler, river, rain
+    Emojis: 🚿
 
 __Assets__
 - Grass background
