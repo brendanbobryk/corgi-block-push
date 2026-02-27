@@ -40,6 +40,8 @@ __________Mechanics__________
     - River
     - Rain
 
+- Acheivement system
+
 __________Assets__________
 - Background assets
     - Grass
@@ -52,6 +54,9 @@ __________Assets__________
 - Pushable block assets
     - Toy ball
     - Sticks
+
+- Sprite assests
+    - Customizable corgi sprites (colour, etc.)
 
 - Misc.
     - Ambient birds flying away when corgi passes by
