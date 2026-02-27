@@ -426,6 +426,7 @@ const Game = () => {
           </div>
 
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", gap: 6, marginBottom:16, pointerEvents: "none" }}>
+            {/* Level Complete Notification */}
             <div
               ref={winBannerRef}
               style={{
@@ -444,6 +445,7 @@ const Game = () => {
               🎉 LEVEL COMPLETE! 🎉
             </div>
 
+            {/* Stepped in Poop Notification */}
             <div
               style={{
                 transform: hasLost ? "scale(1)" : "scale(0.5)",
@@ -461,6 +463,7 @@ const Game = () => {
               💩 OH NO! YOU STEPPED IN POOP! 💩
             </div>
 
+            {/* New Record Notification */}
             <div
               style={{
                 transform: isNewRecord ? "scale(1)" : "scale(0.5)",
