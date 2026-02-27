@@ -40,6 +40,9 @@ __________Mechanics__________
     - River
     - Rain
 
+- Obstacles
+    - Car
+
 - Acheivement system
 
 __________Assets__________
