@@ -19,7 +19,6 @@ export const DIRECTIONS = {
   RIGHT: { x: 1, y: 0 },
 };
 
-// Properties for objects
 export const PROPERTIES = {
   YOU: "YOU",                 // Controllable object
   PUSH: "PUSH",               // Pushable object
@@ -31,7 +30,7 @@ export const PROPERTIES = {
 };
 
 /*
-_____Mechanics_____
+__________Mechanics__________
 - Things to make the corgi dirty ~ can't go home while dirty
     - Mud
     - Puddles
@@ -41,7 +40,7 @@ _____Mechanics_____
     - River
     - Rain
 
-_____Assets_____
+__________Assets__________
 - Background assets
     - Grass
     - Dirt paths
