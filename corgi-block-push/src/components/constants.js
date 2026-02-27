@@ -31,14 +31,17 @@ export const PROPERTIES = {
 };
 
 /*
-__Mechanics__
-- Things to make the corgi dirty: Mud, puddle
-    ~ can't go home while dirty
+_____Mechanics_____
+- Things to make the corgi dirty ~ can't go home while dirty
+    - Mud
+    - Puddles
 
-- Things to clean the corgi: Sprinkler, river, rain
-    Emojis: 🚿
+- Things to clean the corgi
+    - Sprinkler 🚿
+    - River
+    - Rain
 
-__Assets__
+_____Assets_____
 - Background assets
     - Grass
     - Dirt paths
