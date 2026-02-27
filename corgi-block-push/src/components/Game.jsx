@@ -352,6 +352,7 @@ const Game = () => {
       {/* RIGHT CONTROLS PANEL */}
       <div style={{ position: "fixed", right: 0, top: 0, width: SIDEBAR_WIDTH, height: "100vh", background: "#1a1a1a", padding: 16, overflowY: "auto", display: "flex", flexDirection: "column", gap: 14 }}>
 
+        {/* Instructions */}
         <div>
           <div style={{ fontWeight: "bold", marginBottom: 6, color: "#ffdd57" }}>Instructions</div>
 
@@ -364,6 +365,7 @@ const Game = () => {
         {/* Dividing line */}
         <div style={{ height: 1, background: "#333", margin: "6px 0" }} />
 
+        {/* Controls */}
         <div>
           <div style={{ fontWeight: "bold", marginBottom: 6, color: "#ffdd57" }}>Controls</div>
 
