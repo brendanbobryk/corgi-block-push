@@ -39,15 +39,18 @@ __Mechanics__
     Emojis: 🚿
 
 __Assets__
-- Grass background
+- Background assets
+    - Grass
+    - Dirt paths
 
-- Wall assests
+- Wall assets
     - Trees
     - Bush
 
-- Pushable block assests
+- Pushable block assets
     - Toy ball
     - Sticks
 
-- Ambient birds flying away when corgi passes by
+- Misc.
+    - Ambient birds flying away when corgi passes by
 */
