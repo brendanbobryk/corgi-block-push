@@ -260,6 +260,7 @@ const Game = () => {
         <div style={{ height: 1, background: "#333", margin: "6px 0" }} />
 
         <div style={{ display: "flex", gap: 10 }}>
+          {/* Move Count Display */}
           <div
             style={{
               flex: 1,
@@ -279,6 +280,7 @@ const Game = () => {
             </div>
           </div>
 
+          {/* Level Record Display */}
           <div
             style={{
               flex: 1,
