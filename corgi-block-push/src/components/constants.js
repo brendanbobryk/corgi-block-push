@@ -41,9 +41,13 @@ __Mechanics__
 __Assets__
 - Grass background
 
-- Bush/tree walls
+- Wall assests
+    - Trees
+    - Bush
 
-- Toy balls/sticks as pushable blocks
+- Pushable block assests
+    - Toy ball
+    - Sticks
 
 - Ambient birds flying away when corgi passes by
 */
