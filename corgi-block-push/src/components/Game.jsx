@@ -385,8 +385,8 @@ const Game = () => {
           <div style={{ fontWeight: "bold", marginBottom: 6, color: "#ffdd57" }}>Achievements</div>
 
           <div style={{ background: "#333", borderRadius: 10, padding: 8, marginBottom: 6, color: "#fff", fontWeight: "bold", lineHeight: 1.8 }}>
-            1️⃣: Collect Treat 🦴<br />
-            2️⃣: Reach Goal 🚩
+            🏆: *Achievement 1*<br />
+            🏆: *Achievement 2*
           </div>
         </div>
 
