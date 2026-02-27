@@ -35,10 +35,10 @@ __________Mechanics__________
     - Mud
     - Puddles
 
-- Things to clean the corgi
+- Things to clean the corgi 💦💧
     - Sprinkler 🚿
-    - River
-    - Rain
+    - River 🌊
+    - Rain 🌧️☔
 
 - Obstacles
     - Car
