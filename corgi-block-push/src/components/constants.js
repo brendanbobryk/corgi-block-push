@@ -36,7 +36,7 @@ __________Mechanics__________
     - Puddles
 
 - Things to clean the corgi 💦💧
-    - Sprinkler 🚿
+    - Sprinkler 🚿⛲
     - River 🌊
     - Rain 🌧️☔
 
