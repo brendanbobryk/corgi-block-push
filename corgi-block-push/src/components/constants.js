@@ -48,7 +48,10 @@ __________Mechanics__________
 __________Assets__________
 - Background assets
     - Grass 🟩
-    - Dirt paths
+    - Paths
+        - Dirt
+        - Tile/brick
+        - Sidewalk
 
 - Wall assets
     - Trees
