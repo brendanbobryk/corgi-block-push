@@ -32,7 +32,7 @@ export const PROPERTIES = {
 /*
 __________Mechanics__________
 - Things to make the corgi dirty ~ can't go home while dirty
-    - Mud
+    - Mud 🟫
     - Puddles
 
 - Things to clean the corgi 💦💧
