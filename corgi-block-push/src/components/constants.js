@@ -41,7 +41,7 @@ __________Mechanics__________
     - Rain 🌧️☔
 
 - Obstacles
-    - Car
+    - Car 🚗
 
 - Acheivement system
 
