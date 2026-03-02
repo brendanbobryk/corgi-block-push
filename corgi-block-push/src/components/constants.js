@@ -55,6 +55,7 @@ __________Assets__________
 
 - Wall assets
     - Trees 🌳🌲
+        - Vary between different trees?
     - Bush
 
 - Pushable block assets
