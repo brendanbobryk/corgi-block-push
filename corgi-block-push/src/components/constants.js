@@ -54,7 +54,7 @@ __________Assets__________
         - Sidewalk
 
 - Wall assets
-    - Trees
+    - Trees 🌳🌲
     - Bush
 
 - Pushable block assets
