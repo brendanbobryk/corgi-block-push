@@ -68,4 +68,8 @@ __________Assets__________
 
 - Misc.
     - Ambient birds flying away when corgi passes by
+
+__________Misc.__________
+- Per-level tutorial instructions
+
 */
