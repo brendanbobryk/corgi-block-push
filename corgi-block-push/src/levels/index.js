@@ -15,6 +15,22 @@ const EMPTY = () => [];
 
 const LEVELS = [
   {
+    name: "Level X",
+    difficulty: "Tutorial",
+    grid: [
+      Array(7).fill(null).map(WALL),
+
+      [ WALL(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), WALL() ],
+      [ WALL(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), WALL() ],
+      [ WALL(), EMPTY(), CORGI(), TREAT(), GOAL(), EMPTY(), WALL() ],
+      [ WALL(), EMPTY(), EMPTY(), BLOCK(), POOP(), EMPTY(), WALL() ],
+      [ WALL(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), WALL() ],
+
+      Array(7).fill(null).map(WALL),
+    ],
+  },
+
+  {
     name: "Level 1",
     difficulty: "Easy",
     grid: [
