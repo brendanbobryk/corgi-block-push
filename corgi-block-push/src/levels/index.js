@@ -15,7 +15,7 @@ const EMPTY = () => [];
 
 const LEVELS = [
   {
-    name: "Level X",
+    name: "Level 0.1",
     difficulty: "Tutorial",
     grid: [
       Array(7).fill(null).map(WALL),
@@ -23,7 +23,7 @@ const LEVELS = [
       [ WALL(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), WALL() ],
       [ WALL(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), WALL() ],
       [ WALL(), EMPTY(), CORGI(), TREAT(), GOAL(), EMPTY(), WALL() ],
-      [ WALL(), EMPTY(), EMPTY(), BLOCK(), POOP(), EMPTY(), WALL() ],
+      [ WALL(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), WALL() ],
       [ WALL(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), EMPTY(), WALL() ],
 
       Array(7).fill(null).map(WALL),
