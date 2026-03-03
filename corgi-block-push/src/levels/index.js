@@ -15,7 +15,7 @@ const EMPTY = () => [];
 
 const LEVELS = [
   {
-    name: "Level 0.1",
+    name: "Level 0.1", // Take the treat home
     difficulty: "Tutorial",
     grid: [
       Array(7).fill(null).map(WALL),
@@ -31,7 +31,7 @@ const LEVELS = [
   },
 
   {
-    name: "Level 0.2",
+    name: "Level 0.2", // Avoid stepping in poop
     difficulty: "Tutorial",
     grid: [
       Array(7).fill(null).map(WALL),
@@ -47,7 +47,7 @@ const LEVELS = [
   },
 
   {
-    name: "Level 0.3",
+    name: "Level 0.3", // Push blocks out of your path
     difficulty: "Tutorial",
     grid: [
       Array(7).fill(null).map(WALL),
