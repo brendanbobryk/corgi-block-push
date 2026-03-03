@@ -72,6 +72,8 @@ __________Assets__________
 __________Misc.__________
 - Per-level tutorial instructions
 
-- Lock next levels until current level completion 
+- Lock next levels until current level completion
+
+- Change flag emojis everywhere to the house, including repo bio
 
 */
