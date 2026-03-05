@@ -400,8 +400,7 @@ const Game = () => {
           <div style={{ fontWeight: "bold", marginBottom: 6, color: "#ffdd57" }}>Credits</div>
 
           <div style={{ background: "#333", borderRadius: 10, padding: 8, marginBottom: 6, color: "#fff", fontWeight: "bold", lineHeight: 1.8 }}>
-            ⭐: Locked 🔒<br />
-            ⭐: Unlocked 🔓
+            Made by Brendan
           </div>
         </div>
 
