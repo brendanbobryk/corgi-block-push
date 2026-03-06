@@ -444,7 +444,7 @@ const Game = () => {
               .my-anim-class {
                 transition: 
                   transform 0.5s ease, 
-                  display 0.5s ease allow-discrete;
+                  display ease allow-discrete;
               }
               @starting-style {
                 .my-anim-class{
