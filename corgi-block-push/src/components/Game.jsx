@@ -439,10 +439,22 @@ const Game = () => {
 
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-start", gap: 6, marginTop: 20, pointerEvents: "none" }}>
             {/* Level Complete Notification */}
+            <style>{`
+              .my-anim-class {
+                transition: 
+                  transform 0.5s ease, 
+                  display 0.5s ease allow-discrete;
+              }
+              @starting-style {
+                .my-anim-class{
+                  transform: scale(0.5);
+                }
+              }
+            `}</style>
             <div
               ref={winBannerRef}
+              className="my-anim-class"
               style={{
-                transform: hasWon ? "scale(1)" : "scale(0.5)",
                 display: hasWon ? "block" : "none",
                 padding: "16px 32px",
                 borderRadius: 16,
@@ -451,7 +463,6 @@ const Game = () => {
                 fontWeight: 900,
                 fontSize: "1.8rem",
                 boxShadow: "0 6px 16px rgba(0,0,0,.4)",
-                transition: "transform 0.5s"
               }}
             >
               🎉 LEVEL COMPLETE! 🎉
