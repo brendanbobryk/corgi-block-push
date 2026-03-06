@@ -488,7 +488,6 @@ const Game = () => {
             {/* New Record Notification */}
             <div
               style={{
-                transform: isNewRecord ? "scale(1)" : "scale(0.5)",
                 display: isNewRecord ? "block" : "none",
                 padding: "10px 24px",
                 borderRadius: 12,
@@ -497,7 +496,6 @@ const Game = () => {
                 fontWeight: 800,
                 fontSize: "1.2rem",
                 boxShadow: "0 4px 12px rgba(0,0,0,.4)",
-                transition: "opacity 0.4s ease, transform 0.4s ease"
               }}
             >
               🏆 NEW RECORD! 🏆
