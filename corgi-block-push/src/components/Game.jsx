@@ -442,8 +442,8 @@ const Game = () => {
             <div
               ref={winBannerRef}
               style={{
-                transform: hasWon ? "scale(1)" : "scale(0.5)",
                 display: hasWon ? "block" : "none",
+                transform: hasWon ? "scale(1)" : "scale(0.5)",
                 padding: "16px 32px",
                 borderRadius: 16,
                 background: "linear-gradient(135deg,#00ff99,#00cc77)",
@@ -451,7 +451,7 @@ const Game = () => {
                 fontWeight: 900,
                 fontSize: "1.8rem",
                 boxShadow: "0 6px 16px rgba(0,0,0,.4)",
-                transition: "opacity 0.5s ease, transform 0.5s ease"
+                transition: "transform 0.5s"
               }}
             >
               🎉 LEVEL COMPLETE! 🎉
