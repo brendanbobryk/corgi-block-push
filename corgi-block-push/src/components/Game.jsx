@@ -479,7 +479,7 @@ const Game = () => {
             <div
               style={{
                 transform: isNewRecord ? "scale(1)" : "scale(0.5)",
-                opacity: isNewRecord ? "block" : "none",
+                display: isNewRecord ? "block" : "none",
                 padding: "10px 24px",
                 borderRadius: 12,
                 background: "linear-gradient(135deg,#ffd700,#ffb700)",
