@@ -470,6 +470,7 @@ const Game = () => {
 
             {/* Stepped in Poop Notification */}
             <div
+              className="my-anim-class"
               style={{
                 display: hasLost ? "block" : "none",
                 padding: "16px 32px",
