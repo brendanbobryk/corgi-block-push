@@ -487,6 +487,7 @@ const Game = () => {
 
             {/* New Record Notification */}
             <div
+              className="my-anim-class"
               style={{
                 display: isNewRecord ? "block" : "none",
                 padding: "10px 24px",
