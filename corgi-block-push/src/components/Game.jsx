@@ -443,7 +443,7 @@ const Game = () => {
               ref={winBannerRef}
               style={{
                 transform: hasWon ? "scale(1)" : "scale(0.5)",
-                opacity: hasWon ? "block" : "none",
+                display: hasWon ? "block" : "none",
                 padding: "16px 32px",
                 borderRadius: 16,
                 background: "linear-gradient(135deg,#00ff99,#00cc77)",
