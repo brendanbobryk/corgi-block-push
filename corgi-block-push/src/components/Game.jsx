@@ -437,7 +437,7 @@ const Game = () => {
             {grid.map((row, y) => row.map((cell, x) => <Cell key={`${x}-${y}`} content={cell} direction={playerDirection}/>))}
           </div>
 
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", gap: 6, marginBottom:16, pointerEvents: "none" }}>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-start", gap: 6, marginBottom:12, pointerEvents: "none" }}>
             {/* Level Complete Notification */}
             <div
               ref={winBannerRef}
@@ -461,7 +461,7 @@ const Game = () => {
             <div
               style={{
                 transform: hasLost ? "scale(1)" : "scale(0.5)",
-                opacity: hasLost ? 1 : 0,
+                display: hasLost ? "block" : "none",
                 padding: "16px 32px",
                 borderRadius: 16,
                 background: "linear-gradient(135deg,#8b4513,#5a2d0c)",
