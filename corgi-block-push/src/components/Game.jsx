@@ -471,7 +471,6 @@ const Game = () => {
             {/* Stepped in Poop Notification */}
             <div
               style={{
-                transform: hasLost ? "scale(1)" : "scale(0.5)",
                 display: hasLost ? "block" : "none",
                 padding: "16px 32px",
                 borderRadius: 16,
@@ -480,7 +479,6 @@ const Game = () => {
                 fontWeight: 900,
                 fontSize: "1.8rem",
                 boxShadow: "0 6px 16px rgba(0,0,0,.4)",
-                transition: "opacity 0.5s ease, transform 0.5s ease"
               }}
             >
               💩 OH NO! YOU STEPPED IN POOP! 💩
