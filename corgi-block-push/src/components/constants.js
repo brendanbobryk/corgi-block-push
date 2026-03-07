@@ -66,6 +66,8 @@ __________Assets__________
 
 - Sprite assests
     - Customizable corgi sprites (colour, etc.)
+        - Default customizations
+            - Corgi colour (Orange or Black/tan)
         - Unlock customizations through achievements
 
 - Misc.
