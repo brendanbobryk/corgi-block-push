@@ -68,6 +68,7 @@ __________Assets__________
     - Customizable corgi sprites (colour, etc.)
         - Default customizations
             - Corgi colour (Orange or Black/tan)
+            - Hats?
         - Unlock customizations through achievements
 
 - Misc.
