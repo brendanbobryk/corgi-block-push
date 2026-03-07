@@ -65,6 +65,7 @@ __________Assets__________
 
 - Sprite assests
     - Customizable corgi sprites (colour, etc.)
+        - Unlock customizations through achievements
 
 - Misc.
     - Ambient birds flying away when corgi passes by
