@@ -53,6 +53,7 @@ __________Assets__________
         - Dirt
         - Tile/brick
         - Sidewalk
+    - Backyard fence border
 
 - Wall assets
     - Trees 🌳🌲
