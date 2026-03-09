@@ -82,6 +82,9 @@ __________Assets__________
 
     - Music
 
+    - Sounds effects
+        - Level complete/loss
+
 __________Misc.__________
 - Per-level tutorial instructions
 
