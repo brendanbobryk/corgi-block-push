@@ -72,6 +72,7 @@ __________Assets__________
             - Corgi colour (Orange or Black/tan)
             - Hats?
         - Unlock customizations through achievements
+            - Raincoat
 
 - Misc.
     - Ambient birds flying away when corgi passes by
