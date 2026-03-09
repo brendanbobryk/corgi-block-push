@@ -75,6 +75,7 @@ __________Assets__________
             - Raincoat
             - Boots
             - Bow/bowtie
+            - Sweater
 
 - Misc.
     - Ambient birds flying away when corgi passes by
