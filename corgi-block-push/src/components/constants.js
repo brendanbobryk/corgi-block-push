@@ -74,6 +74,7 @@ __________Assets__________
         - Unlock customizations through achievements
             - Raincoat
             - Boots
+            - Bow/bowtie
 
 - Misc.
     - Ambient birds flying away when corgi passes by
