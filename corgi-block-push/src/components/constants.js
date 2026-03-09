@@ -73,6 +73,7 @@ __________Assets__________
             - Hats?
         - Unlock customizations through achievements
             - Raincoat
+            - Boots
 
 - Misc.
     - Ambient birds flying away when corgi passes by
