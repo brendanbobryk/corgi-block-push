@@ -46,6 +46,8 @@ __________Mechanics__________
 
 - Acheivement system
 
+- Grid size increase as levels progressively climb
+
 __________Assets__________
 - Background assets
     - Grass 🟩
