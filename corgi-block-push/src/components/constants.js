@@ -86,6 +86,7 @@ __________Assets__________
     - Sounds effects
         - Level complete/loss
         - Bark when treat is obtained or arriving home
+        - Misc. car horns
 
 __________Misc.__________
 - Per-level tutorial instructions
