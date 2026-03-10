@@ -87,7 +87,7 @@ __________Assets__________
         - Level complete/loss
         - Bark when treat is obtained or arriving home
         - Misc. car horns
-        - Birds chriping
+        - Birds chirping
 
 __________Misc.__________
 - Per-level tutorial instructions
