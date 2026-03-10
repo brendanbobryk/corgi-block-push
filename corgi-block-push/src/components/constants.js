@@ -44,7 +44,7 @@ __________Mechanics__________
     - Cars 🚗🚙🚕🚓🚐🛻
     - Logs 🪵
 
-- Acheivement system
+- Achievement system
 
 - Grid size increase as levels progressively climb
 
