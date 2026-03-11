@@ -48,6 +48,7 @@ __________Mechanics__________
     - Level completed with minimum move count
     - Hidden achievements / easter eggs
         - Escape the map
+        - A reference to Ein, from Cowboy Bebop
 
 - Grid size increase as levels progressively climb
 
