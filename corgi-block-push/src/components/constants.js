@@ -46,6 +46,8 @@ __________Mechanics__________
 
 - Achievement system
     - Level completed with minimum move count
+    - Hidden achievements / easter eggs
+        - Escape the map
 
 - Grid size increase as levels progressively climb
 
