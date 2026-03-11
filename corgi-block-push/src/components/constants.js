@@ -45,6 +45,7 @@ __________Mechanics__________
     - Logs 🪵
 
 - Achievement system
+    - Level completed with minimum move count
 
 - Grid size increase as levels progressively climb
 
