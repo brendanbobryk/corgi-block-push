@@ -49,6 +49,7 @@ __________Mechanics__________
     - Hidden achievements / easter eggs
         - Escape the map
         - A reference to Ein, from Cowboy Bebop
+        - A reference to the Queen's corgis
 
 - Grid size increase as levels progressively climb
 
@@ -75,6 +76,7 @@ __________Assets__________
         - Default customizations
             - Corgi colour (Orange or Black/tan)
             - Hats?
+                - Crown from Queen achievement
         - Unlock customizations through achievements
             - Raincoat
             - Boots
