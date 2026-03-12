@@ -49,7 +49,7 @@ __________Mechanics__________
     - [Explore the Backyard] Traversed every space in a level
     - [Stinker] Attempt to enter the house while dirty
     - [Fetch!] Push a ball 25 spaces
-    - Eat 25 treats
+    - [Treat Time] Eat 25 treats
     - Hidden achievements / easter eggs
         - Escape the map
         - A reference to Ein, from Cowboy Bebop
