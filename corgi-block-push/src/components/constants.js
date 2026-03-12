@@ -45,8 +45,8 @@ __________Mechanics__________
     - Logs 🪵
 
 - Achievement system
-    - Level completed with minimum move count
-    - Traversed every space in a level
+    - [] Level completed with minimum move count
+    - [Explore the Backyard] Traversed every space in a level
     - Hidden achievements / easter eggs
         - Escape the map
         - A reference to Ein, from Cowboy Bebop
