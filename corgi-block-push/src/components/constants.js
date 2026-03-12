@@ -46,6 +46,7 @@ __________Mechanics__________
 
 - Achievement system
     - Level completed with minimum move count
+    - Traversed every space in a level
     - Hidden achievements / easter eggs
         - Escape the map
         - A reference to Ein, from Cowboy Bebop
