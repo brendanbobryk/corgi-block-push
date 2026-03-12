@@ -47,7 +47,7 @@ __________Mechanics__________
 - Achievement system
     - [Come Here Boy!] Level completed with minimum move count
     - [Explore the Backyard] Traversed every space in a level
-    - Attempt to enter the house while dirty
+    - [Stinker] Attempt to enter the house while dirty
     - Hidden achievements / easter eggs
         - Escape the map
         - A reference to Ein, from Cowboy Bebop
