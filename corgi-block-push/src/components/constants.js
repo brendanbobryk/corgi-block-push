@@ -50,6 +50,7 @@ __________Mechanics__________
     - [Stinker] Attempt to enter the house while dirty
     - [Fetch!] Push a ball 25 spaces
     - [Snack Time] Eat 25 treats
+    - Ran through 25 sprinklers
     - Hidden achievements / easter eggs
         - Escape the map
         - A reference to Ein, from Cowboy Bebop
