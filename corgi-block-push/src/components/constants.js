@@ -51,6 +51,7 @@ __________Mechanics__________
     - [Fetch!] Push a ball 25 spaces
     - [Snack Time] Eat 25 treats
     - [Bath Time] Ran through 25 sprinklers
+    - Scare 25 birds
     - Hidden achievements / easter eggs
         - Escape the map
         - A reference to Ein, from Cowboy Bebop
