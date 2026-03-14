@@ -59,6 +59,8 @@ __________Mechanics__________
 
 - Grid size increase as levels progressively climb
 
+- Main menu
+
 __________Assets__________
 - Background assets
     - Grass 🟩
