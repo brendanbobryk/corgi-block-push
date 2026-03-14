@@ -61,6 +61,7 @@ __________Mechanics__________
 
 - Main menu
     - Play
+    - Customizations
     - Options/Settings
     - Credits
 
