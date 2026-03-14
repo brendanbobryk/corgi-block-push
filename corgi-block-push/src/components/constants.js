@@ -60,6 +60,8 @@ __________Mechanics__________
 - Grid size increase as levels progressively climb
 
 - Main menu
+    - Play
+    - Options/Settings
 
 __________Assets__________
 - Background assets
