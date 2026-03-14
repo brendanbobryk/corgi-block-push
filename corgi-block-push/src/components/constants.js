@@ -62,6 +62,7 @@ __________Mechanics__________
 - Main menu
     - Play
     - Customizations
+    - Achievements
     - Options/Settings
     - Credits
 
