@@ -76,6 +76,7 @@ __________Assets__________
 - Pushable block assets
     - Toy ball (Tennis ball) ⚽🔵🏀🟡
     - Sticks
+    - Rope
 
 - Sprite assests
     - Customizable corgi sprites (colour, etc.)
