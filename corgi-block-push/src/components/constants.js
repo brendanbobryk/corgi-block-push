@@ -62,6 +62,7 @@ __________Mechanics__________
 - Main menu
     - Play
     - Options/Settings
+    - Credits
 
 __________Assets__________
 - Background assets
