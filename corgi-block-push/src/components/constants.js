@@ -95,6 +95,7 @@ __________Assets__________
 
     - Music
         - Background level song
+        - Main menu song
 
     - Sounds effects
         - Level complete/loss
