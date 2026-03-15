@@ -62,7 +62,7 @@ __________Mechanics__________
 - Main menu
     - Play
     - Customizations (see assets)
-    - Achievements?
+    - Achievements (show completed + locked)
     - Options/Settings
         - Volume
             - Music (+ on/off)
