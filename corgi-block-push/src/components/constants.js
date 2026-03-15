@@ -67,6 +67,7 @@ __________Mechanics__________
         - Volume
             - Music
             - Sound effects
+        - Controls
     - Credits
 
 __________Assets__________
