@@ -68,6 +68,7 @@ __________Mechanics__________
             - Music
             - Sound effects
         - Controls
+            - < v ^ > to wasd?
     - Credits
 
 __________Assets__________
