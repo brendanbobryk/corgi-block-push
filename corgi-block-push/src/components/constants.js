@@ -66,6 +66,7 @@ __________Mechanics__________
     - Options/Settings
         - Volume
             - Music
+            - Sound effects
     - Credits
 
 __________Assets__________
