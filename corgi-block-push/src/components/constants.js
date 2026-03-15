@@ -66,7 +66,7 @@ __________Mechanics__________
     - Options/Settings
         - Volume
             - Music (+ on/off)
-            - Sound effects
+            - Sound effects (+ on/off)
         - Controls
             - < v ^ > to wasd?
     - Credits
