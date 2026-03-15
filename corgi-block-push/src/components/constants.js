@@ -61,7 +61,7 @@ __________Mechanics__________
 
 - Main menu
     - Play
-    - Customizations
+    - Customizations (see assets)
     - Achievements?
     - Options/Settings
         - Volume
