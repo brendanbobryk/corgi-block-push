@@ -65,7 +65,7 @@ __________Mechanics__________
     - Achievements?
     - Options/Settings
         - Volume
-            - Music
+            - Music (+ on/off)
             - Sound effects
         - Controls
             - < v ^ > to wasd?
