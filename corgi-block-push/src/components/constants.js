@@ -98,6 +98,7 @@ __________Assets__________
             - Hats?
                 - Crown from Queen achievement
                 - Propeller hat
+                - Pirate hat
         - Unlock customizations through achievements
             - Raincoat
             - Boots
