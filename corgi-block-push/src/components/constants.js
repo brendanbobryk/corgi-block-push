@@ -70,6 +70,7 @@ __________Mechanics__________
         - Controls
             - < v ^ > to wasd?
     - Credits
+    - Quit/Exit
 
 __________Assets__________
 - Background assets
