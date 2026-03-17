@@ -79,9 +79,9 @@ __________Assets__________
         - Dirt
         - Tile/brick
         - Sidewalk
-    - Backyard fence border
 
 - Wall assets
+    - Backyard fence border
     - Trees 🌳🌲
         - Vary between different trees?
     - Bush
