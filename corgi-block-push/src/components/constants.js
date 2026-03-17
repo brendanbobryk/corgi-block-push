@@ -63,7 +63,7 @@ __________Mechanics__________
     - Play
     - Customizations (see assets)
     - Achievements (show completed + locked)
-    - Options/Settings
+    - Options/Settings (also add accessability to this menu in-game)
         - Volume
             - Music (+ on/off)
             - Sound effects (+ on/off)
