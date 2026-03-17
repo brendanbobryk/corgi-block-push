@@ -97,6 +97,7 @@ __________Assets__________
             - Corgi colour (Orange or Tri-colour)
             - Hats?
                 - Crown from Queen achievement
+                - Propeller hat
         - Unlock customizations through achievements
             - Raincoat
             - Boots
