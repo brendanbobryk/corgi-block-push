@@ -94,7 +94,7 @@ __________Assets__________
 - Sprite assests
     - Customizable corgi sprites (colour, etc.)
         - Default customizations
-            - Corgi colour (Orange or Black/tan)
+            - Corgi colour (Orange or Tri-colour)
             - Hats?
                 - Crown from Queen achievement
         - Unlock customizations through achievements
