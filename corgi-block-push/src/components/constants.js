@@ -108,6 +108,7 @@ __________Assets__________
 
 - Misc.
     - Ambient birds flying away when corgi passes by
+    - Ambient cats that run into bushes/trees whe ncorgi passes near
 
     - Music
         - Background level song
