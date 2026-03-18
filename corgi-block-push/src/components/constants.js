@@ -100,7 +100,7 @@ __________Assets__________
                 - Propeller hat
                 - Pirate hat
                 - Bucket hat
-        - Unlock customizations through achievements
+        - Unlock customizations through achievements (each piece with different colours)
             - Raincoat
             - Boots
             - Bow/bowtie
