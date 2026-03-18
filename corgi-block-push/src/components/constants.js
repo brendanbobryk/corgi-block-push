@@ -102,7 +102,7 @@ __________Assets__________
                 - Bucket hat
         - Unlock customizations through achievements (each piece with different colours)
             - Raincoat
-            - Boots
+            - Shoes
             - Bow/bowtie
             - Sweater
             - Harness
