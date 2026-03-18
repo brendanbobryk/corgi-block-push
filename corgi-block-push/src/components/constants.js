@@ -106,6 +106,7 @@ __________Assets__________
             - Bow/bowtie
             - Sweater
             - Harness
+            - Collar
 
 - Misc.
     - Ambient birds flying away when corgi passes by
