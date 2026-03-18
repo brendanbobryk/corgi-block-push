@@ -103,6 +103,7 @@ __________Assets__________
         - Unlock customizations through achievements (each piece with different colours)
             - Raincoat
             - Shoes
+                - Boots
             - Bow/bowtie
             - Sweater
             - Harness
