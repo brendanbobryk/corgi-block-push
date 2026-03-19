@@ -97,3 +97,6 @@ Organized below are groupings of addiitons yet to be added to the game.
         - Birds chirping
 
 ## Misc.
+- Per-level tutorial instructions
+
+- Lock next levels until current level completion
