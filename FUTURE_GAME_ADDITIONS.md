@@ -83,3 +83,15 @@ Organized below are groupings of addiitons yet to be added to the game.
             - Collar
 
 ## Misc.
+    - Ambient birds flying away when corgi passes by
+    - Ambient cats that run into bushes/trees whe ncorgi passes near
+
+    - Music
+        - Background level song
+        - Main menu song
+
+    - Sounds effects
+        - Level complete/loss
+        - Bark when treat is obtained or arriving home
+        - Misc. car horns
+        - Birds chirping
