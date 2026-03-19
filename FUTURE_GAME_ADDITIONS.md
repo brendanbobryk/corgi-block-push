@@ -43,7 +43,43 @@ Organized below are groupings of addiitons yet to be added to the game.
             - < v ^ > to wasd?
     - Credits
     - Quit/Exit
-    
+
 ## Assets
+- Background assets
+    - Grass 🟩
+    - Paths
+        - Dirt
+        - Tile/brick
+        - Sidewalk
+
+- Wall assets
+    - Backyard fence border
+    - Trees 🌳🌲
+        - Vary between different trees?
+    - Bush
+
+- Pushable block assets
+    - Toy ball (Tennis ball) ⚽🔵🏀🟡
+    - Sticks
+    - Rope
+
+- Sprite assests
+    - Customizable corgi sprites (colour, etc.)
+        - Default customizations
+            - Corgi colour (Orange or Tri-colour)
+            - Hats?
+                - Crown from Queen achievement
+                - Propeller hat
+                - Pirate hat
+                - Bucket hat
+        - Unlock customizations through achievements (each piece with different colours)
+            - Raincoat
+            - Shoes
+                - Boots
+                - Runners/sneakers
+            - Bow/bowtie
+            - Sweater
+            - Harness
+            - Collar
 
 ## Misc.
