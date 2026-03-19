@@ -43,7 +43,7 @@ Organized below are groupings of addiitons yet to be added to the game.
             - < v ^ > to wasd?
     - Credits
     - Quit/Exit
-
+    
 ## Assets
 - Background assets
     - Grass 🟩
@@ -82,7 +82,7 @@ Organized below are groupings of addiitons yet to be added to the game.
             - Harness
             - Collar
 
-## Misc.
+- Misc.
     - Ambient birds flying away when corgi passes by
     - Ambient cats that run into bushes/trees whe ncorgi passes near
 
@@ -95,3 +95,5 @@ Organized below are groupings of addiitons yet to be added to the game.
         - Bark when treat is obtained or arriving home
         - Misc. car horns
         - Birds chirping
+
+## Misc.
