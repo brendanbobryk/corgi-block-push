@@ -98,6 +98,8 @@ Organized below are groupings of addiitons yet to be added to the game.
             - Arriving home
             - When siren sound effect passes
         - Birds chirping
+        - Bug buzzing
+            - Bees, crickets
 
 ## Misc.
 - Per-level tutorial instructions
