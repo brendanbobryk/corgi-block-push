@@ -100,7 +100,7 @@ Organized below are groupings of addiitons yet to be added to the game.
             - When siren sound effect passes
         - Birds chirping
         - Bug buzzing
-            - Bees, crickets
+            - Bees, crickets 🦗
 
 ## Misc.
 - Per-level tutorial instructions
