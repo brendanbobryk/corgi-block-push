@@ -84,7 +84,7 @@ Organized below are groupings of addiitons yet to be added to the game.
 
 - Misc.
     - Ambient birds flying away when corgi passes by
-    - Ambient cats that run into bushes/trees whe ncorgi passes near
+    - Ambient cats that run into bushes/trees when corgi passes near
 
     - Music
         - Background level song
