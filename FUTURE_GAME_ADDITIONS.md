@@ -15,7 +15,7 @@ Organized below are groupings of addiitons yet to be added to the game.
 - Obstacles
     - Cars 🚗🚙🚕🚓🚐🛻
     - Logs 🪵
-    - Bees
+    - Bees 🐝
 
 - Achievement system
     - [Come Here Boy!] Level completed with minimum move count
