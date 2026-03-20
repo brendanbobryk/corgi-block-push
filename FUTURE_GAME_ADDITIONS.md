@@ -92,10 +92,11 @@ Organized below are groupings of addiitons yet to be added to the game.
 
     - Sounds effects
         - Level complete/loss
+        - Misc. car horns & sirens
         - Bark 
             - When obtaining a treat
             - Arriving home
-        - Misc. car horns & sirens
+            - When siren sound effect passes
         - Birds chirping
 
 ## Misc.
