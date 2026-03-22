@@ -68,7 +68,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Customizable corgi sprites (colour, etc.)
         - Default customizations
             - Corgi colour (Orange or Tri-colour)
-            - Hats?
+            - Hats
                 - Crown from Queen achievement
                 - Propeller hat
                 - Pirate hat
