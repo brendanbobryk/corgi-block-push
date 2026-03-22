@@ -104,5 +104,6 @@ Organized below are groupings of addiitons yet to be added to the game.
 
 ## Misc.
 - Per-level tutorial instructions
+    - Introduce new mechanic/block/item per tutorial level
 
 - Lock next levels until current level completion
