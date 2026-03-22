@@ -1,6 +1,6 @@
 # Future Game Additions 🐶🟦
 
-Organized below are groupings of addiitons yet to be added to the game.
+Organized below are groupings of additions yet to be added to the game.
 
 ## Mechanics
 - Things to make the corgi dirty ~ can't go home while dirty
