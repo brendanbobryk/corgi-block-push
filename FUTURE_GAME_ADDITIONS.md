@@ -107,3 +107,4 @@ Organized below are groupings of addiitons yet to be added to the game.
     - Introduce new mechanic/block/item per tutorial level
 
 - Lock next levels until current level completion
+    - Unlock all levels dev option button/setting
