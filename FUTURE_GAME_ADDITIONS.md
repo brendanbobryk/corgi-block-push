@@ -45,6 +45,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Credits
         - Dev(s)
         - Music
+        - Assets
     - Quit/Exit
     
 ## Assets
