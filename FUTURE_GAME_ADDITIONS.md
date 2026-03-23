@@ -22,7 +22,7 @@ Organized below are groupings of additions yet to be added to the game.
     - [Explore the Backyard] Traversed every space in a level
     - [Stinker] Attempt to enter the house while dirty
     - [Fetch!] Push a ball 10 spaces
-    - [Snack Time] Eat 25 treats
+    - [Snack Time] Eat 10 treats
     - [Bath Time] Ran through 25 sprinklers
     - [Bark Bark!] Scare 25 birds/cats
     - Hidden achievements / easter eggs
