@@ -21,7 +21,7 @@ Organized below are groupings of additions yet to be added to the game.
     - [Come Here Boy!] Level completed with minimum move count
     - [Explore the Backyard] Traversed every space in a level
     - [Stinker] Attempt to enter the house while dirty
-    - [Fetch!] Push a ball 25 spaces
+    - [Fetch!] Push a ball 10 spaces
     - [Snack Time] Eat 25 treats
     - [Bath Time] Ran through 25 sprinklers
     - [Bark Bark!] Scare 25 birds/cats
