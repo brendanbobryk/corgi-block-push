@@ -43,6 +43,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Controls
             - < v ^ > to wasd?
     - Credits
+        - Dev(s)
     - Quit/Exit
     
 ## Assets
