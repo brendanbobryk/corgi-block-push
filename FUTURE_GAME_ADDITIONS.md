@@ -36,7 +36,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Play
     - Customizations (see assets)
     - Achievements (show completed + locked)
-    - Options/Settings (also add accessibility to this menu in-game - settings cog icon)
+    - Options/Settings
         - Volume
             - Music (+ on/off)
             - Sound effects (+ on/off)
@@ -49,6 +49,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Quit/Exit
 
 - Pause/Settings (Menu/Cog icon in game)
+    - Options/Settings (see above)
     
 ## Assets
 - Background assets
