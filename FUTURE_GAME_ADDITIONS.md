@@ -50,6 +50,7 @@ Organized below are groupings of additions yet to be added to the game.
 
 - Pause/Settings (Menu/Cog icon in game)
     - Options/Settings (see above)
+    - Quit/exit (to main menu)
     
 ## Assets
 - Background assets
