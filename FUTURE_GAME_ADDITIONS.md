@@ -33,6 +33,7 @@ Organized below are groupings of additions yet to be added to the game.
 - Grid size increase as levels progressively climb
     - Tutorial & Easy: 7 x 7
     - Medium: 10 x 10
+    - Hard: 15 x 15
 
 - Main menu
     - Play
