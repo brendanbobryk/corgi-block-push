@@ -46,7 +46,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Dev(s)
         - Music
         - Assets
-    - Quit/Exit
+    - Quit/Exit (close game)
 
 - Pause/Settings (Menu/Cog icon in game)
     - Achievements (see above)
