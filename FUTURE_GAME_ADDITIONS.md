@@ -31,7 +31,8 @@ Organized below are groupings of additions yet to be added to the game.
         - A reference to the Queen's corgis
 
 - Grid size increase as levels progressively climb
-    - Tutorial & Easy: 7x7
+    - Tutorial & Easy: 7 x 7
+    - Medium: 10 x 10
 
 - Main menu
     - Play
