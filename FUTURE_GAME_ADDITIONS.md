@@ -90,7 +90,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Shoes
                 - Boots
                 - Runners/sneakers
-            - Bow/bowtie
+            - Bow/bowtie/tie
             - Sweater
             - Harness
             - Collar
