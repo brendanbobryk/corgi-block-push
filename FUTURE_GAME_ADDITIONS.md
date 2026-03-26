@@ -69,7 +69,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Backyard fence border for the trim of the game grid
     - Trees 🌳🌲
         - Vary between different trees?
-    - Bush
+    - Bushes
 
 - Pushable block assets
     - Toy ball (Tennis ball) ⚽🔵🏀🟡
