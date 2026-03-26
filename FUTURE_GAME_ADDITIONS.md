@@ -66,7 +66,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Sidewalk
 
 - Wall assets
-    - Backyard fence border
+    - Backyard fence border for the trim of the game grid
     - Trees 🌳🌲
         - Vary between different trees?
     - Bush
