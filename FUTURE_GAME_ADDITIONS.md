@@ -78,7 +78,8 @@ Organized below are groupings of additions yet to be added to the game.
 
 - Sprite assests
     - Customizable corgi sprites (colour, etc.)
-        - Default customizations
+        - Unlock customizations through achievements (each piece with different colours)
+        - Customizations
             - Corgi colour (Orange or Tri-colour)
             - Corgi gender?
             - Hats (+ colour/pattern variations)
@@ -86,7 +87,6 @@ Organized below are groupings of additions yet to be added to the game.
                 - Propeller hat
                 - Pirate hat
                 - Bucket hat
-        - Unlock customizations through achievements (each piece with different colours)
             - Raincoat (+ colour variations)
             - Shoes (+ colour variations)
                 - Boots
