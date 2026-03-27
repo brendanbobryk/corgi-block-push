@@ -82,7 +82,8 @@ Organized below are groupings of additions yet to be added to the game.
         - Corgi colour
             - Orange or Tri-colour
             - Spots?
-        - Corgi gender? (M/F)
+        - Corgi gender 
+            - Male or Female (change bark sounds?)
         - Hats (+ colour/pattern variations)
             - Crown from Queen achievement
             - Propeller hat
