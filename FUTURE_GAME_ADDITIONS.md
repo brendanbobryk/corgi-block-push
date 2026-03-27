@@ -81,20 +81,20 @@ Organized below are groupings of additions yet to be added to the game.
         - Default customizations
             - Corgi colour (Orange or Tri-colour)
             - Corgi gender?
-            - Hats
+            - Hats (+ colour variations)
                 - Crown from Queen achievement
                 - Propeller hat
                 - Pirate hat
                 - Bucket hat
         - Unlock customizations through achievements (each piece with different colours)
-            - Raincoat
-            - Shoes
+            - Raincoat (+ colour variations)
+            - Shoes (+ colour variations)
                 - Boots
                 - Runners/sneakers
-            - Bow/bowtie/tie
-            - Sweater
-            - Harness
-            - Collar
+            - Bow/bowtie/tie (+ colour variations)
+            - Sweater (+ colour variations)
+            - Harness (+ colour variations)
+            - Collar (+ colour variations)
 
 - Misc.
     - Ambient birds flying away when corgi passes by
