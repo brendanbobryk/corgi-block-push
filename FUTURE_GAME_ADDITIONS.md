@@ -78,7 +78,7 @@ Organized below are groupings of additions yet to be added to the game.
 
 - Sprite assests
     - Customizable corgi sprites (colour, etc.)
-        - Unlock customizations through achievements (each piece with different colours)
+        - Unlock customizations through achievements
         - Customizations
             - Corgi colour (Orange or Tri-colour)
             - Corgi gender?
