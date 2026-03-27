@@ -77,24 +77,23 @@ Organized below are groupings of additions yet to be added to the game.
     - Rope
 
 - Sprite assests
-    - Customizable corgi sprites (colour, etc.)
-        - Unlock customizations through achievements
-        - Customizations
-            - Corgi colour (Orange or Tri-colour)
-            - Corgi gender?
-            - Hats (+ colour/pattern variations)
-                - Crown from Queen achievement
-                - Propeller hat
-                - Pirate hat
-                - Bucket hat
-            - Raincoat (+ colour variations)
-            - Shoes (+ colour variations)
-                - Boots
-                - Runners/sneakers
-            - Bow/bowtie/tie (+ colour/pattern variations)
-            - Sweater (+ colour/pattern variations)
-            - Harness (+ colour variations)
-            - Collar (+ colour variations)
+    - Unlock customizations through achievements
+    - Customizations
+        - Corgi colour (Orange or Tri-colour)
+        - Corgi gender?
+        - Hats (+ colour/pattern variations)
+            - Crown from Queen achievement
+            - Propeller hat
+            - Pirate hat
+            - Bucket hat
+        - Raincoat (+ colour variations)
+        - Shoes (+ colour variations)
+            - Boots
+            - Runners/sneakers
+        - Bow/bowtie/tie (+ colour/pattern variations)
+        - Sweater (+ colour/pattern variations)
+        - Harness (+ colour variations)
+        - Collar (+ colour variations)
 
 - Misc.
     - Ambient birds flying away when corgi passes by
