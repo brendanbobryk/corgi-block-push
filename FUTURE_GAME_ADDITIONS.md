@@ -92,7 +92,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Boots
                 - Runners/sneakers
             - Bow/bowtie/tie (+ colour variations)
-            - Sweater (+ colour variations)
+            - Sweater (+ colour/pattern variations)
             - Harness (+ colour variations)
             - Collar (+ colour variations)
 
