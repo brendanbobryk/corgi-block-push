@@ -91,6 +91,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Bucket hat
         - Raincoat (+ colour variations)
         - Shoes (+ colour variations)
+            - Rainboots
             - Boots
             - Runners/sneakers
         - Bow/bowtie/tie (+ colour/pattern variations)
