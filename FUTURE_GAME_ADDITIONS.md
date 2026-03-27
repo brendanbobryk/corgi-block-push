@@ -79,7 +79,9 @@ Organized below are groupings of additions yet to be added to the game.
 - Sprite assests
     - Unlock customizations through achievements
     - Customizations
-        - Corgi colour (Orange or Tri-colour)
+        - Corgi colour
+            - Orange or Tri-colour
+            - Spots?
         - Corgi gender?
         - Hats (+ colour/pattern variations)
             - Crown from Queen achievement
