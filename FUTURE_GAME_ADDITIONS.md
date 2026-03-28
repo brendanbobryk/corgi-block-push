@@ -117,7 +117,8 @@ Organized below are groupings of additions yet to be added to the game.
             - When siren sound effect passes
             - On keybind press
         - Birds chirping
-        - Bug buzzing
+        - Insect noises
+            - Bees buzzing
             - Bees, crickets 🦗
 
 ## Misc.
