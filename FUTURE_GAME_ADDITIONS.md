@@ -46,6 +46,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Sound effects (+ on/off)
         - Controls
             - < v ^ > to wasd?
+            - Bark keybind
     - Credits
         - Dev(s)
         - Music
