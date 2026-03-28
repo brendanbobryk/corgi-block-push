@@ -4,7 +4,7 @@ export const GRID_COLS = 7;
 
 export const EMOJIS = {
   CORGI: "🐶",
-  BLOCK: "🟫",
+  BLOCK: "🔵",
   WALL: "🌳",
   EMPTY: "⬜",
   GOAL: "🏡",
