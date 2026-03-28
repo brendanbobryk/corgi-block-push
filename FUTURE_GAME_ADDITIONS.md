@@ -115,6 +115,7 @@ Organized below are groupings of additions yet to be added to the game.
             - When obtaining a treat
             - Arriving home
             - When siren sound effect passes
+            - On keybind press
         - Birds chirping
         - Bug buzzing
             - Bees, crickets 🦗
