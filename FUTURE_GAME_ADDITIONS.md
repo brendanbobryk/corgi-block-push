@@ -110,7 +110,7 @@ Organized below are groupings of additions yet to be added to the game.
 
     - Sounds effects
         - Level complete/loss
-        - Misc. car horns & sirens
+        - Misc. car horns & 
         - Bark 
             - When obtaining a treat
             - Arriving home
