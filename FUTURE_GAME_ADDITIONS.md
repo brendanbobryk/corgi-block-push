@@ -118,7 +118,7 @@ Organized below are groupings of additions yet to be added to the game.
             - On keybind press
         - Birds chirping
         - Insect noises
-            - Bees 
+            - Bees buzzing
             - Bees, crickets 🦗
 
 ## Misc.
