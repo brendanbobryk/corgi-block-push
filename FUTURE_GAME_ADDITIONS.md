@@ -112,16 +112,17 @@ Organized below are groupings of additions yet to be added to the game.
         - Level complete
         - Stepped in poop
         - Achievement obtained
-        - Misc. car horns & sirens
         - Bark 
             - When obtaining a treat
             - Arriving home
             - When siren sound effect passes
             - On keybind press
-        - Birds chirping
-        - Insect noises
-            - Bees buzzing
-            - Bees, crickets 🦗
+        - Misc. environment
+            - Car horns & sirens
+            - Birds chirping
+            - Insect noises
+                - Bees buzzing
+                - Bees, crickets 🦗
 
 ## Misc.
 - Per-level tutorial instructions
