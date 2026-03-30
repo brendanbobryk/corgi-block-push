@@ -15,6 +15,7 @@ Organized below are groupings of additions yet to be added to the game.
 - Obstacles
     - Cars 🚗🚙🚕🚓🚐🛻
     - Logs 🪵
+        - Immovable object alike trees
     - Bees 🐝
         - Cause game over alike poop
 
