@@ -28,7 +28,7 @@ Organized below are groupings of additions yet to be added to the game.
     - [Bath Time] Cleaned the corgi 10 times (sprinklers, rivers, rain, etc.)
     - [Bark Bark!] Scare 10 birds/cats
     - Hidden achievements / easter eggs
-        - Escape the map
+        - Escape the map (backyard)
         - A reference to Ein, from Cowboy Bebop
         - A reference to the Queen's corgis
 
