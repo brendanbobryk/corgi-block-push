@@ -109,7 +109,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Main menu song
 
     - Sounds effects
-        - Level complete/loss
+        - Level complete
         - Stepped in poop
         - Achievement obtained
         - Misc. car horns & sirens
