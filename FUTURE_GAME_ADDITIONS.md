@@ -16,6 +16,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Cars 🚗🚙🚕🚓🚐🛻
     - Logs 🪵
     - Bees 🐝
+        - Cause game over alike poop
 
 - Achievement system
     - [Come Here Boy!] Level completed with minimum move count
