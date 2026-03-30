@@ -123,6 +123,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Insect noises
                 - Bees buzzing
                 - Bees, crickets 🦗
+        - Button presses in menus (main menu and ingame options)
 
 ## Misc.
 - Per-level tutorial instructions
