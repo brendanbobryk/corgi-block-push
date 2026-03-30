@@ -20,7 +20,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Cause game over alike poop
 
 - Achievement system
-    - [Come Here Boy!] Level completed with minimum move count
+    - [Come Here Boy!]
     - [Explore the Backyard] Traversed every space in a level
     - [Stinker] Attempt to enter the house while dirty
     - [Fetch!] Push a ball 10 spaces
@@ -30,6 +30,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Hidden achievements / easter eggs
         - Escape the map (backyard)
         - A reference to Ein, from Cowboy Bebop
+            - Level completed with minimum move count
         - A reference to the Queen's corgis
 
 - Grid size increase as levels progressively climb
