@@ -19,6 +19,9 @@ Organized below are groupings of additions yet to be added to the game.
     - Bees 🐝
         - Cause game over alike poop
 
+- "Perfect Completion"
+    - Rewarded for completing a level with the minimum move count
+
 - Achievement system (Tutorials do not grant achievements)
     - [Potty Trained] Finished all tutorial levels
     - [Come Here Boy!] Made it home for the first time
