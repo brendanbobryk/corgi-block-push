@@ -34,6 +34,7 @@ Organized below are groupings of additions yet to be added to the game.
         - [Data Dog] A reference to Ein, from Cowboy Bebop
             - Level completed with minimum move count
         - [Your Royal Corg] A reference to the Queen's corgis
+            - Achieve perfect completion on every level
 
 - Grid size increase as levels progressively climb
     - Tutorial & Easy: 7 x 7 (or reduce tutorial level size to 5 x 5)
