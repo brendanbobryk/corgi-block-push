@@ -21,6 +21,7 @@ Organized below are groupings of additions yet to be added to the game.
 
 - Achievement system
     - [Come Here Boy!] Made it home for the first time
+    - [] Stepped in poop for the first time
     - [Explore the Backyard] Traversed every space in a level
     - [Stinker] Attempt to enter the house while dirty
     - [Fetch!] Push a ball 10 spaces
