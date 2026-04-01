@@ -33,7 +33,7 @@ Organized below are groupings of additions yet to be added to the game.
         - [On The Loose] Escape the map (backyard)
         - [Data Dog] A reference to Ein, from Cowboy Bebop
             - Level completed with minimum move count
-        - A reference to the Queen's corgis
+        - [Your Royal Corg] A reference to the Queen's corgis
 
 - Grid size increase as levels progressively climb
     - Tutorial & Easy: 7 x 7 (or reduce tutorial level size to 5 x 5)
