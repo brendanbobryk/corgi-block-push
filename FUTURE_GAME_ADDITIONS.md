@@ -20,6 +20,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Cause game over alike poop
 
 - Achievement system (Tutorials do not grant achievements)
+    - [] Finished all tutorial levels
     - [Come Here Boy!] Made it home for the first time
     - [Yuckie!] Stepped in poop for the first time
     - [Explore the Backyard] Traversed every space in a level
