@@ -33,7 +33,7 @@ Organized below are groupings of additions yet to be added to the game.
     - [Snack Time] Eat 10 treats
     - [Bath Time] Cleaned the corgi 10 times (sprinklers, rivers, rain, etc.)
     - [Bark Bark!] Scare 10 birds/cats/insects
-    - [] Complete all levels
+    - [Man's Best Friend] Complete all levels
     - Hidden achievements / easter eggs
         - [On The Loose] Escape the map (backyard)
         - [Data Dog] A reference to Ein, from Cowboy Bebop
