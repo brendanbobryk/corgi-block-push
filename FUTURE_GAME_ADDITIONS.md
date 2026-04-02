@@ -46,7 +46,8 @@ Organized below are groupings of additions yet to be added to the game.
     - Easy: 7 x 7
     - Medium: 10 x 10
     - Hard: 15 x 15
-    - Expert & Dev Level: 20 x 20
+    - Expert: 20 x 20 
+    - Dev Level: 20 x 20
 
 - Main menu
     - Play
