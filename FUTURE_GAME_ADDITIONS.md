@@ -42,7 +42,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Achieve perfect completion on every level
 
 - Grid size increase as levels progressively climb
-    - Tutorial: 7 x 7 (or reduce to 5 x 5)
+    - Tutorial: 7 x 7 (may reduce to 5 x 5 given the simplicity)
     - Easy: 7 x 7
     - Medium: 10 x 10
     - Hard: 15 x 15
