@@ -13,7 +13,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Rain 🌧️☔
 
 - Obstacles
-    - Cars 🚗🚙🚕🚓🚐🛻 (+ moving hazard)
+    - Cars 🚗🚙🚕🚓🚐🛻 (+ moving hazard) (if chosen to be a hazard)
         - cause game over alike poop
     - Logs 🪵
         - Immovable object alike trees
