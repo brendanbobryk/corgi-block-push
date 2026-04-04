@@ -13,7 +13,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Rain 🌧️☔
 
 - Obstacles
-    - Cars 🚗🚙🚕🚓🚐🛻 (+ moving)
+    - Cars 🚗🚙🚕🚓🚐🛻 (+ moving hazard)
     - Logs 🪵
         - Immovable object alike trees
     - Bees 🐝 (+ moving)
