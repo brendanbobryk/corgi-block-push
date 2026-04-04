@@ -16,7 +16,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Cars 🚗🚙🚕🚓🚐🛻 (+ moving hazard)
     - Logs 🪵
         - Immovable object alike trees
-    - Bees 🐝 (+ moving)
+    - Bees 🐝 (+ moving hazard)
         - Cause game over alike poop
 
 - "Perfect Completion"
