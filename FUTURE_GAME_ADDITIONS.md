@@ -12,11 +12,11 @@ Organized below are groupings of additions yet to be added to the game.
     - River 🌊
     - Rain 🌧️☔
 
-- Obstacles/Hazards
-    - Cars 🚗🚙🚕🚓🚐🛻 (+ moving hazard)
+- Hazards
+    - Cars 🚗🚙🚕🚓🚐🛻 (+ moving)
         - cause game over alike poop
         - might be too theoretically grotesque of a hazard
-    - Bees 🐝 (+ moving hazard)
+    - Bees 🐝 (+ moving)
         - Cause game over alike poop
 
 - "Perfect Completion"
