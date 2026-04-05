@@ -15,10 +15,7 @@ Organized below are groupings of additions yet to be added to the game.
 - Obstacles/Hazards
     - Cars 🚗🚙🚕🚓🚐🛻 (+ moving hazard)
         - cause game over alike poop
-        - might be too theoretically grotesque of a hazard 
-    - Logs 🪵
-        - Immovable object alike trees
-        - Mix with trees for walls
+        - might be too theoretically grotesque of a hazard
     - Bees 🐝 (+ moving hazard)
         - Cause game over alike poop
 
@@ -90,7 +87,6 @@ Organized below are groupings of additions yet to be added to the game.
         - Vary between different trees?
     - Bushes
     - Logs 🪵
-        - See obstacles/hazards
 
 - Pushable block assets
     - Toy ball (Tennis ball) ⚽🔵🏀🟡
