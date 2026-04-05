@@ -33,7 +33,7 @@ Organized below are groupings of additions yet to be added to the game.
     - [Explore the Backyard] Traversed every space in a level
     - [Stinker] Attempt to enter the house while dirty
     - [Fetch!] Push a ball 10 spaces
-    - [Snack Time] Eat 10 treats
+    - [Snack Time] Collect 10 treats
     - [Bath Time] Cleaned the corgi 10 times (sprinklers, rivers, rain, etc.)
     - [Bark Bark!] Scare 10 birds/cats/insects
     - [Man's Best Friend] Complete all levels
