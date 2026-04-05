@@ -12,7 +12,7 @@ Organized below are groupings of additions yet to be added to the game.
     - River 🌊
     - Rain 🌧️☔
 
-- Obstacles
+- Obstacles/Hazards
     - Cars 🚗🚙🚕🚓🚐🛻 (+ moving hazard)
         - cause game over alike poop
         - might be too theoretically grotesque of a hazard 
