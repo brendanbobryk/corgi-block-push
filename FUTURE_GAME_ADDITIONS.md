@@ -14,8 +14,9 @@ Organized below are groupings of additions yet to be added to the game.
 
 - Hazards
     - Cars 🚗🚙🚕🚓🚐🛻 (+ moving)
-        - cause game over alike poop
-        - might be too theoretically grotesque of a hazard
+        - Cause game over alike poop
+        - Might be too theoretically grotesque of a hazard
+            - Perhaps use outside the backyard as a misc. asset instead
     - Bees 🐝 (+ moving)
         - Cause game over alike poop
 
