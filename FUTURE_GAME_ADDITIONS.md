@@ -18,6 +18,7 @@ Organized below are groupings of additions yet to be added to the game.
         - might be too theoretically grotesque of a hazard 
     - Logs 🪵
         - Immovable object alike trees
+        - Mix with trees for walls
     - Bees 🐝 (+ moving hazard)
         - Cause game over alike poop
 
