@@ -89,6 +89,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Trees 🌳🌲
         - Vary between different trees?
     - Bushes
+    - Logs 🪵
 
 - Pushable block assets
     - Toy ball (Tennis ball) ⚽🔵🏀🟡
