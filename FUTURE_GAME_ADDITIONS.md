@@ -25,7 +25,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Mark a star per level as achieved
 
 - Achievement system (Tutorials do not grant achievements)
-    - [] Finished first tutorial level
+    - [Adoption Day] Finished first tutorial level
     - [Potty Trained] Finished all tutorial levels
     - [Come Here Boy!] Made it home for the first time
     - [Yuckie!] Stepped in poop for the first time
