@@ -28,6 +28,7 @@ Organized below are groupings of additions yet to be added to the game.
     - [Adoption Day] Finished first tutorial level
     - [Potty Trained] Finished all tutorial levels
     - [Come Here Boy!] Made it home for the first time
+    - [Man's Best Friend] Complete all levels
     - [Yuckie!] Stepped in poop for the first time
     - [Ouchie!] Stung by a bee for the first time
     - [Explore the Backyard] Traversed every space in a level
@@ -36,7 +37,6 @@ Organized below are groupings of additions yet to be added to the game.
     - [Snack Time] Collect 10 treats
     - [Bath Time] Cleaned the corgi 10 times (sprinklers, rivers, rain, etc.)
     - [Bark Bark!] Scare 10 birds/cats/insects
-    - [Man's Best Friend] Complete all levels
     - Hidden achievements / easter eggs
         - [On The Loose] Escape the map (backyard)
         - [Data Dog] A reference to Ein, from Cowboy Bebop
