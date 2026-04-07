@@ -13,7 +13,6 @@ Organized below are groupings of additions yet to be added to the game.
     - Rain 🌧️☔
 
 - Hazards
-    - Cars 🚗🚙🚕🚓🚐🛻
     - Bees 🐝 (+ moving)
         - Cause game over alike poop
 
