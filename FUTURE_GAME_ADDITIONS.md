@@ -13,10 +13,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Rain 🌧️☔
 
 - Hazards
-    - Cars 🚗🚙🚕🚓🚐🛻 (+ moving)
-        - Cause game over alike poop
-        - Might be too theoretically grotesque of a hazard
-            - Perhaps use outside the backyard as a misc. asset instead
+    - Cars 🚗🚙🚕🚓🚐🛻
     - Bees 🐝 (+ moving)
         - Cause game over alike poop
 
