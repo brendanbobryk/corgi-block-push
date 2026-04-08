@@ -71,7 +71,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Exit (to main menu)
     
 ## Assets
-- Background assets
+- Tile assets
     - Grass 🟩
     - Paths
         - Dirt
