@@ -80,7 +80,7 @@ Organized below are groupings of additions yet to be added to the game.
     
         
 
-- Background assets
+- Background assets (outside of game grid)
     - Cars 🚗🚙🚕🚓🚐🛻
         - Moving outside of game grid (outside fence, see below)
 
