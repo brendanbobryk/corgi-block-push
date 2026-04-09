@@ -98,7 +98,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Unlock customizations through achievements
     - Customizations
         - Corgi colour
-            - Orange or Tri-colour
+            - Orange/White or Tri-colour
             - Mixed-breeds?
                 - Spots
                 - Longer fur (husky-like)
