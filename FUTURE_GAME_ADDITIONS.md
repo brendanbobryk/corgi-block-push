@@ -101,6 +101,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Orange or Tri-colour
             - Mixed-breeds?
                 - Spots
+                - Longer fur (husky-like)
         - Corgi gender 
             - Male or Female (change bark sounds?)
         - Hats (+ colour/pattern variations)
