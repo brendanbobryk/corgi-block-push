@@ -100,8 +100,8 @@ Organized below are groupings of additions yet to be added to the game.
         - Corgi colour
             - Orange/White or Tri-colour
             - Hair patterns
-                - Boot-like paws
                 - Variations of fur colour patterns
+                - Boot-like paws
             - Mixed-breeds?
                 - Spots
                 - Longer fur (husky-like)
