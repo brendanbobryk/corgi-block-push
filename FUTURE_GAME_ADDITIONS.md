@@ -99,7 +99,8 @@ Organized below are groupings of additions yet to be added to the game.
     - Customizations
         - Corgi colour
             - Orange or Tri-colour
-            - Spots?
+            - Mixed-breeds?
+                - Spots
         - Corgi gender 
             - Male or Female (change bark sounds?)
         - Hats (+ colour/pattern variations)
