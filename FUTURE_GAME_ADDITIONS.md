@@ -114,6 +114,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Pirate hat
             - Bucket hat
             - Ball cap
+            - Top hat
         - Raincoat (+ colour variations)
         - Shoes (+ colour variations)
             - Rainboots
