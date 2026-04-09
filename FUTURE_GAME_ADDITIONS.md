@@ -109,7 +109,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Male or Female
                 - Higher/Lower pitch bark sounds
         - Hats (+ colour/pattern variations)
-            - Crown from Queen achievement
+            - Crown/Tiara from Queen achievement
             - Propeller hat
             - Pirate hat
             - Bucket hat
