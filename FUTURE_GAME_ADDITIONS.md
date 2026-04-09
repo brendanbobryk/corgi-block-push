@@ -101,6 +101,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Orange/White or Tri-colour
             - Hair patterns
                 - Boot-like paws
+                - Variations of fur colour patterns
             - Mixed-breeds?
                 - Spots
                 - Longer fur (husky-like)
