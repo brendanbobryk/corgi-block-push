@@ -99,6 +99,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Customizations
         - Corgi colour
             - Orange/White or Tri-colour
+            - Hair patterns
             - Mixed-breeds?
                 - Spots
                 - Longer fur (husky-like)
