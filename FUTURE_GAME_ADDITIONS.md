@@ -111,7 +111,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Corgi age
             - Puppy or Mid-aged
                 - Higher/Lower pitch bark sounds
-                - Sprite model size variance
+                - Sprite model size variance (small-medium)
         - Hats (+ colour/pattern variations)
             - Crown/Tiara from Queen achievement
             - Propeller hat
