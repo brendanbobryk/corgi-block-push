@@ -109,6 +109,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Male or Female
                 - Higher/Lower pitch bark sounds
         - Corgi age
+            - Puppy or Mid-aged
         - Hats (+ colour/pattern variations)
             - Crown/Tiara from Queen achievement
             - Propeller hat
