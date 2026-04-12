@@ -95,7 +95,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Rope
 
 - Sprite assests
-    - Unlock customizations through achievements
+    - Unlock some customizations through achievements, others default
     - Customizations
         - Corgi colour
             - Orange/White or Tri-colour
