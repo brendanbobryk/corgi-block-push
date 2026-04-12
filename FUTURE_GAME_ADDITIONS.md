@@ -129,6 +129,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Suit (formal)
         - Harness (+ colour variations)
         - Collar (+ colour variations)
+        - Bandana
 
 - Misc.
     - Ambient birds flying away when corgi passes by
