@@ -96,6 +96,7 @@ Organized below are groupings of additions yet to be added to the game.
 
 - Sprite assests
     - Unlock progression
+        - Customizations as rewards for obtaining achievements
     - Customizations
         - Corgi colour
             - Orange/White or Tri-colour
