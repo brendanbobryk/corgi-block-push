@@ -99,6 +99,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Customizations as rewards for obtaining achievements
         - Have some unlocked by defult
         - Unlock more as you progress level completion
+            - Colours and patterns?
     - Customizations
         - Corgi colour
             - Orange/White or Tri-colour
