@@ -124,7 +124,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Ball cap
             - Top hat
         - Raincoat (+ colour/pattern variations)
-        - Shoes (+ colour variations)
+        - Shoes (+ colour/pattern variations)
             - Rainboots
             - Boots
             - Runners/sneakers
