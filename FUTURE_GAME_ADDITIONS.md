@@ -123,7 +123,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Bucket hat
             - Ball cap
             - Top hat
-        - Raincoat (+ colour variations)
+        - Raincoat (+ colour/pattern variations)
         - Shoes (+ colour variations)
             - Rainboots
             - Boots
