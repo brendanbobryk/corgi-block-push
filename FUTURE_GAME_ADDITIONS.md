@@ -140,6 +140,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Pattern variations:
             - plaid
             - pride (rainbow)
+            - checkered (B/W)
         - colour variations:
             - primaries (red/blue/green/yellow/purple/pink/orange)
             - secondaries (cyan/teal/majenta/maroon)
