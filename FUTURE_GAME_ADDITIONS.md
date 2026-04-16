@@ -141,6 +141,7 @@ Organized below are groupings of additions yet to be added to the game.
             - plaid
             - pride (rainbow)
         - colour variations:
+            - primaries (red/blue/green/yellow/purple/pink/orange)
 
 - Misc.
     - Ambient birds flying away when corgi passes by
