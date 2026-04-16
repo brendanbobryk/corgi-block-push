@@ -138,6 +138,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Bow (for head) (+ colour/pattern variations)
 
         - Pattern variations:
+            - plaid
 
 - Misc.
     - Ambient birds flying away when corgi passes by
