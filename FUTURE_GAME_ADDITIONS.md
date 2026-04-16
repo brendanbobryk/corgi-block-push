@@ -140,6 +140,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Pattern variations:
             - plaid
             - pride (rainbow)
+        - colour variations:
 
 - Misc.
     - Ambient birds flying away when corgi passes by
