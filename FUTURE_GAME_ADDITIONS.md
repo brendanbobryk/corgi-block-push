@@ -142,6 +142,7 @@ Organized below are groupings of additions yet to be added to the game.
             - pride (rainbow)
         - colour variations:
             - primaries (red/blue/green/yellow/purple/pink/orange)
+            - secondaries (cyan/teal/majenta/maroon)
 
 - Misc.
     - Ambient birds flying away when corgi passes by
