@@ -106,6 +106,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Hair patterns
                 - Variations of fur colour patterns
                 - Boot-like paws
+                - Round or shaggy bum
             - Mixed-breeds?
                 - Spots
                 - Longer fur (husky-like)
