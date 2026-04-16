@@ -137,6 +137,8 @@ Organized below are groupings of additions yet to be added to the game.
         - Bandana (+ colour/pattern variations)
         - Bow (for head) (+ colour/pattern variations)
 
+        - Pattern variations:
+
 - Misc.
     - Ambient birds flying away when corgi passes by
     - Ambient cats that run into bushes/trees when corgi passes near
