@@ -145,7 +145,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Santa suit w/ hat
             - Easter
                 - Easter bunny onezie
-            - Valentines Day
+            - Valentine's Day
                 - Cupid w/ wings
             - Thanksgiving
                 - Turkey
