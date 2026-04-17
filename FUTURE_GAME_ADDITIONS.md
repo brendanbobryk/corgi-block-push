@@ -143,6 +143,8 @@ Organized below are groupings of additions yet to be added to the game.
                 - Pumpkin
             - Christmas
                 - Santa suit w/ hat
+            - Easter
+                - Easter bunny onezie
 
         - Pattern variations:
             - plaid
