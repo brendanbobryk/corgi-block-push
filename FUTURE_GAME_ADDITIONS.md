@@ -137,6 +137,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Bandana (+ colour/pattern variations)
         - Bow (for head) (+ colour/pattern variations)
         - Halloween~ish costumes
+            - Dragon
 
         - Pattern variations:
             - plaid
