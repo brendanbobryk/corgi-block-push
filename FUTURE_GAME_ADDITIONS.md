@@ -139,6 +139,8 @@ Organized below are groupings of additions yet to be added to the game.
         - Holiday costumes
             - Halloween
                 - Dragon
+            - Christmas
+                - Santa hat
 
         - Pattern variations:
             - plaid
