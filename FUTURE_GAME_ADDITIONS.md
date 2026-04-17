@@ -140,7 +140,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Halloween
                 - Dragon
             - Christmas
-                - Santa hat
+                - Santa suit w/ hat
 
         - Pattern variations:
             - plaid
