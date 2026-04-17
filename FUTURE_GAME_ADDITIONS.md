@@ -139,6 +139,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Holiday costumes
             - Halloween
                 - Dragon
+                - Bat
             - Christmas
                 - Santa suit w/ hat
 
