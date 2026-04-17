@@ -140,6 +140,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Halloween
                 - Dragon
                 - Bat
+                - Pumpkin
             - Christmas
                 - Santa suit w/ hat
 
