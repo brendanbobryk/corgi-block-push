@@ -145,6 +145,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Christmas
                 - Santa suit w/ hat
                 - Elf
+                - Present
             - Easter
                 - Easter bunny onezie
                 - Egg w/ cracked hat
