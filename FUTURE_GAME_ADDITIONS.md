@@ -148,7 +148,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Present w/ bow
             - Easter
                 - Easter bunny onezie
-                - Egg w/ cracked hat
+                - Egg w/ cracked egg cap
             - Valentine's Day
                 - Cupid w/ wings
             - Thanksgiving
