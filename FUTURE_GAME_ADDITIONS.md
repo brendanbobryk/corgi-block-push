@@ -143,7 +143,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Pumpkin
                 - Bee
             - Christmas
-                - Santa suit w/ hat
+                - Santa suit w/ hat & beard
                 - Elf
                 - Present
             - Easter
