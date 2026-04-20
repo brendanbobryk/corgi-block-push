@@ -150,7 +150,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Easter bunny onezie
                 - Egg w/ cracked egg cap
             - Valentine's Day
-                - Cupid w/ wings
+                - Cupid w/ wings & bow/arrow/quiver
             - Thanksgiving
                 - Turkey
 
