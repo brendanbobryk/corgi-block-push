@@ -142,6 +142,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Bat
                 - Pumpkin
                 - Bee
+                - Bread loaf
             - Christmas
                 - Santa suit w/ hat & beard
                 - Elf
