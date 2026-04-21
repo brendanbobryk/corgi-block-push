@@ -153,6 +153,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Cupid w/ wings & bow/arrow/quiver
             - Thanksgiving
                 - Turkey
+            - Birthday
 
         - Pattern variations:
             - plaid
