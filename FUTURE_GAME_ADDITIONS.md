@@ -154,6 +154,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Thanksgiving
                 - Turkey
             - Birthday
+                - Birthday hat
 
         - Pattern variations:
             - plaid
