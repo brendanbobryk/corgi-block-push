@@ -148,6 +148,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Elf
                 - Present w/ bow
                 - String lights w/ tree hat
+                - Snowman
             - Easter
                 - Easter bunny onezie w/ ears & tail
                 - Egg w/ cracked egg cap
