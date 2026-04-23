@@ -188,7 +188,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Bark 
             - When obtaining a treat
             - Arriving home
-            - When vehicle siren passes
+            - On vehicle horn/siren (see below)
             - On keybind press
         - Misc. environment
             - Vehicle horns & sirens
