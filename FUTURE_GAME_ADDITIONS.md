@@ -190,6 +190,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Arriving home
             - On vehicle horn/siren (see below)
             - On keybind press
+        - Panting
         - Misc. environment
             - Vehicle horns & sirens
             - Birds chirping
