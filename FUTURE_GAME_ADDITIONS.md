@@ -191,6 +191,7 @@ Organized below are groupings of additions yet to be added to the game.
             - On vehicle horn/siren (see below)
             - On keybind press
         - Panting
+            - After moving multiple spaces quickly
         - Misc. environment
             - Vehicle horns & sirens
             - Birds chirping
