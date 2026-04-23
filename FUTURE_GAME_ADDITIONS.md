@@ -21,7 +21,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Rewarded for completing a level with the minimum move count
         - Mark a star per level as achieved
 
-- Achievement system (Tutorials do not grant achievements)
+- Achievement system (Tutorials do not grant achievements) (+ notification sound)
     - [Adoption Day] Finished first tutorial level
     - [Potty Trained] Finished all tutorial levels
     - [Come Here Boy!] Made it home for the first time
