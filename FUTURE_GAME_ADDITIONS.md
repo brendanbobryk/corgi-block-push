@@ -191,7 +191,7 @@ Organized below are groupings of additions yet to be added to the game.
             - When vehicle siren passes
             - On keybind press
         - Misc. environment
-            - Car horns & sirens
+            - Vehicle horns & sirens
             - Birds chirping
             - Insect noises
                 - Bees buzzing
