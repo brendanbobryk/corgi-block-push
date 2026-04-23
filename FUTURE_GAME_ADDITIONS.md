@@ -15,6 +15,7 @@ Organized below are groupings of additions yet to be added to the game.
 - Hazards
     - Bees 🐝 (+ moving)
         - Cause game over alike poop
+        - Trigger game over sound effect
 
 - "Perfect Completion"
     - Rewarded for completing a level with the minimum move count
