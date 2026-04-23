@@ -183,7 +183,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Sounds effects
         - Level complete
         - Stepped in poop
-        - Stung by bee
+        - [Game over] Stung by bee
         - Achievement obtained
         - Bark 
             - When obtaining a treat
