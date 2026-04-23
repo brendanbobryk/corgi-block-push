@@ -199,6 +199,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Button presses in menus (main menu and ingame options)
             - Main menu
             - Ingame options
+            - Level selection
 
 ## Misc.
 - Per-level tutorial instructions
