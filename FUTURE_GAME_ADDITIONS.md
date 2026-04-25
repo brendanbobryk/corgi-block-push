@@ -197,6 +197,7 @@ Organized below are groupings of additions yet to be added to the game.
             - On game over
                 - Stepped in poop
                 - Stung by bee
+            - On attempt to arrive home dirty
         - Misc. environment
             - Vehicle horns & sirens
             - Birds chirping
