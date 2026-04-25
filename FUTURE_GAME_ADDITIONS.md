@@ -174,6 +174,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Emotes
         - Sit
         - Lay down
+        - Spin
 
 - Misc.
     - Ambient birds flying away when corgi passes by
