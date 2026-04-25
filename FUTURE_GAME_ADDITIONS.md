@@ -192,7 +192,7 @@ Organized below are groupings of additions yet to be added to the game.
             - On keybind press
         - Panting
             - After moving multiple spaces quickly
-            - After being cleaned
+            - After being cleaned (from any source)
         - Misc. environment
             - Vehicle horns & sirens
             - Birds chirping
