@@ -173,6 +173,7 @@ Organized below are groupings of additions yet to be added to the game.
             - complimentary pairs (blue-pink, purple-yellow)
     - Emotes
         - Sit
+        - Lay down
 
 - Misc.
     - Ambient birds flying away when corgi passes by
