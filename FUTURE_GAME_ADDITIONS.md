@@ -193,6 +193,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Panting
             - After moving multiple spaces quickly
             - After being cleaned (from any source)
+        - Whine
         - Misc. environment
             - Vehicle horns & sirens
             - Birds chirping
