@@ -194,6 +194,7 @@ Organized below are groupings of additions yet to be added to the game.
             - After moving multiple spaces quickly
             - After being cleaned (from any source)
         - Whine
+            - On game loss
         - Misc. environment
             - Vehicle horns & sirens
             - Birds chirping
