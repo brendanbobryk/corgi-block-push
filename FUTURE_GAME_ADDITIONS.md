@@ -195,6 +195,7 @@ Organized below are groupings of additions yet to be added to the game.
             - After being cleaned (from any source)
         - Whine
             - On game over
+                - Stepped in poop
                 - Stung by bee
         - Misc. environment
             - Vehicle horns & sirens
