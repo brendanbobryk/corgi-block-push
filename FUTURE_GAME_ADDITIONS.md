@@ -176,6 +176,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Lay down
         - Spin
         - Roll over
+        - Shake (a paw)
 
 - Misc.
     - Ambient birds flying away when corgi passes by
