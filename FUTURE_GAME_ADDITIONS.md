@@ -180,6 +180,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Speak (bark) (+ keybind press)
         - Play dead
         - Jump
+        - Dance
 
 - Misc.
     - Ambient birds flying away when corgi passes by
