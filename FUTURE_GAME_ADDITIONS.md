@@ -179,6 +179,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Shake a paw
         - Speak (bark) (+ keybind press)
         - Play dead
+        - Jump
 
 - Misc.
     - Ambient birds flying away when corgi passes by
