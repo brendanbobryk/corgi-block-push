@@ -156,6 +156,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Baby chick
             - Valentine's Day
                 - Cupid w/ wings & bow/arrow/quiver
+                - Box of chocolates
             - Thanksgiving
                 - Turkey w/ tail
             - Birthday
