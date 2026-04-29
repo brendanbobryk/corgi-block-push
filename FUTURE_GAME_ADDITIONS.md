@@ -157,6 +157,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Valentine's Day
                 - Cupid w/ wings & bow/arrow/quiver
                 - Box of chocolates
+                - Rose bouqet
             - Thanksgiving
                 - Turkey w/ tail
             - Birthday
