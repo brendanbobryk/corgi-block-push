@@ -234,6 +234,6 @@ Organized below are groupings of additions yet to be added to the game.
 
 - Time tracker? (+ optional toggle)
     - Per level
-        - Best time saved & displayed
+        - Best time saved & displayed alongside best move count
     - Until game completion
         - Game speedrun mode in play menu?
