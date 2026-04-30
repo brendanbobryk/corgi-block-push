@@ -234,4 +234,5 @@ Organized below are groupings of additions yet to be added to the game.
 
 - Time tracker? (+ optional toggle)
     - Per level
+        - Best time saved & displayed
     - Until game completion
