@@ -236,3 +236,4 @@ Organized below are groupings of additions yet to be added to the game.
     - Per level
         - Best time saved & displayed
     - Until game completion
+        - Game speedrun mode in play menu?
