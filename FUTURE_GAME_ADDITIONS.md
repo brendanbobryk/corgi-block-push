@@ -232,6 +232,6 @@ Organized below are groupings of additions yet to be added to the game.
 
 - Random level button?
 
-- Time tracker? (+ toggle)
+- Time tracker? (+ optional toggle)
     - Per level
     - Until game completion
