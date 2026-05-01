@@ -190,39 +190,39 @@ Organized below are groupings of additions yet to be added to the game.
     - Ambient birds flying away when corgi passes by
     - Ambient cats that run into bushes/trees when corgi passes near
 
-    - Sounds effects
-        - Level complete
-        - [Game over] Stepped in poop
-        - [Game over] Stung by bee
-        - Achievement obtained
-        - Bark 
-            - When obtaining a treat
-            - Arriving home
-            - On vehicle horn/siren (see below)
-            - On keybind press
-        - Panting
-            - After moving multiple spaces quickly
-            - After being cleaned (from any source)
-        - Whine
-            - On game over
-                - Stepped in poop
-                - Stung by bee
-            - On attempt to arrive home while dirty
-        - Misc. environment
-            - Vehicle horns & sirens
-            - Birds chirping
-            - Insect noises
-                - Bees buzzing
-                - Bees, crickets 🦗
-        - Button presses
-            - Main menu
-            - Ingame options
-            - Level selection
-
 ## Audio
 - Music
     - Background level song
     - Main menu song
+
+- Sounds effects
+    - Level complete
+    - [Game over] Stepped in poop
+    - [Game over] Stung by bee
+    - Achievement obtained
+    - Bark 
+        - When obtaining a treat
+        - Arriving home
+        - On vehicle horn/siren (see below)
+        - On keybind press
+    - Panting
+        - After moving multiple spaces quickly
+        - After being cleaned (from any source)
+    - Whine
+        - On game over
+            - Stepped in poop
+            - Stung by bee
+        - On attempt to arrive home while dirty
+    - Misc. environment
+        - Vehicle horns & sirens
+        - Birds chirping
+        - Insect noises
+            - Bees buzzing
+            - Bees, crickets 🦗
+    - Button presses
+        - Main menu
+        - Ingame options
+        - Level selection
 
 ## Misc.
 - Per-level tutorial instructions
