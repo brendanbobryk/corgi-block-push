@@ -169,6 +169,7 @@ Organized below are groupings of additions yet to be added to the game.
             - checkered (B/W)
             - striped
             - paw prints
+            
         - Colour variations:
             - primaries (red/blue/green/yellow/purple/pink/orange)
             - secondaries (cyan/teal/majenta/maroon)
