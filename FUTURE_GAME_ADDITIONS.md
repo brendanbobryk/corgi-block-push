@@ -190,10 +190,6 @@ Organized below are groupings of additions yet to be added to the game.
     - Ambient birds flying away when corgi passes by
     - Ambient cats that run into bushes/trees when corgi passes near
 
-    - Music
-        - Background level song
-        - Main menu song
-
     - Sounds effects
         - Level complete
         - [Game over] Stepped in poop
@@ -224,6 +220,9 @@ Organized below are groupings of additions yet to be added to the game.
             - Level selection
 
 ## Audio
+- Music
+    - Background level song
+    - Main menu song
 
 ## Misc.
 - Per-level tutorial instructions
