@@ -223,6 +223,8 @@ Organized below are groupings of additions yet to be added to the game.
             - Ingame options
             - Level selection
 
+## Audio
+
 ## Misc.
 - Per-level tutorial instructions
     - Introduce new mechanic/block/item per tutorial level
