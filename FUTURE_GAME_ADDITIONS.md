@@ -173,18 +173,19 @@ Organized below are groupings of additions yet to be added to the game.
             - primaries (red/blue/green/yellow/purple/pink/orange)
             - secondaries (cyan/teal/majenta/maroon)
             - complimentary pairs (blue-pink, purple-yellow)
-    - Emotes
-        - Sit
-        - Lay down
-        - Spin
-        - Roll over
-        - Shake a paw
-        - Speak (bark) (+ keybind press)
-        - Play dead
-        - Jump
-        - Dance
-        - Sleep
-        - Lick/kiss
+
+        - Emotes
+            - Sit
+            - Lay down
+            - Spin
+            - Roll over
+            - Shake a paw
+            - Speak (bark) (+ keybind press)
+            - Play dead
+            - Jump
+            - Dance
+            - Sleep
+            - Lick/kiss
 
 - Misc.
     - Ambient birds flying away when corgi passes by
