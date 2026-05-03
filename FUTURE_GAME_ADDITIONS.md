@@ -125,11 +125,12 @@ Organized below are groupings of additions yet to be added to the game.
             - Bucket hat
             - Ball cap
             - Top hat
-        - Raincoat (+ colour/pattern variations)
+        
         - Shoes (+ colour/pattern variations)
             - Rainboots
             - Boots
             - Runners/sneakers
+            
         - Bow/bowtie/tie (+ colour/pattern variations)
         - Sweater (+ colour/pattern variations)
         - Suit (formal)
@@ -137,7 +138,8 @@ Organized below are groupings of additions yet to be added to the game.
         - Collar (+ colour variations)
         - Bandana (+ colour/pattern variations)
         - Bow (for head) (+ colour/pattern variations)
-        
+        - Raincoat (+ colour/pattern variations)
+
         - Holiday costumes:
             - Halloween
                 - Dragon
