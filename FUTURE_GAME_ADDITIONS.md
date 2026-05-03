@@ -104,6 +104,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Customizations
         - Corgi colour
             - Orange/White or Tri-colour
+
             - Hair patterns
                 - Variations of fur colour patterns
                 - Boot-like paws
@@ -111,13 +112,16 @@ Organized below are groupings of additions yet to be added to the game.
             - Mixed-breeds?
                 - Spots
                 - Longer fur (husky-like)
+
         - Corgi gender 
             - Male or Female
                 - Higher/Lower pitch bark sounds
+
         - Corgi age
             - Puppy or Mid-aged
                 - Higher/Lower pitch bark sounds
                 - Physical size variance (small/medium/large character sprite)
+
         - Hats (+ colour/pattern variations)
             - Crown/Tiara from Queen achievement
             - Propeller hat
@@ -130,7 +134,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Rainboots
             - Boots
             - Runners/sneakers
-            
+
         - Bow/bowtie/tie (+ colour/pattern variations)
         - Sweater (+ colour/pattern variations)
         - Suit (formal)
