@@ -124,19 +124,17 @@ Organized below are groupings of additions yet to be added to the game.
                 - Physical size variance (small/medium/large character sprite)
 
         - Corgi clothes
-
-        - Hats (+ colour/pattern variations)
-            - Crown/Tiara from Queen achievement
-            - Propeller hat
-            - Pirate hat
-            - Bucket hat
-            - Ball cap
-            - Top hat
-        
-        - Shoes (+ colour/pattern variations)
-            - Rainboots
-            - Boots
-            - Runners/sneakers
+            - Hats (+ colour/pattern variations)
+                - Crown/Tiara from Queen achievement
+                - Propeller hat
+                - Pirate hat
+                - Bucket hat
+                - Ball cap
+                - Top hat
+            - Shoes (+ colour/pattern variations)
+                - Rainboots
+                - Boots
+                - Runners/sneakers
 
         - Bow/bowtie/tie (+ colour/pattern variations)
         - Sweater (+ colour/pattern variations)
