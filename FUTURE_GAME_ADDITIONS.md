@@ -143,46 +143,45 @@ Organized below are groupings of additions yet to be added to the game.
                 - Rainboots
                 - Boots
                 - Runners/sneakers
+            - Holiday costumes:
+                - Halloween
+                    - Dragon
+                    - Bat
+                    - Pumpkin
+                    - Bee
+                    - Bread loaf
+                - Christmas
+                    - Santa suit w/ hat & beard
+                    - Elf
+                    - Present w/ bow
+                    - String lights w/ tree hat
+                    - Snowman
+                - Easter
+                    - Easter bunny onezie w/ ears & tail
+                    - Egg w/ cracked egg cap
+                    - Baby chick
+                - Valentine's Day
+                    - Cupid w/ wings & bow/arrow/quiver
+                    - Box of chocolates
+                    - Rose bouquet
+                - Thanksgiving
+                    - Turkey w/ tail
+                - Birthday
+                    - Birthday hat & ribbon
 
-        - Holiday costumes:
-            - Halloween
-                - Dragon
-                - Bat
-                - Pumpkin
-                - Bee
-                - Bread loaf
-            - Christmas
-                - Santa suit w/ hat & beard
-                - Elf
-                - Present w/ bow
-                - String lights w/ tree hat
-                - Snowman
-            - Easter
-                - Easter bunny onezie w/ ears & tail
-                - Egg w/ cracked egg cap
-                - Baby chick
-            - Valentine's Day
-                - Cupid w/ wings & bow/arrow/quiver
-                - Box of chocolates
-                - Rose bouquet
-            - Thanksgiving
-                - Turkey w/ tail
-            - Birthday
-                - Birthday hat & ribbon
-
-        - Pattern variations:
-            - plaid
-            - pride (rainbow)
-            - checkered (B/W)
-            - striped
-            - paw prints
+            - Pattern variations:
+                - plaid
+                - pride (rainbow)
+                - checkered (B/W)
+                - striped
+                - paw prints
             
-        - Colour variations:
-            - primaries (red/blue/green/yellow/purple/pink/orange)
-            - secondaries (cyan/teal/majenta/maroon)
-            - complimentary pairs (blue-pink, purple-yellow)
+            - Colour variations:
+                - primaries (red/blue/green/yellow/purple/pink/orange)
+                - secondaries (cyan/teal/majenta/maroon)
+                - complimentary pairs (blue-pink, purple-yellow)
 
-        - Emotes
+        - Corgi Emotes
             - Sit
             - Lay down
             - Spin
