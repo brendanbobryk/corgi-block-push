@@ -124,6 +124,14 @@ Organized below are groupings of additions yet to be added to the game.
                 - Physical size variance (small/medium/large character sprite)
 
         - Corgi clothes
+            - Bow/bowtie/tie (+ colour/pattern variations)
+            - Sweater (+ colour/pattern variations)
+            - Suit (formal)
+            - Harness (+ colour variations)
+            - Collar (+ colour variations)
+            - Bandana (+ colour/pattern variations)
+            - Bow (for head) (+ colour/pattern variations)
+            - Raincoat (+ colour/pattern variations)
             - Hats (+ colour/pattern variations)
                 - Crown/Tiara from Queen achievement
                 - Propeller hat
@@ -135,15 +143,6 @@ Organized below are groupings of additions yet to be added to the game.
                 - Rainboots
                 - Boots
                 - Runners/sneakers
-
-        - Bow/bowtie/tie (+ colour/pattern variations)
-        - Sweater (+ colour/pattern variations)
-        - Suit (formal)
-        - Harness (+ colour variations)
-        - Collar (+ colour variations)
-        - Bandana (+ colour/pattern variations)
-        - Bow (for head) (+ colour/pattern variations)
-        - Raincoat (+ colour/pattern variations)
 
         - Holiday costumes:
             - Halloween
