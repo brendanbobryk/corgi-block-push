@@ -202,6 +202,7 @@ Organized below are groupings of additions yet to be added to the game.
 - Music
     - Main menu song
     - Background level song
+        - Pause music while in pause menu
 
 - Sounds effects
     - Level complete
