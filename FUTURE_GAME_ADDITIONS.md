@@ -200,7 +200,6 @@ Organized below are groupings of additions yet to be added to the game.
 
 ## Audio
 - Music
-    - Background level song
     - Main menu song
 
 - Sounds effects
