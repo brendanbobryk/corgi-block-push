@@ -135,7 +135,6 @@ Organized below are groupings of additions yet to be added to the game.
             - Hats (+ colour/pattern variations)
                 - Crown/Tiara from Queen achievement
                 - Propeller hat
-                - Pirate hat
                 - Bucket hat
                 - Ball cap
                 - Top hat
