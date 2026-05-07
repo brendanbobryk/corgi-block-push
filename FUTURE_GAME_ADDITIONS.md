@@ -156,6 +156,7 @@ Organized below are groupings of additions yet to be added to the game.
                     - Present w/ bow
                     - String lights w/ tree hat
                     - Snowman
+                    - Gingerbread man
                 - Easter
                     - Easter bunny onezie w/ ears & tail
                     - Egg w/ cracked egg cap
