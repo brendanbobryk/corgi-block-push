@@ -51,6 +51,7 @@ Organized below are groupings of additions yet to be added to the game.
 
 - Main menu
     - Play
+        - Normal mode
     - Customizations (see assets)
     - Achievements (show completed & locked, sorted w completed first)
     - Options/Settings
