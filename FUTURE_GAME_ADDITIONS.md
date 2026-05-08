@@ -53,6 +53,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Play
         - Normal mode
         - Speedrun mode
+        - Time trial
     - Customizations (see assets)
     - Achievements (show completed & locked, sorted w completed first)
     - Options/Settings
