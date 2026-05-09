@@ -62,7 +62,7 @@ Organized below are groupings of additions yet to be added to the game.
                     - 2 mins per level
                 - Hard: 4.5 mins
                     - 1.5 mins per level
-                - Expert: 3 mins
+                - Expert: 1 mins
                     - 1 min per level
     - Customizations (see assets)
     - Achievements (show completed & locked, sorted w completed first)
