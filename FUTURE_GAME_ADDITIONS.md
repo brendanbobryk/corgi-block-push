@@ -59,6 +59,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Easy: 10 mins
                 - Medium: 7 mins
                 - Hard: 5 mins
+                    - 1.5 mins per level
                 - Expert: 3 mins
                     - 1 min per level
     - Customizations (see assets)
