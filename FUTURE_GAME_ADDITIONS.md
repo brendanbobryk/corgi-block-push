@@ -58,6 +58,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Select difficulty and attempt to complete each level before time runs out
                 - Easy: 10 mins
                 - Medium: 7 mins
+                    - 2 mins per level
                 - Hard: 5 mins
                     - 1.5 mins per level
                 - Expert: 3 mins
