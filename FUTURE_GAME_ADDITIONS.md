@@ -60,6 +60,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Medium: 7 mins
                 - Hard: 5 mins
                 - Expert: 3 mins
+                    - 1 min per level
     - Customizations (see assets)
     - Achievements (show completed & locked, sorted w completed first)
     - Options/Settings
