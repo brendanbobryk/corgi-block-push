@@ -56,6 +56,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Normal mode but displays an added timer
         - Time trial
             - Select difficulty and attempt to complete each level before time runs out
+                - Easy: 10 mins
     - Customizations (see assets)
     - Achievements (show completed & locked, sorted w completed first)
     - Options/Settings
