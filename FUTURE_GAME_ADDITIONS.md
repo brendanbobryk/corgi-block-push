@@ -55,6 +55,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Speedrun mode
             - Normal mode but displays an added timer
         - Time trial
+            - Select difficulty and attempt to complete each level before time runs out
     - Customizations (see assets)
     - Achievements (show completed & locked, sorted w completed first)
     - Options/Settings
