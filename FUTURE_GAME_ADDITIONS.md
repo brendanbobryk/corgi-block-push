@@ -57,6 +57,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Time trial
             - Select difficulty and attempt to complete each level before time runs out
                 - Easy: 10 mins
+                    - 2.5 mins per level
                 - Medium: 7 mins
                     - 2 mins per level
                 - Hard: 5 mins
