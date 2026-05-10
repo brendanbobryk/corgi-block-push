@@ -67,7 +67,7 @@ Organized below are groupings of additions yet to be added to the game.
                     - Currently 3 level(s)
                 - Expert: 1 min(s)
                     - 1 min(s) per level
-                    - Currently x level(s)
+                    - Currently 1 level(s)
     - Customizations (see assets)
     - Achievements (show completed & locked, sorted w completed first)
     - Options/Settings
