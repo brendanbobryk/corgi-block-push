@@ -64,6 +64,7 @@ Organized below are groupings of additions yet to be added to the game.
                     - Currently x levels
                 - Hard: 4.5 min(s)
                     - 1.5 min(s) per level
+                    - Currently x levels
                 - Expert: 1 min(s)
                     - 1 min(s) per level
     - Customizations (see assets)
