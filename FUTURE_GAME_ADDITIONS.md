@@ -58,6 +58,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Select difficulty and attempt to complete each level before time runs out
                 - Easy: 7.5 min(s)
                     - 2.5 min(s) per level
+                    - Currently x levels
                 - Medium: 6 min(s)
                     - 2 min(s) per level
                 - Hard: 4.5 min(s)
