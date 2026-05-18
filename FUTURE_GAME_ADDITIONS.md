@@ -55,6 +55,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Speedrun mode
             - Normal mode but displays an added timer
             - Tracks personal best(s)
+                - Arcade-style username/score tracking
         - Time trial
             - Select difficulty and attempt to complete each level before time runs out
                 - Easy: 7.5 min(s)
