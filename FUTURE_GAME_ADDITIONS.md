@@ -71,8 +71,9 @@ Organized below are groupings of additions yet to be added to the game.
                     - 1 min(s) per level
                         - Currently 1 level(s)
     - Customizations (see assets)
-    - Achievements (sorted w completed first)
+    - Achievements
         - Show completed, locked, & hidden
+        - Sorted by completed first
     - Options/Settings
         - Volume
             - Music (+ on/off)
