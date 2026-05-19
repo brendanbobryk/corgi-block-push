@@ -72,7 +72,7 @@ Organized below are groupings of additions yet to be added to the game.
                         - Currently 1 level(s)
     - Customizations (see assets)
     - Achievements
-        - Show completed, locked, & hidden
+        - Show completed (w/ description), locked (w/ description), & hidden
         - Sorted by completed first, locked second, hidden last
     - Options/Settings
         - Volume
