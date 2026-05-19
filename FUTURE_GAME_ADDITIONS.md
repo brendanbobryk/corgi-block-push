@@ -73,7 +73,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Customizations (see assets)
     - Achievements
         - Show completed, locked, & hidden
-        - Sorted by completed first
+        - Sorted by completed first, locked second, hidden last
     - Options/Settings
         - Volume
             - Music (+ on/off)
