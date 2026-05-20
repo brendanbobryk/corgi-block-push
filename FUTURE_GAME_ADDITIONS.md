@@ -78,7 +78,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Volume 🔇🔈🔉🔊
             - Music (+ on/off) 🎵
             - Sound effects (+ on/off) 📢
-        - Controls
+        - Controls ⌨️🖱️
             - < v ^ > to wasd?
             - Bark keybind
     - Credits 💼🧠
