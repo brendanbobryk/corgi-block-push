@@ -17,9 +17,9 @@ Organized below are groupings of additions yet to be added to the game.
         - Cause game over alike poop
         - Trigger game over sound effect
 
-- "Perfect Completion"
+- "Perfect Completion" 💯
     - Rewarded for completing a level with the minimum move count
-        - Mark a star per level as achieved
+        - Mark a star per level as achieved ⭐
 
 - Achievement system (Tutorials do not grant achievements) (+ notification sound)
     - [Adoption Day] Finished first tutorial level
