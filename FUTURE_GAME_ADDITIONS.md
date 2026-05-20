@@ -12,7 +12,7 @@ Organized below are groupings of additions yet to be added to the game.
     - River 🌊
     - Rain 🌧️☔
 
-- Hazards
+- Hazards 🚨❗
     - Bees 🐝 (+ moving)
         - Cause game over alike poop
         - Trigger game over sound effect
