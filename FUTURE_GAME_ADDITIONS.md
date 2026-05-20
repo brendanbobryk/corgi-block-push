@@ -88,7 +88,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Quit (close game)
 
 - Pause/Settings (Menu/Cog icon in game) ⚙️🛠️
-    - Achievements (see above)
+    - Achievements (see above) 🏆
     - Options/Settings (see above)
     - Exit (to main menu)
     
