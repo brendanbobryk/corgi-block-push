@@ -89,7 +89,7 @@ Organized below are groupings of additions yet to be added to the game.
 
 - Pause/Settings (Menu/Cog icon in game) ⚙️🛠️
     - Achievements (see above) 🏆
-    - Options/Settings (see above)
+    - Options/Settings (see above) ⚙️🛠️
     - Exit (to main menu)
     
 ## Assets
