@@ -58,13 +58,13 @@ Organized below are groupings of additions yet to be added to the game.
                 - Arcade-style username/score tracking
         - Time trial ⏰⌛
             - Select difficulty and attempt to complete each level before time runs out
-                - Easy: 7.5 min(s)
+                - Easy: 7.5 min(s) 🟢
                     - 2.5 min(s) per level
                         - Currently 3 level(s)
-                - Medium: 6 min(s)
+                - Medium: 6 min(s) 🟡
                     - 2 min(s) per level
                         - Currently 3 level(s)
-                - Hard: 4.5 min(s)
+                - Hard: 4.5 min(s) 🔴
                     - 1.5 min(s) per level
                         - Currently 3 level(s)
                 - Expert: 1 min(s)
