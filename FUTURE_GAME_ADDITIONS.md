@@ -74,7 +74,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Achievements 🏆
         - Show completed, locked (both w/ description), & hidden (w/o description)
         - Sorted by completed first, locked second, hidden last
-    - Options/Settings
+    - Options/Settings ⚙️🛠️
         - Volume
             - Music (+ on/off)
             - Sound effects (+ on/off)
