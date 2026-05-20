@@ -50,7 +50,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Dev Level: 20 x 20
 
 - Main menu
-    - Play
+    - Play 🕹️
         - Normal mode
         - Speedrun mode 🔥
             - Normal mode but displays an added timer
