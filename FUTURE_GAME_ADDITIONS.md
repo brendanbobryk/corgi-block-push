@@ -71,7 +71,7 @@ Organized below are groupings of additions yet to be added to the game.
                     - 1 min(s) per level
                         - Currently 1 level(s)
     - Customizations (see assets)
-    - Achievements
+    - Achievements 🏆
         - Show completed, locked (both w/ description), & hidden (w/o description)
         - Sorted by completed first, locked second, hidden last
     - Options/Settings
