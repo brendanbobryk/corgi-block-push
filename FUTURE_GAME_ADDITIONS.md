@@ -76,7 +76,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Sorted by completed first, locked second, hidden last
     - Options/Settings ⚙️🛠️
         - Volume 🔇🔈🔉🔊
-            - Music (+ on/off)
+            - Music (+ on/off) 🎵
             - Sound effects (+ on/off)
         - Controls
             - < v ^ > to wasd?
