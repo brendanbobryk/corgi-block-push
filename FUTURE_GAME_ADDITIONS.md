@@ -70,7 +70,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Expert: 1 min(s)
                     - 1 min(s) per level
                         - Currently 1 level(s)
-    - Customizations (see assets)
+    - Customizations (see assets) 🐶
     - Achievements 🏆
         - Show completed, locked (both w/ description), & hidden (w/o description)
         - Sorted by completed first, locked second, hidden last
