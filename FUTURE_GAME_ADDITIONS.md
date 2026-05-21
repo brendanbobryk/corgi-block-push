@@ -83,7 +83,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Bark keybind
     - Credits 💼🧠
         - Dev(s)
-        - Music
+        - Music 🎵
         - Assets
     - Quit (close game)
 
