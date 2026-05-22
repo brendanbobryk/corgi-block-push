@@ -23,7 +23,7 @@ Organized below are groupings of additions yet to be added to the game.
 
 - Achievement system (Tutorials do not grant achievements) (+ notification sound)
     - ⭐ [Adoption Day] Finished first tutorial level
-    - [Potty Trained] Finished all tutorial levels
+    - ⭐ [Potty Trained] Finished all tutorial levels
     - [Come Here Boy!] Made it home for the first time
     - [Man's Best Friend] Complete all levels
     - [Yuckie!] Stepped in poop for the first time
