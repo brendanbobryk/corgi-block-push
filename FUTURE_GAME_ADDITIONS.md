@@ -29,7 +29,7 @@ Organized below are groupings of additions yet to be added to the game.
     - ⭐ [Yuckie!] Stepped in poop for the first time
     - ⭐ [Ouchie!] Stung by a bee for the first time
     - ⭐ [Explore the Backyard] Traversed every space in a level
-    - [Stinker] Attempt to enter the house while dirty
+    - ⭐ [Stinker] Attempt to enter the house while dirty
     - [Fetch!] Push a ball 10 spaces
     - [Snack Time] Collect 10 treats
     - [Bath Time] Cleaned the corgi 10 times (sprinklers, rivers, rain, etc.)
