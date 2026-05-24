@@ -36,7 +36,7 @@ Organized below are groupings of additions yet to be added to the game.
     - ⭐ [Bark Bark!] Scare 10 birds/cats/insects
     - Hidden achievements / easter eggs
         - ⭐ [On The Loose] Escape the map (backyard)
-        - [Data Dog] A reference to Ein, from Cowboy Bebop
+        - ⭐ [Data Dog] A reference to Ein, from Cowboy Bebop
             - Level completed with minimum move count
         - [Your Royal Corg] A reference to the Queen's corgis
             - Achieve perfect completion on every level
