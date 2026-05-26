@@ -93,7 +93,8 @@ Organized below are groupings of additions yet to be added to the game.
             - Level completed with minimum move count
         - ⭐ [Your Royal Corg] A reference to the Queen's corgis
             - Achieve perfect completion on every level
-        - ⭐ [Goose On The Loose]
+        
+            - ⭐ [Goose On The Loose] A reference to Untitled Goose Game
     
 ## Assets
 - Tile assets
