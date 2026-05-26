@@ -22,34 +22,6 @@ Organized below are groupings of additions yet to be added to the game.
         - Mark a star per level as achieved ⭐
 
 ## UI
-- Achievement system (Tutorials do not grant achievements) (+ notification sound)
-    - ⭐ [Adoption Day] Finished first tutorial level
-    - ⭐ [Potty Trained] Finished all tutorial levels
-    - ⭐ [Come Here Boy!] Made it home for the first time
-    - ⭐ [Man's Best Friend] Complete all levels
-    - ⭐ [Yuckie!] Stepped in poop for the first time
-    - ⭐ [Ouchie!] Stung by a bee for the first time
-    - ⭐ [Explore the Backyard] Traversed every space in a level
-    - ⭐ [Stinker] Attempt to enter the house while dirty
-    - ⭐ [Fetch!] Push a ball 10 spaces
-    - ⭐ [Snack Time] Collect 10 treats
-    - ⭐ [Bath Time] Cleaned the corgi 10 times (sprinklers, rivers, rain, etc.)
-    - ⭐ [Bark Bark!] Scare 10 birds/cats/insects
-    - Hidden achievements / easter eggs
-        - ⭐ [On The Loose] Escape the map (backyard)
-        - ⭐ [Data Dog] A reference to Ein, from Cowboy Bebop
-            - Level completed with minimum move count
-        - ⭐ [Your Royal Corg] A reference to the Queen's corgis
-            - Achieve perfect completion on every level
-
-- Grid size increase as levels progressively climb
-    - Tutorial: 7 x 7 (may reduce to 5 x 5 given the simplicity)
-    - Easy: 7 x 7
-    - Medium: 10 x 10
-    - Hard: 15 x 15
-    - Expert: 20 x 20 
-    - Dev Level: 20 x 20
-
 - Main menu
     - Play 👾
         - Normal mode 🕹️
@@ -92,6 +64,34 @@ Organized below are groupings of additions yet to be added to the game.
     - Achievements (see above) 🏆
     - Options/Settings (see above) ⚙️🛠️
     - Exit (to main menu) 🏠
+
+- Achievement system (Tutorials do not grant achievements) (+ notification sound)
+    - ⭐ [Adoption Day] Finished first tutorial level
+    - ⭐ [Potty Trained] Finished all tutorial levels
+    - ⭐ [Come Here Boy!] Made it home for the first time
+    - ⭐ [Man's Best Friend] Complete all levels
+    - ⭐ [Yuckie!] Stepped in poop for the first time
+    - ⭐ [Ouchie!] Stung by a bee for the first time
+    - ⭐ [Explore the Backyard] Traversed every space in a level
+    - ⭐ [Stinker] Attempt to enter the house while dirty
+    - ⭐ [Fetch!] Push a ball 10 spaces
+    - ⭐ [Snack Time] Collect 10 treats
+    - ⭐ [Bath Time] Cleaned the corgi 10 times (sprinklers, rivers, rain, etc.)
+    - ⭐ [Bark Bark!] Scare 10 birds/cats/insects
+    - Hidden achievements / easter eggs
+        - ⭐ [On The Loose] Escape the map (backyard)
+        - ⭐ [Data Dog] A reference to Ein, from Cowboy Bebop
+            - Level completed with minimum move count
+        - ⭐ [Your Royal Corg] A reference to the Queen's corgis
+            - Achieve perfect completion on every level
+
+- Grid size increase as levels progressively climb
+    - Tutorial: 7 x 7 (may reduce to 5 x 5 given the simplicity)
+    - Easy: 7 x 7
+    - Medium: 10 x 10
+    - Hard: 15 x 15
+    - Expert: 20 x 20 
+    - Dev Level: 20 x 20
     
 ## Assets
 - Tile assets
