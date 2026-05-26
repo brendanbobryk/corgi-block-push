@@ -95,6 +95,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Achieve perfect completion on every level
     - Non-corgi References:
         - ⭐ [Goose On The Loose] A reference to Untitled Goose Game
+            - Chase away a bird/goose
     
 ## Assets
 - Tile assets
