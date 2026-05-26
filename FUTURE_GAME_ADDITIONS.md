@@ -72,6 +72,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Achievements (see above) 🏆
     - Options/Settings (see above) ⚙️🛠️
     - Exit (to main menu) 🏠
+        - Main menu and/or close game?
 
 - Achievement system (Tutorials do not grant achievements) (+ notification sound)
     - ⭐ [Adoption Day] Finished first tutorial level
