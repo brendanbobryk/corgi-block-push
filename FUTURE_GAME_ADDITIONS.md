@@ -93,7 +93,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Level completed with minimum move count
         - ⭐ [Your Royal Corg] A reference to the Queen's corgis
             - Achieve perfect completion on every level
-        - ⭐
+        - ⭐ []
     
 ## Assets
 - Tile assets
