@@ -21,6 +21,14 @@ Organized below are groupings of additions yet to be added to the game.
     - Rewarded for completing a level with the minimum move count
         - Mark a star per level as achieved ⭐
 
+- Grid size increase as levels progressively climb
+    - Tutorial: 7 x 7 (may reduce to 5 x 5 given the simplicity)
+    - Easy: 7 x 7
+    - Medium: 10 x 10
+    - Hard: 15 x 15
+    - Expert: 20 x 20 
+    - Dev Level: 20 x 20
+
 ## UI
 - Main menu
     - Play 👾
@@ -84,14 +92,6 @@ Organized below are groupings of additions yet to be added to the game.
             - Level completed with minimum move count
         - ⭐ [Your Royal Corg] A reference to the Queen's corgis
             - Achieve perfect completion on every level
-
-- Grid size increase as levels progressively climb
-    - Tutorial: 7 x 7 (may reduce to 5 x 5 given the simplicity)
-    - Easy: 7 x 7
-    - Medium: 10 x 10
-    - Hard: 15 x 15
-    - Expert: 20 x 20 
-    - Dev Level: 20 x 20
     
 ## Assets
 - Tile assets
