@@ -21,6 +21,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Rewarded for completing a level with the minimum move count
         - Mark a star per level as achieved ⭐
 
+## UI
 - Achievement system (Tutorials do not grant achievements) (+ notification sound)
     - ⭐ [Adoption Day] Finished first tutorial level
     - ⭐ [Potty Trained] Finished all tutorial levels
