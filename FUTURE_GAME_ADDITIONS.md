@@ -90,6 +90,7 @@ Organized below are groupings of additions yet to be added to the game.
     - ⭐ [Zoomies] Finished a level in under 10 seconds
     - ⭐ [Cuddle Time] Made it home 10 times
     - ⭐ [Clean Paws] Made it home without becoming dirty
+        - Only obtainable on a level with dirt hazard
     - Hidden achievements / easter eggs
         - ⭐ [On The Loose] Escape the map (backyard)
         - ⭐ [Data Dog] A reference to Ein, from Cowboy Bebop
