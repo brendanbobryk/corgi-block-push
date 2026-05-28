@@ -88,7 +88,7 @@ Organized below are groupings of additions yet to be added to the game.
     - ⭐ [Bath Time] Cleaned the corgi 10 times (sprinklers, rivers, rain, etc.)
     - ⭐ [Bark Bark!] Scare 10 birds/cats/insects
     - ⭐ [Zoomies] Finished a level in under 10 seconds
-    - ⭐
+    - ⭐ [Cuddle Time]
     - Hidden achievements / easter eggs
         - ⭐ [On The Loose] Escape the map (backyard)
         - ⭐ [Data Dog] A reference to Ein, from Cowboy Bebop
