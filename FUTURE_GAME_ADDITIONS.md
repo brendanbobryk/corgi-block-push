@@ -94,6 +94,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Hidden achievements / easter eggs
         - ⭐ [On The Loose] Escape the map (backyard)
         - ⭐ [Professional Borker] Bark 100 times
+        - ⭐
         - ⭐ [Data Dog] A reference to Ein, from Cowboy Bebop
             - Level completed with minimum move count
         - ⭐ [Your Royal Corg] A reference to the Queen's corgis
