@@ -93,6 +93,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Only obtainable on a level with dirt hazard
     - Hidden achievements / easter eggs
         - ⭐ [On The Loose] Escape the map (backyard)
+        - ⭐
         - ⭐ [Data Dog] A reference to Ein, from Cowboy Bebop
             - Level completed with minimum move count
         - ⭐ [Your Royal Corg] A reference to the Queen's corgis
