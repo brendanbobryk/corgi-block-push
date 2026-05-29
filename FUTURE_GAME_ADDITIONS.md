@@ -225,7 +225,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Play dead
             - Jump
             - Dance
-            - Sleep
+            - Sleep (idle animation)
             - Lick/kiss
 
 - Misc.
