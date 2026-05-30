@@ -228,6 +228,8 @@ Organized below are groupings of additions yet to be added to the game.
             - Sleep (idle animation)
             - Lick/kiss
 
+        - Corgi Idle Animation(s)
+
 - Misc.
     - Ambient birds flying away when corgi passes by
     - Ambient cats that run into bushes/trees when corgi passes near
