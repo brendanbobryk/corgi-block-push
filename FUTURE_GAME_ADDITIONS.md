@@ -62,6 +62,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Controls ⌨️🖱️
             - < v ^ > to wasd?
             - Emote keybinds
+                - Bark, etc.
     - Credits 💼🧠
         - Dev(s) 💻👨‍💻
         - Music 🎵
