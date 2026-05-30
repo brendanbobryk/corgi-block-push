@@ -95,7 +95,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Hidden achievements / easter eggs
         - ⭐ [On The Loose] Escape the map (backyard)
         - ⭐ [Professional Borker] Bark 100 times
-        - ⭐ [Who Dug This Hole?] 
+        - ⭐ [Who Dug This Hole?] Dig 25 holes
         - ⭐ [Certified Loaf] Remain idle for 5 minutes
         - ⭐ [Data Dog] A reference to Ein, from Cowboy Bebop
             - Level completed with minimum move count
