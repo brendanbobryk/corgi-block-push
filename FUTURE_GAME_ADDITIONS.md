@@ -61,7 +61,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Sound effects (+ on/off) 📢
         - Controls ⌨️🖱️
             - < v ^ > to wasd?
-            - Emote keybinds (number keys?)
+            - Emote keybinds (default to number keys?)
                 - Bark, etc.
     - Credits 💼🧠
         - Dev(s) 💻👨‍💻
