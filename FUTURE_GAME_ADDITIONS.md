@@ -215,7 +215,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - secondaries (cyan/teal/majenta/maroon)
                 - complimentary pairs (blue-pink, purple-yellow)
 
-        - Corgi Emotes
+        - Corgi Emotes (+ optional keybinds)
             - Sit
             - Lay down
             - Spin
