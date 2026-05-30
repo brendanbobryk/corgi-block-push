@@ -229,6 +229,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Lick/kiss
 
         - Corgi Idle Animation(s)
+            - Sleep
 
 - Misc.
     - Ambient birds flying away when corgi passes by
