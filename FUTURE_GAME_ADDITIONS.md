@@ -221,7 +221,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Spin
             - Roll over
             - Shake a paw
-            - Speak (bark) (+ keybind press)
+            - Speak (bark)
             - Play dead
             - Jump
             - Dance
