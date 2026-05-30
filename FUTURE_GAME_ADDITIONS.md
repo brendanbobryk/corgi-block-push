@@ -231,6 +231,7 @@ Organized below are groupings of additions yet to be added to the game.
 
         - Corgi Idle Animation(s)
             - Sleep (Curl up in a ball)
+            - Lick
 
 - Misc.
     - Ambient birds flying away when corgi passes by
