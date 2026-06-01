@@ -61,6 +61,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Total treats collected
         - Total times corgi was cleaned
         - Total distance (tiles) travelled
+        - Total playtime
     - Options/Settings ⚙️🛠️
         - Volume 🔇🔈🔉🔊
             - Music (+ on/off) 🎵
