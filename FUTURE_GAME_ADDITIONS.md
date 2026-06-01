@@ -228,6 +228,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Jump
             - Dance
                 - Shake bum
+                - Jump up on hind legs and hop in circle
             - Nap
                 - Small zzz's coming from snout
             - Lick/kiss
