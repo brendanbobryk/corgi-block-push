@@ -67,6 +67,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Colourblind palette options
             - Adjustable UI scaling?
             - Screen shake toggle?
+            - Subtitles (for sounds)
     - Credits 💼🧠
         - Dev(s) 💻👨‍💻
         - Music 🎵
