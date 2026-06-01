@@ -68,6 +68,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Adjustable UI scaling?
             - Screen shake toggle?
             - Subtitles (for sounds)
+            - Screen flash reduction
     - Credits 💼🧠
         - Dev(s) 💻👨‍💻
         - Music 🎵
