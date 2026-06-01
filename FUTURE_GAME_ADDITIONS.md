@@ -59,6 +59,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Total moves
         - Total levels completed
         - Total treats collected
+        - Total times corgi was cleaned
     - Options/Settings ⚙️🛠️
         - Volume 🔇🔈🔉🔊
             - Music (+ on/off) 🎵
