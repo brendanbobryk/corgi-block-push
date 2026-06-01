@@ -228,6 +228,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Jump
             - Dance
             - Nap
+                - Small zzz's coming from snout
             - Lick/kiss
                 - Heart emojis around corgi head
             - Dig hole
