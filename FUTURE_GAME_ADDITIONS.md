@@ -229,6 +229,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Dance
             - Nap
             - Lick/kiss
+                - Heart emojis around corgi head
             - Dig hole
                 - Leave behind a small hole graphic on the tile
 
