@@ -63,6 +63,7 @@ Organized below are groupings of additions yet to be added to the game.
             - < v ^ > to wasd?
             - Emote keybinds (default to number keys?)
                 - Bark, etc.
+        - Accessibility
     - Credits 💼🧠
         - Dev(s) 💻👨‍💻
         - Music 🎵
