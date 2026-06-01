@@ -227,6 +227,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Play dead
             - Jump
             - Dance
+                - Shake bum
             - Nap
                 - Small zzz's coming from snout
             - Lick/kiss
