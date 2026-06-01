@@ -235,6 +235,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Heart emojis around corgi head
             - Dig hole
                 - Leave behind a small hole graphic on the tile
+                - Find hidden treats?
 
         - Corgi Idle Animation(s)
             - Sleep (Curl up in a ball)
