@@ -64,6 +64,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Emote keybinds (default to number keys?)
                 - Bark, etc.
         - Accessibility ♿
+            - Colourblind palette options
     - Credits 💼🧠
         - Dev(s) 💻👨‍💻
         - Music 🎵
