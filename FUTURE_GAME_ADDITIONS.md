@@ -65,6 +65,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Bark, etc.
         - Accessibility ♿
             - Colourblind palette options
+            - Adjustable UI scaling?
     - Credits 💼🧠
         - Dev(s) 💻👨‍💻
         - Music 🎵
