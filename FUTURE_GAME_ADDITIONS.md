@@ -179,7 +179,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Bandana (+ colour/pattern variations)
             - Bow (for head) (+ colour/pattern variations)
             - Raincoat (+ colour/pattern variations)
-            - Glasses
+            - Glasses (+ colour/pattern variations)
             - Hats (+ colour/pattern variations)
                 - Crown/Tiara from Queen achievement
                 - Propeller hat
