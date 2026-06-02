@@ -182,6 +182,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Glasses (+ colour/pattern variations)
                 - Regular glasses
                 - Sunglasses
+                - Motorcycle/skiing goggles
             - Hats (+ colour/pattern variations)
                 - Crown/Tiara from Queen achievement
                 - Propeller hat
