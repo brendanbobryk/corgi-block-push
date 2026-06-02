@@ -181,6 +181,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Raincoat (+ colour/pattern variations)
             - Glasses (+ colour/pattern variations)
                 - Regular glasses
+                - Sunglasses
             - Hats (+ colour/pattern variations)
                 - Crown/Tiara from Queen achievement
                 - Propeller hat
