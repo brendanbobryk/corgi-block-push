@@ -181,6 +181,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Raincoat (+ colour/pattern variations)
             - Glasses (+ colour/pattern variations)
                 - Regular glasses
+                    - Round, square, etc.
                 - Sunglasses
                 - Motorcycle/skiing goggles
             - Hats (+ colour/pattern variations)
