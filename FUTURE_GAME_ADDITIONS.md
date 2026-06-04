@@ -128,6 +128,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Flowers
     - Bird baths
     - Picnic tables
+    - Dog houses
 
 - Background assets (outside of game grid)
     - Cars 🚗🚙🚕🚓🚐🛻 (+ moving)
