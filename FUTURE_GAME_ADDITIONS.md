@@ -184,6 +184,7 @@ Organized below are groupings of additions yet to be added to the game.
                     - Round, square, etc.
                 - Sunglasses
                 - Motorcycle/skiing goggles
+            - Misc. Back Assessories
             - Hats (+ colour/pattern variations)
                 - Crown/Tiara from Queen achievement
                 - Propeller hat
