@@ -187,7 +187,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Misc. Back Assessories (+ colour/pattern variations)
                 - Backpack
                 - Wings
-                - Cape
+                - Cape (w/ superhero mask)
             - Hats (+ colour/pattern variations)
                 - Crown/Tiara from Queen achievement
                 - Propeller hat
