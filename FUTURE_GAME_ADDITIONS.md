@@ -185,6 +185,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Sunglasses
                 - Motorcycle/skiing goggles
             - Misc. Back Assessories (+ colour/pattern variations)
+                - Backpack
             - Hats (+ colour/pattern variations)
                 - Crown/Tiara from Queen achievement
                 - Propeller hat
