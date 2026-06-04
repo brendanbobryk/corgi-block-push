@@ -125,7 +125,8 @@ Organized below are groupings of additions yet to be added to the game.
         - Dirt
         - Tile/brick
         - Sidewalk
-    
+    - Flowers
+
 - Background assets (outside of game grid)
     - Cars 🚗🚙🚕🚓🚐🛻 (+ moving)
         - Outside fence, see below
