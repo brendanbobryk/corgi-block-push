@@ -126,6 +126,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Tile/brick
         - Sidewalk
     - Flowers
+        - Flower patches
     - Bird baths
     - Picnic tables
     - Dog houses
