@@ -136,6 +136,8 @@ Organized below are groupings of additions yet to be added to the game.
     - Cars 🚗🚙🚕🚓🚐🛻 (+ moving)
         - Outside fence, see below
 
+- Weather assets
+
 - Wall assets
     - Backyard fence border for the trim of the game grid
     - Trees 🌳🌲
