@@ -141,6 +141,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Rainy 🌧️
         - Creates puddles
     - Windy 🍃
+    - Foggy 🌫️
 
 - Wall assets
     - Backyard fence border for the trim of the game grid
