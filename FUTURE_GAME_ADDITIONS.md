@@ -147,6 +147,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Spring 🌸
             - Rain showers
         - Summer ☀️
+            - Passing clouds/shadows
         - Autumn 🍂
             - Falling leaves
         - Winter ❄️
