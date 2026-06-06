@@ -149,6 +149,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Puddles
         - Summer ☀️
             - Passing clouds/shadows
+            - Light rays
         - Autumn 🍂
             - Falling leaves
         - Winter ❄️
