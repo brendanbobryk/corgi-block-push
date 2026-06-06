@@ -144,6 +144,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Foggy 🌫️
         - Limited visibility challenge levels
     - Seasonal Variants
+        - Spring 🌸
     
 
 - Wall assets
