@@ -146,6 +146,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Seasonal Variants
         - Spring 🌸
             - Rain showers
+            - Puddles
         - Summer ☀️
             - Passing clouds/shadows
         - Autumn 🍂
