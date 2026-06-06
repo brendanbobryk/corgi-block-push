@@ -150,6 +150,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Autumn 🍂
             - Falling leaves
         - Winter ❄️
+            - Snow-covered tiles/objects
 
 - Wall assets
     - Backyard fence border for the trim of the game grid
