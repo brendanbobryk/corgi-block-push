@@ -145,8 +145,8 @@ Organized below are groupings of additions yet to be added to the game.
         - Limited visibility challenge levels
     - Seasonal Variants
         - Spring 🌸
+        - Summer ☀️
     
-
 - Wall assets
     - Backyard fence border for the trim of the game grid
     - Trees 🌳🌲
