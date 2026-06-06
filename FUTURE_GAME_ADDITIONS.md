@@ -145,6 +145,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Limited visibility challenge levels
     - Seasonal Variants
         - Spring 🌸
+            - Rain showers
         - Summer ☀️
         - Autumn 🍂
             - Falling leaves
