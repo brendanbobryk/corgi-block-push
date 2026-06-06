@@ -151,6 +151,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Autumn 🍂
             - Falling leaves
         - Winter ❄️
+            - Snow fall w/ snowflakes
             - Snow-covered tiles/objects
 
 - Wall assets
