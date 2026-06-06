@@ -143,6 +143,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Windy 🍃
     - Foggy 🌫️
         - Limited visibility challenge levels
+    - Seasonal Variants
     
 
 - Wall assets
