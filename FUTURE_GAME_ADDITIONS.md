@@ -147,6 +147,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Spring 🌸
         - Summer ☀️
         - Autumn 🍂
+        - Winter ❄️
 
 - Wall assets
     - Backyard fence border for the trim of the game grid
