@@ -151,7 +151,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Passing clouds/shadows
             - Light rays
         - Autumn 🍂
-            - Falling leaves
+            - Falling leaves blowing in wind
         - Winter ❄️
             - Snow fall w/ snowflakes
             - Snow-covered tiles/objects
