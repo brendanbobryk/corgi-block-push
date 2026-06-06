@@ -136,13 +136,14 @@ Organized below are groupings of additions yet to be added to the game.
     - Cars 🚗🚙🚕🚓🚐🛻 (+ moving)
         - Outside fence, see below
 
-- Weather assets
+- Environment/Weather assets
     - Sunny ☀️
     - Rainy 🌧️
         - Creates puddles
     - Windy 🍃
     - Foggy 🌫️
         - Limited visibility challenge levels
+    
 
 - Wall assets
     - Backyard fence border for the trim of the game grid
