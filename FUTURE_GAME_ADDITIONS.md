@@ -146,7 +146,8 @@ Organized below are groupings of additions yet to be added to the game.
     - Seasonal Variants
         - Spring 🌸
         - Summer ☀️
-    
+        - Autumn 🍂
+
 - Wall assets
     - Backyard fence border for the trim of the game grid
     - Trees 🌳🌲
