@@ -147,6 +147,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Spring 🌸
         - Summer ☀️
         - Autumn 🍂
+            - Falling leaves
         - Winter ❄️
 
 - Wall assets
