@@ -297,6 +297,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Squirrels
         - Rabbits
         - Frogs
+        - Cats
 
 ## Audio
 - Music
