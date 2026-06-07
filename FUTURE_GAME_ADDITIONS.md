@@ -292,7 +292,7 @@ Organized below are groupings of additions yet to be added to the game.
 - Misc.
     - Ambient birds flying away when corgi passes by
     - Ambient cats that run into bushes/trees when corgi passes near
-    - Ambient squirrels that run into bushes/trees when corgi approaches
+    - Ambient animals that run into bushes/trees when corgi approaches
 
 ## Audio
 - Music
