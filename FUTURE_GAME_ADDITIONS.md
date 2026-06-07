@@ -297,6 +297,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Ambient animals that run into bushes/trees when corgi approaches
         - Squirrels
         - Rabbits
+        - Frogs
 
 ## Audio
 - Music
