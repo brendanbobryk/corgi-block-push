@@ -292,11 +292,11 @@ Organized below are groupings of additions yet to be added to the game.
 - Misc.
     - Ambient animals flying away when corgi passes by
         - Birds
-        - Buitterflies
+        - Buitterflies 🦋
     - Ambient animals that run into bushes/trees when corgi approaches
-        - Squirrels
-        - Rabbits
-        - Frogs
+        - Squirrels 🐿️
+        - Rabbits 🐇
+        - Frogs 🐸
         - Cats
 
 ## Audio
