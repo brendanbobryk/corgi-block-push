@@ -109,7 +109,7 @@ Organized below are groupings of additions yet to be added to the game.
     - ⭐ [Clean Paws] Made it home without becoming dirty
         - Only obtainable on a level with dirt hazard
     - ⭐ [Full Tummy] Obtain all treats
-    - Hidden achievements / easter eggs
+    - Hidden achievements / easter eggs:
         - ⭐ [On The Loose] Escape the map (backyard)
         - ⭐ [Professional Borker] Bark 100 times
         - ⭐ [Who Dug This Hole?] Dig 25 holes
@@ -121,6 +121,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Non-corgi References:
         - ⭐ [Goose On The Loose] A reference to Untitled Goose Game
             - Chase away a bird/goose
+    - Mode dependant:
     
 ## Assets
 - Tile assets
