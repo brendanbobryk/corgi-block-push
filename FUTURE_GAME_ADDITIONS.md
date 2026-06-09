@@ -123,7 +123,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Chase away a bird/goose
     - Mode dependant:
         - ⭐ [Habitual Hound] Complete 7 daily challenges
-        - ⭐ [Dedicated Doggo]
+        - ⭐ [Dedicated Doggo] Complete 30 daily challenges
 
 ## Assets
 - Tile assets
