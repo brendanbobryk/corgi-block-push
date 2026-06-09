@@ -119,6 +119,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Level completed with minimum move count
         - ⭐ [Your Royal Corg] A reference to the Queen's corgis
             - Achieve perfect completion on every level
+            - Unlocks crown accessory
     - Non-corgi References:
         - ⭐ [Goose On The Loose] A reference to Untitled Goose Game
             - Chase away a bird/goose
