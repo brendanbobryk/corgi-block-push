@@ -284,6 +284,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Speak (bark)
             - Play dead
             - Jump
+            - Stretch
             - Dance
                 - Shake bum
                 - Jump up on hind legs and hop in circle
