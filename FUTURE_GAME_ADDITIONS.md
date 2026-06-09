@@ -241,6 +241,7 @@ Organized below are groupings of additions yet to be added to the game.
                     - Bee
                     - Bread loaf
                     - Pirate w/ eyepatch & peg-leg?
+                    - Astronaut
                 - Christmas
                     - Santa suit w/ hat & beard
                     - Elf
