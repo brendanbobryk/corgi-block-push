@@ -300,6 +300,8 @@ Organized below are groupings of additions yet to be added to the game.
             - Sleep (Curl up in a ball) + Yawn
             - Lick (Stick up back leg)
             - Scratch ear
+        
+        - House Variants
 
 - Misc.
     - Ambient animals flying away when corgi passes by
