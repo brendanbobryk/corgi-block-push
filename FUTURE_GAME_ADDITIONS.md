@@ -302,6 +302,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Scratch ear
         
         - House Variants
+            - Cottage
 
 - Misc.
     - Ambient animals flying away when corgi passes by
