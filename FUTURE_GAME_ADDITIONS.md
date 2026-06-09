@@ -52,6 +52,7 @@ Organized below are groupings of additions yet to be added to the game.
                     - 1 min(s) per level
                         - Currently 1 level(s)
         - Daily challenge mode
+            - One puzzle per day
     - Customizations (see assets) 🐶
     - Achievements 🏆
         - Show completed, locked (both w/ description), & hidden (w/o description)
