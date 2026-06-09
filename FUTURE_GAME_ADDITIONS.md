@@ -123,7 +123,8 @@ Organized below are groupings of additions yet to be added to the game.
             - Chase away a bird/goose
     - Mode dependant:
         - ⭐
-    
+        - ⭐
+
 ## Assets
 - Tile assets
     - Grass 🟩
