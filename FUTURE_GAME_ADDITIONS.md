@@ -297,7 +297,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Find hidden treats?
 
         - Corgi Idle Animation(s)
-            - Sleep (Curl up in a ball)
+            - Sleep (Curl up in a ball) + Yawn
             - Lick (Stick up back leg)
             - Scratch ear
 
