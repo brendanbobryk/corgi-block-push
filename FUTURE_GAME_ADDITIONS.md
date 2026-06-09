@@ -109,7 +109,7 @@ Organized below are groupings of additions yet to be added to the game.
     - ⭐ [Clean Paws] Made it home without becoming dirty
         - Only obtainable on a level with dirt hazard
     - ⭐ [Full Tummy] Obtain all treats
-    - ⭐
+    - ⭐ [Nappies]
     - Hidden achievements / easter eggs:
         - ⭐ [On The Loose] Escape the map (backyard)
         - ⭐ [Professional Borker] Bark 100 times
