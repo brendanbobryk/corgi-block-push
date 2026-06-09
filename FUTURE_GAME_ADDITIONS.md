@@ -122,7 +122,7 @@ Organized below are groupings of additions yet to be added to the game.
         - ⭐ [Goose On The Loose] A reference to Untitled Goose Game
             - Chase away a bird/goose
     - Mode dependant:
-        - ⭐ [Habitual Hound]
+        - ⭐ [Habitual Hound] Complete 7 daily challenges
         - ⭐ [Dedicated Doggo]
 
 ## Assets
