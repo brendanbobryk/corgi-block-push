@@ -304,6 +304,7 @@ Organized below are groupings of additions yet to be added to the game.
         - House Variants
             - Cottage
             - Barn/Farm house
+            - Castle
 
 - Misc.
     - Ambient animals flying away when corgi passes by
