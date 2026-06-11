@@ -244,7 +244,7 @@ Organized below are groupings of additions yet to be added to the game.
                     - Pirate w/ eyepatch & peg-leg?
                     - Astronaut (from Cowboy Bebop achievement)
                     - Wizard
-                    - Knight
+                    - Knight w/ sword & shield
                 - Christmas
                     - Santa suit w/ hat & beard
                     - Elf
