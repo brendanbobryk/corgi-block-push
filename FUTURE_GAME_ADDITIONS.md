@@ -225,7 +225,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Wings
                 - Cape (w/ superhero mask)
             - Hats (+ colour/pattern variations)
-                - Crown/Tiara from Queen achievement
+                - Crown/Tiara (from Queen achievement)
                 - Propeller hat
                 - Bucket hat
                 - Ball cap
@@ -242,7 +242,7 @@ Organized below are groupings of additions yet to be added to the game.
                     - Bee
                     - Bread loaf
                     - Pirate w/ eyepatch & peg-leg?
-                    - Astronaut from Cowboy Bebop achievement
+                    - Astronaut (from Cowboy Bebop achievement)
                 - Christmas
                     - Santa suit w/ hat & beard
                     - Elf
