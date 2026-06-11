@@ -245,6 +245,7 @@ Organized below are groupings of additions yet to be added to the game.
                     - Astronaut (from Cowboy Bebop achievement)
                     - Wizard
                     - Knight w/ sword & shield
+                    - Detective w/ magnifying glass
                 - Christmas
                     - Santa suit w/ hat & beard
                     - Elf
