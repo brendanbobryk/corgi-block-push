@@ -117,6 +117,7 @@ Organized below are groupings of additions yet to be added to the game.
         - ⭐ [Certified Loaf] Remain idle for 5 minutes
         - ⭐ [Data Dog] A reference to Ein, from Cowboy Bebop
             - Level completed with minimum move count
+            - Unlocks astronaut accessory
         - ⭐ [Your Royal Corg] A reference to the Queen's corgis
             - Achieve perfect completion on every level
             - Unlocks crown accessory
