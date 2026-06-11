@@ -66,6 +66,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Total distance (tiles) travelled
         - Total playtime
         - Total barks
+        - Total restarts
     - Options/Settings ⚙️🛠️
         - Volume 🔇🔈🔉🔊
             - Music (+ on/off) 🎵
