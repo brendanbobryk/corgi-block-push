@@ -243,6 +243,7 @@ Organized below are groupings of additions yet to be added to the game.
                     - Bread loaf
                     - Pirate w/ eyepatch & peg-leg?
                     - Astronaut (from Cowboy Bebop achievement)
+                    - Wizard
                 - Christmas
                     - Santa suit w/ hat & beard
                     - Elf
