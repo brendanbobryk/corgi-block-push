@@ -67,6 +67,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Total playtime
         - Total barks
         - Total restarts
+        - Total times stepped in poop
     - Options/Settings ⚙️🛠️
         - Volume 🔇🔈🔉🔊
             - Music (+ on/off) 🎵
