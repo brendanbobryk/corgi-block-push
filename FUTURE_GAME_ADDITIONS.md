@@ -248,6 +248,7 @@ Organized below are groupings of additions yet to be added to the game.
                     - Detective w/ magnifying glass
                     - Cowboy w/ boots
                     - Shark
+                    - Hotdog
                 - Christmas
                     - Santa suit w/ hat & beard
                     - Elf
