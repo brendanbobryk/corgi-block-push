@@ -249,6 +249,7 @@ Organized below are groupings of additions yet to be added to the game.
                     - Cowboy w/ boots
                     - Shark
                     - Hotdog
+                    - Sushi
                 - Christmas
                     - Santa suit w/ hat & beard
                     - Elf
