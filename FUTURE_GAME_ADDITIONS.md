@@ -247,6 +247,7 @@ Organized below are groupings of additions yet to be added to the game.
                     - Knight w/ sword & shield
                     - Detective w/ magnifying glass
                     - Cowboy w/ boots
+                    - Shark
                 - Christmas
                     - Santa suit w/ hat & beard
                     - Elf
