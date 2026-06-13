@@ -154,6 +154,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Queue bark sound effect
     - Cats sitting on the fence
     - Birds landing on the fence
+    - Children bike riding past
 
 - Environment/Weather assets
     - Sunny ☀️
