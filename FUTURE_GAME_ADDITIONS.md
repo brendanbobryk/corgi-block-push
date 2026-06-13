@@ -68,6 +68,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Total barks
         - Total restarts
         - Total times stepped in poop
+        - Total times stung by bees
     - Options/Settings ⚙️🛠️
         - Volume 🔇🔈🔉🔊
             - Music (+ on/off) 🎵
