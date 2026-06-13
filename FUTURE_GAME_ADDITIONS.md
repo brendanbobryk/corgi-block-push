@@ -153,6 +153,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Mail carrier walking by
         - Queue bark sound effect
     - Cats sitting on the fence
+    - Birds landing on the fence
 
 - Environment/Weather assets
     - Sunny ☀️
