@@ -150,6 +150,7 @@ Organized below are groupings of additions yet to be added to the game.
 - Background assets (outside of game grid)
     - Cars 🚗🚙🚕🚓🚐🛻 (+ moving)
         - Outside fence, see below
+    - Mail carrier walking by
 
 - Environment/Weather assets
     - Sunny ☀️
