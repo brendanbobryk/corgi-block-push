@@ -151,6 +151,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Cars 🚗🚙🚕🚓🚐🛻 (+ moving)
         - Outside fence, see below
     - Mail carrier walking by
+        - Queue bark sound effect
 
 - Environment/Weather assets
     - Sunny ☀️
