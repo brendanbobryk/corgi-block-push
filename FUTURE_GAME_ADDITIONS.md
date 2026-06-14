@@ -17,7 +17,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Cause game over alike poop
         - Trigger game over sound effect
 
-- Fetch Zones
+- Fetch Zones (Name pending)
 
 - "Perfect Completion" 💯
     - Rewarded for completing a level with the minimum move count
