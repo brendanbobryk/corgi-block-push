@@ -18,7 +18,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Trigger game over sound effect
 
 - Fetch Zones (Name pending)
-    - Bring toy to marked location
+    - Bring toy to marked location (Seperate from home)
 
 - "Perfect Completion" 💯
     - Rewarded for completing a level with the minimum move count
