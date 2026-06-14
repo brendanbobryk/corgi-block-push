@@ -18,7 +18,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Trigger game over sound effect
 
 - Fetch Zones (Name pending)
-    - Optioanl level objective
+    - Optional level objective
     - Bring toy to marked location (Seperate from home)
 
 - "Perfect Completion" 💯
