@@ -17,6 +17,8 @@ Organized below are groupings of additions yet to be added to the game.
         - Cause game over alike poop
         - Trigger game over sound effect
 
+- Fetch Zones
+
 - "Perfect Completion" 💯
     - Rewarded for completing a level with the minimum move count
         - Mark a star per level as achieved ⭐
