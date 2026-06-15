@@ -59,7 +59,7 @@ Organized below are groupings of additions yet to be added to the game.
             - One puzzle per day
             - Tracks daily completion streak
         - Custom Level Creator
-            - Creat custom levels
+            - Create custom levels
             - Save locally
             - Sharable level codes
             - Community challenge levels?
