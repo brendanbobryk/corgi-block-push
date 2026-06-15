@@ -60,7 +60,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Tracks daily completion streak
         - Custom Level Creator
             - Create custom levels
-            - Save locally
+            - Save levels locally
             - Sharable level codes
             - Community challenge levels?
     - Customizations (see assets) 🐶
