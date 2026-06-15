@@ -61,6 +61,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Custom Level Creator
             - Creat custom levels
             - Save locally
+            - Sharable level codes
     - Customizations (see assets) 🐶
     - Achievements 🏆
         - Show completed, locked (both w/ description), & hidden (w/o description)
