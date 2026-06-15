@@ -58,6 +58,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Daily challenge mode
             - One puzzle per day
             - Tracks daily completion streak
+        - Custom Level Creator
     - Customizations (see assets) 🐶
     - Achievements 🏆
         - Show completed, locked (both w/ description), & hidden (w/o description)
