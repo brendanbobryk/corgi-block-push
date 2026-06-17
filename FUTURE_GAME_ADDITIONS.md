@@ -157,7 +157,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Picnic tables
     - Dog houses
 
-- Background assets (outside of game grid, behind bordering fence)
+- Background assets (outside of game grid, behind bordering fence) (+ moving)
     - Cars 🚗🚙🚕🚓🚐🛻 (+ moving)
     - Mail carrier walking by
         - Queue bark sound effect
