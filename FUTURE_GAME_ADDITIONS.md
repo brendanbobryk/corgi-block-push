@@ -64,6 +64,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Sharable level codes
             - Community challenge levels
                 - Favourites
+                - Rating system
     - Customizations 🐶
         - (see assets)
     - Achievements 🏆
