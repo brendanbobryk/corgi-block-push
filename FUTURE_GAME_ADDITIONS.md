@@ -65,6 +65,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Community challenge levels
                 - Favourites
                 - Rating system
+                - Featured levels
     - Customizations 🐶
         - (see assets)
     - Achievements 🏆
