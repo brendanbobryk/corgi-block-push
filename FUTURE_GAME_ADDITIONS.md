@@ -62,7 +62,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Create custom levels
             - Save levels locally
             - Sharable level codes
-            - Community challenge levels?
+            - Community challenge levels
     - Customizations 🐶
         - (see assets)
     - Achievements 🏆
