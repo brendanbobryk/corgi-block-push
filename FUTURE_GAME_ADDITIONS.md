@@ -63,6 +63,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Save levels locally
             - Sharable level codes
             - Community challenge levels
+                - Favouriting system
     - Customizations 🐶
         - (see assets)
     - Achievements 🏆
