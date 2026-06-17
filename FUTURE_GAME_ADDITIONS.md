@@ -66,6 +66,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Favourites
                 - Rating system
                 - Featured levels
+                - Custom challenge rules?
     - Customizations 🐶
         - (see assets)
     - Achievements 🏆
