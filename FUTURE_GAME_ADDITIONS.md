@@ -159,7 +159,6 @@ Organized below are groupings of additions yet to be added to the game.
 
 - Background assets (outside of game grid, behind bordering fence)
     - Cars 🚗🚙🚕🚓🚐🛻 (+ moving)
-        - Outside fence, see below
     - Mail carrier walking by
         - Queue bark sound effect
     - Cats sitting on the fence
