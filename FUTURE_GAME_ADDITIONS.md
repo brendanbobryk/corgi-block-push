@@ -157,7 +157,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Picnic tables
     - Dog houses
 
-- Background assets (outside of game grid)
+- Background assets (outside of game grid, behind bordering fence)
     - Cars 🚗🚙🚕🚓🚐🛻 (+ moving)
         - Outside fence, see below
     - Mail carrier walking by
