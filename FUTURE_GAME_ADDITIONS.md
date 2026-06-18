@@ -67,6 +67,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Rating system
                     - 1-5 treats (bones)
                 - Featured levels
+                    - Showcase highly rated and trending levels
                 - Custom challenge rules?
                 - Creator achievements?
     - Customizations 🐶
