@@ -65,6 +65,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Community challenge levels
                 - Favourite (save) other creators levels
                 - Rating system
+                    - 1-5 treats (bones)
                 - Featured levels
                 - Custom challenge rules?
                 - Creator achievements?
