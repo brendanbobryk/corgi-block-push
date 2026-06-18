@@ -63,7 +63,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Save levels locally
             - Sharable level codes
             - Community challenge levels
-                - Favourites
+                - Favourite (save) other creators levels
                 - Rating system
                 - Featured levels
                 - Custom challenge rules?
