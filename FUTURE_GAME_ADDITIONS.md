@@ -70,6 +70,7 @@ Organized below are groupings of additions yet to be added to the game.
                     - Showcase highly rated and trending levels
                 - Custom challenge rules?
                 - Creator achievements?
+                    - Create a level
     - Customizations 🐶
         - (see assets)
     - Achievements 🏆
