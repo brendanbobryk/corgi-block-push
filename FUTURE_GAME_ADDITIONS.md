@@ -73,6 +73,7 @@ Organized below are groupings of additions yet to be added to the game.
                     - Create a level
                     - Play another creator's level
                     - Rate a level
+                    - Favourite a level
     - Customizations 🐶
         - (see assets)
     - Achievements 🏆
