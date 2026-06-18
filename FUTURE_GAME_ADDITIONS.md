@@ -71,7 +71,8 @@ Organized below are groupings of additions yet to be added to the game.
                 - Custom challenge rules?
                 - Creator achievements?
                     - Create a level
-                    - Play anotehr creator's level
+                    - Play another creator's level
+                    - 
     - Customizations 🐶
         - (see assets)
     - Achievements 🏆
