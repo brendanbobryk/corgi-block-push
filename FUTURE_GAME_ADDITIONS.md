@@ -71,7 +71,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Custom challenge rules?
                 - Creator achievements?
                     - ⭐ Create a level
-                    - Play another creator's level
+                    - ⭐ Play another creator's level
                     - Rate a level
                     - Favourite a level
     - Customizations 🐶
