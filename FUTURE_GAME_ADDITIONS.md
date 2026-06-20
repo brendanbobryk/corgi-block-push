@@ -73,7 +73,7 @@ Organized below are groupings of additions yet to be added to the game.
                     - ⭐ [Backyard Architect] Create a level
                     - ⭐ [Neighbourhood Explorer] Play another creator's level
                     - ⭐ [Top Critic] Rate a level
-                    - ⭐ [] Favourite a level
+                    - ⭐ [Best in Show] Favourite a level
     - Customizations 🐶
         - (see assets)
     - Achievements 🏆
