@@ -70,7 +70,7 @@ Organized below are groupings of additions yet to be added to the game.
                     - Showcase highly rated and trending levels
                 - Custom challenge rules?
                 - Creator achievements?
-                    - ⭐ [] Create a level
+                    - ⭐ [Backyard Architect] Create a level
                     - ⭐ [Neighbourhood Explorer] Play another creator's level
                     - ⭐ [] Rate a level
                     - ⭐ [] Favourite a level
