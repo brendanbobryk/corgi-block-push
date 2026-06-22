@@ -81,6 +81,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Sorted by completed first 🔓, locked second 🔒, hidden last ❔
     - Statistics 📊
         - Total moves
+            - Total tiles travelled
         - Total levels completed
             - Total perfect levels
         - Total treats collected
