@@ -91,7 +91,6 @@ Organized below are groupings of additions yet to be added to the game.
         - Total restarts
         - Total times stepped in poop
         - Total times stung by bees
-        - Total perfect levels completed
         - Total community levels completed
     - Options/Settings ⚙️🛠️
         - Volume 🔇🔈🔉🔊
