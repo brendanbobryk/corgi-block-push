@@ -82,6 +82,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Statistics 📊
         - Total moves
         - Total levels completed
+            - Total perfect levels
         - Total treats collected
         - Total times corgi was cleaned
         - Total distance (tiles) travelled
