@@ -84,6 +84,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Total tiles travelled
         - Total levels completed
             - Total perfect levels
+            - Total levels restarted
         - Total treats collected
         - Total times corgi was cleaned
         - Total playtime
