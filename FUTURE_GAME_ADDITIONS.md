@@ -82,7 +82,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Statistics 📊
         - Moves
             - Total tiles travelled
-        - Total levels completed
+        - Levels
             - Total perfect levels
             - Total levels restarted
             - Total community levels completed
