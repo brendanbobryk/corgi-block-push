@@ -86,6 +86,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Total perfect levels
             - Total levels restarted
         - Total game overs
+            - Total stepped in poop
         - Total treats collected
         - Total times corgi was cleaned
         - Total playtime
