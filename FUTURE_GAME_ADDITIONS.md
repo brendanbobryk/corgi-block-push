@@ -87,6 +87,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Total levels restarted
         - Total game overs
             - Total stepped in poop
+            - Total stung by bees
         - Total treats collected
         - Total times corgi was cleaned
         - Total playtime
