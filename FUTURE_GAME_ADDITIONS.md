@@ -93,7 +93,6 @@ Organized below are groupings of additions yet to be added to the game.
         - Total times corgi was cleaned
         - Total playtime
         - Total barks
-        - Total community levels completed
     - Options/Settings ⚙️🛠️
         - Volume 🔇🔈🔉🔊
             - Music (+ on/off) 🎵
