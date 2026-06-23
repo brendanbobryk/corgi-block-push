@@ -85,6 +85,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Total levels completed
             - Total perfect levels
             - Total levels restarted
+            - Total community levels completed
         - Total game overs
             - Total stepped in poop
             - Total stung by bees
