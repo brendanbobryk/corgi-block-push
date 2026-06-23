@@ -83,6 +83,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Moves
             - Total tiles travelled
         - Levels
+            - Total levels completed
             - Total perfect levels
             - Total levels restarted
             - Total community levels completed
