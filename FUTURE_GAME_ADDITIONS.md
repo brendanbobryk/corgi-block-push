@@ -80,7 +80,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Show completed, locked (both w/ description), & hidden (w/o description)
         - Sorted by completed first 🔓, locked second 🔒, hidden last ❔
     - Statistics 📊
-        - Total moves
+        - Moves
             - Total tiles travelled
         - Total levels completed
             - Total perfect levels
