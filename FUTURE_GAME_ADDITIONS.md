@@ -91,6 +91,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Total stepped in poop
             - Total stung by bees
         - Emotes
+            - Total barks
         - Total treats collected
         - Total times corgi was cleaned
         - Total playtime
