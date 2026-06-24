@@ -92,7 +92,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Total stung by bees
         - Emotes
             - Total barks
-            - Total time sleeping
+            - Total time sleeping (idle)
         - Total treats collected
         - Total times corgi was cleaned
         - Total playtime
