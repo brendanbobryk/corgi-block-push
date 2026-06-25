@@ -83,7 +83,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Moves
             - Total tiles travelled
         - Levels
-            - Total levels completed (made it home)
+            - Total levels completed (made it inside home)
             - Total perfect levels
             - Total levels restarted
             - Total community levels completed
