@@ -80,6 +80,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Show completed, locked (both w/ description), & hidden (w/o description)
         - Sorted by completed first 🔓, locked second 🔒, hidden last ❔
     - Statistics 📊
+        - Total playtime
         - Moves
             - Total tiles travelled
         - Levels
@@ -97,7 +98,6 @@ Organized below are groupings of additions yet to be added to the game.
             - Total treats collected
             - Total times corgi got dirty
             - Total times corgi was cleaned
-        - Total playtime
     - Options/Settings ⚙️🛠️
         - Volume 🔇🔈🔉🔊
             - Music (+ on/off) 🎵
