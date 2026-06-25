@@ -95,7 +95,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Total time sleeping (idle)
         - Interactions
             - Total treats collected
-        - Total times corgi was cleaned
+            - Total times corgi was cleaned
         - Total playtime
     - Options/Settings ⚙️🛠️
         - Volume 🔇🔈🔉🔊
