@@ -81,7 +81,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Sorted by completed first 🔓, locked second 🔒, hidden last ❔
     - Statistics 📊
         - Total playtime
-        - Total achievements
+        - Total achievements (X/X)
         - Moves
             - Total tiles travelled
         - Levels
