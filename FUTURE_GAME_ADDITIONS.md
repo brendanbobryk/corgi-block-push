@@ -82,7 +82,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Statistics 📊
         - Total playtime
         - Total achievements (X/X)
-        - Total cosmetics
+        - Total cosmetics (X/X)
         - Moves
             - Total tiles travelled
         - Levels
