@@ -94,6 +94,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Easy
                 - Medium
                 - Hard
+                - Expert
         - Game Overs
             - Total stepped in poop
             - Total stung by bees
