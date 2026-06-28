@@ -90,7 +90,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Total perfect levels
             - Total levels restarted
             - Total community levels completed
-            - Best level completion time
+            - Best level completion time(s)
         - Game Overs
             - Total stepped in poop
             - Total stung by bees
