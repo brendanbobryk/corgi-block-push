@@ -91,6 +91,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Total levels restarted
             - Total community levels completed
             - Best level completion time(s)
+                - Easy
         - Game Overs
             - Total stepped in poop
             - Total stung by bees
