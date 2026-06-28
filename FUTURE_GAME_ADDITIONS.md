@@ -93,6 +93,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Best level completion time(s)
                 - Easy
                 - Medium
+                - Hard
         - Game Overs
             - Total stepped in poop
             - Total stung by bees
