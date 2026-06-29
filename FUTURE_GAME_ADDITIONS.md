@@ -84,7 +84,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Total playtime
             - Playtime in each mode
                 - Normal 🕹️
-                - Speedrun
+                - Speedrun 🔥
                 - Time trial
                 - Daily challenge
                 - Custom & Community
