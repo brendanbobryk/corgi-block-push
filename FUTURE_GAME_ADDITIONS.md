@@ -83,6 +83,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Playtime
             - Total playtime
             - Playtime in each mode
+                - Normal
         - Total achievements (X/X)
         - Total cosmetics (X/X)
         - Moves
