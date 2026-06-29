@@ -84,6 +84,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Total playtime
             - Playtime in each mode
                 - Normal
+                - Speedrun
         - Total achievements (X/X)
         - Total cosmetics (X/X)
         - Moves
