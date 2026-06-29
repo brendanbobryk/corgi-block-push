@@ -86,6 +86,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Normal
                 - Speedrun
                 - Time trial
+                - Daily challenge
         - Total achievements (X/X)
         - Total cosmetics (X/X)
         - Moves
