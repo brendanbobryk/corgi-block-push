@@ -81,6 +81,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Sorted by completed first 🔓, locked second 🔒, hidden last ❔
     - Statistics 📊
         - Playtime
+            - Total playtime
         - Total achievements (X/X)
         - Total cosmetics (X/X)
         - Moves
