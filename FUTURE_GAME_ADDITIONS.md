@@ -89,7 +89,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Daily challenge
                 - Custom & Community
         - Total achievements (X/X)
-            - Total hidden achievements
+            - Total hidden achievements (X/X)
         - Total cosmetics (X/X)
         - Moves
             - Total tiles travelled
