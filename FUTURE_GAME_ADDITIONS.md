@@ -108,6 +108,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Total stepped in poop
             - Total stung by bees
             - Hidden (???)
+                - Escape the backyard
         - Emotes
             - Total barks
             - Total time sleeping (idle)
