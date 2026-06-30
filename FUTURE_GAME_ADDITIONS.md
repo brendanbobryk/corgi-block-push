@@ -107,6 +107,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Game Overs
             - Total stepped in poop
             - Total stung by bees
+            - Hidden (???)
         - Emotes
             - Total barks
             - Total time sleeping (idle)
