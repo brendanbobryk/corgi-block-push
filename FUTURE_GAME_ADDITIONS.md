@@ -91,6 +91,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Total achievements (X/X)
             - Total hidden achievements (X/X)
         - Total cosmetics (X/X)
+            - Total hidden cosmetics
         - Moves
             - Total tiles travelled
         - Levels
