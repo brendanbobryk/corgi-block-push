@@ -216,7 +216,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Passing clouds/shadows
             - Light rays diagonally down screen
         - Autumn 🍂
-            - Falling leaves over screen
+            - Falling leaves down screen
             - Leaves in the wind
             - Breeze aminations across screen
         - Winter ❄️
