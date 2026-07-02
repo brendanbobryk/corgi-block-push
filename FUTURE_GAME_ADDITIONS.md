@@ -213,7 +213,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Rain showers
             - Puddles
         - Summer ☀️
-            - Passing clouds/shadows
+            - Passing shadows of clouds
             - Light rays diagonally down screen
         - Autumn 🍂
             - Falling leaves down screen
