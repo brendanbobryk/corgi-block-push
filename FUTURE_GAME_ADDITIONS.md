@@ -221,7 +221,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Windy weather
             - Falling leaves down screen
         - Winter ❄️
-            - Snow fall w/ snowflakes down screen
+            - Falling snowflakes down screen
             - Snow-covered tiles/objects
 
 - Wall assets
