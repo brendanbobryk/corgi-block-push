@@ -210,7 +210,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Limited visibility challenge levels
     - Seasonal Variants
         - Spring 🌸
-            - Rain showers
+            - Rainy weather
             - Puddles
         - Summer ☀️
             - Passing shadows of clouds
