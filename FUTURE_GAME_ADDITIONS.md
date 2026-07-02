@@ -203,6 +203,8 @@ Organized below are groupings of additions yet to be added to the game.
 
 - Environment/Weather assets
     - Sunny ☀️
+        - Passing shadows of clouds
+        - Light rays diagonally down screen
     - Rainy 🌧️
         - Creates puddles
     - Windy 🍃
