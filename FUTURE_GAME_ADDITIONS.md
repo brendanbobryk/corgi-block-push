@@ -219,8 +219,6 @@ Organized below are groupings of additions yet to be added to the game.
             - Sunny weather
         - Autumn 🍂
             - Falling leaves down screen
-            - Leaves in the wind across screen
-            - Breeze animations across screen
         - Winter ❄️
             - Snow fall w/ snowflakes down screen
             - Snow-covered tiles/objects
