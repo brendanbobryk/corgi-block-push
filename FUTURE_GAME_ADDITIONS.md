@@ -214,8 +214,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Spring 🌸
             - Rainy weather
         - Summer ☀️
-            - Passing shadows of clouds
-            - Light rays diagonally down screen
+            - Sunny weather
         - Autumn 🍂
             - Falling leaves down screen
             - Leaves in the wind across screen
