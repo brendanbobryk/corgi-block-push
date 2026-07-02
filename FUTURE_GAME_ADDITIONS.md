@@ -223,6 +223,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Winter ❄️
             - Falling snowflakes down screen
             - Snow-covered tiles/objects
+            - Breeze animations across screen
 
 - Wall assets
     - Backyard fence border for the trim of the game grid
