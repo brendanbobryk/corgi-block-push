@@ -208,6 +208,8 @@ Organized below are groupings of additions yet to be added to the game.
     - Rainy 🌧️
         - Creates puddles
     - Windy 🍃
+        - Leaves in the wind across screen
+        - Breeze animations across screen
     - Foggy 🌫️
         - Limited visibility challenge levels
     - Seasonal Variants
