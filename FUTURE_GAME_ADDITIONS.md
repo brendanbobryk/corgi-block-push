@@ -207,7 +207,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Light rays diagonally down screen
     - Rainy 🌧️
         - Rain down screen
-            - Droplets on forefront like a glass window?
+            - Droplets on forefront player POV alike a glass window?
         - Creates puddles
     - Windy 🍃
         - Leaves in the wind across screen
