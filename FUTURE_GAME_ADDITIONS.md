@@ -225,7 +225,6 @@ Organized below are groupings of additions yet to be added to the game.
             - Sunny weather
         - Autumn 🍂
             - Windy weather
-            - Falling leaves down screen
         - Winter ❄️
             - Snowy weather
             - Snow-covered tiles/objects
