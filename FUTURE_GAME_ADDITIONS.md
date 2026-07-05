@@ -205,7 +205,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Summer (Sunny) ☀️
         - Passing shadows of clouds
         - Light rays diagonally down screen
-    -  Spring (Rainy) 🌧️
+    -  Spring (Rainy) 🌸🌧️
         - Rain down screen
             - Droplets on forefront player POV alike a glass window?
         - Creates puddles
@@ -213,7 +213,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Falling snowflakes down screen
         - Breeze animations across screen
         - Snow-covered tiles/objects
-    - Autumn/Fall (Windy) 🍃
+    - Autumn/Fall (Windy) 🍂🍃
         - Leaves in the wind across screen
         - Falling leaves down screen
         - Breeze animations across screen
