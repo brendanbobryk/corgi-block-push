@@ -213,7 +213,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Falling snowflakes down screen
         - Breeze animations across screen
         - Snow-covered tiles/objects
-    - Windy 🍃
+    - Autumn/Fall (Windy) 🍃
         - Leaves in the wind across screen
         - Falling leaves down screen
         - Breeze animations across screen
