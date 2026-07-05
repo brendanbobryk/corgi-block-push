@@ -205,7 +205,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Summer (Sunny) ☀️
         - Passing shadows of clouds
         - Light rays diagonally down screen
-    - Rainy 🌧️
+    -  Spring (Rainy) 🌧️
         - Rain down screen
             - Droplets on forefront player POV alike a glass window?
         - Creates puddles
