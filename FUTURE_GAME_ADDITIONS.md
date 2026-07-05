@@ -209,6 +209,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Rain down screen
             - Droplets on forefront player POV alike a glass window?
         - Creates puddles
+        - Blooming flowers
     - Winter (Snowy) ❄️
         - Falling snowflakes down screen
         - Breeze animations across screen
