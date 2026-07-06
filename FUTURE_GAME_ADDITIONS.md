@@ -227,8 +227,6 @@ Organized below are groupings of additions yet to be added to the game.
             - Sunny weather
         - Autumn 🍂
             - Windy weather
-        - Winter ❄️
-            - Snowy weather
 
 - Wall assets
     - Backyard fence border for the trim of the game grid
