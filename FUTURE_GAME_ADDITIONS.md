@@ -201,7 +201,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Birds landing on the fence
     - Children bike riding past
 
-- Environment/Weather assets
+- Environment/Weather/Seasonal assets
     - Summer (Sunny) ☀️
         - Passing shadows of clouds
         - Light rays diagonally down screen
