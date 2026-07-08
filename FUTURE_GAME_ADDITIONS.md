@@ -218,6 +218,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Leaves in the wind across screen
         - Falling leaves down screen
         - Breeze animations across screen
+    - Misc.
     - Foggy 🌫️
         - Limited visibility challenge levels
 
