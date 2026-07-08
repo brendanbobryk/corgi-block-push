@@ -229,6 +229,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Summer:
             - Spring: 
             - Winter: 
+            - Fall: 
 
 - Wall assets
     - Backyard fence border for the trim of the game grid
