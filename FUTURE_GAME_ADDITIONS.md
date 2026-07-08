@@ -225,6 +225,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Lightning flashes
             - Thunder sound effects
             - Heavy rainfall
+        - Tiles/background colour change per season
 
 - Wall assets
     - Backyard fence border for the trim of the game grid
