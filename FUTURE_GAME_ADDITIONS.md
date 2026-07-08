@@ -219,8 +219,8 @@ Organized below are groupings of additions yet to be added to the game.
         - Falling leaves down screen
         - Breeze animations across screen
     - Misc.
-    - Foggy 🌫️
-        - Limited visibility challenge levels
+        - Foggy 🌫️
+            - Limited visibility challenge levels
 
 - Wall assets
     - Backyard fence border for the trim of the game grid
