@@ -226,8 +226,8 @@ Organized below are groupings of additions yet to be added to the game.
             - Thunder sound effects
             - Heavy rainfall
         - Tiles/background colour change per season
-            - Summer: Green
-            - Spring: Yellow
+            - Summer: green
+            - Spring: yellow/gold
             - Winter: 
             - Fall: 
 
