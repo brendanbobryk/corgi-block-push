@@ -228,7 +228,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Tiles/background colour change per season
             - Summer: green
             - Spring: yellow/gold
-            - Winter: 
+            - Winter: white/silver
             - Fall: 
 
 - Wall assets
