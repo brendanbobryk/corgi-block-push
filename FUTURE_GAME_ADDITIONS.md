@@ -227,7 +227,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Heavy rainfall
         - Tiles/background colour change per season
             - Summer: Green
-            - Spring: 
+            - Spring: Yellow
             - Winter: 
             - Fall: 
 
