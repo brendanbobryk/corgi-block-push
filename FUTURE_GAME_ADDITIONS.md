@@ -227,9 +227,9 @@ Organized below are groupings of additions yet to be added to the game.
             - Heavy rainfall
         - Tiles/background colour change per season
             - Summer: green
-            - Spring: yellow/gold
-            - Winter: white/silver/blue
-            - Fall: orange/red/yellow
+            - Spring: yellow/gold,
+            - Winter: white/silver, blue
+            - Fall: orange/red, yellow
 
 - Wall assets
     - Backyard fence border for the trim of the game grid
