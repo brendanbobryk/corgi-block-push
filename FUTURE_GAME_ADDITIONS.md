@@ -225,7 +225,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Lightning flashes
             - Thunder sound effects
             - Heavy rainfall
-        - Night
+        - Evening/Night
         - Tiles/background colour change per season
             - Summer: green
             - Spring: yellow/gold,
