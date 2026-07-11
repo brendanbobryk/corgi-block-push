@@ -229,7 +229,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Sunsetting effect, colour transitions
         - Tiles/background colour change per season
             - Summer: green
-            - Spring: yellow/gold, pink
+            - Spring: yellow/gold, pink, orange
             - Winter: white/silver, blue
             - Fall: orange/red, yellow
             - Night: dark blue, purple
