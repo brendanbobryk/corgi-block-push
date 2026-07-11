@@ -232,7 +232,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Spring: yellow/gold, pink, orange
             - Winter: white/silver, blue
             - Fall: orange, red, yellow
-            - Night: dark blue, purple
+            - Night: dark blue, purple, grey
 
 - Wall assets
     - Backyard fence border for the trim of the game grid
