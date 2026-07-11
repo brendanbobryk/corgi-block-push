@@ -231,7 +231,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Summer: green, yellow
             - Spring: yellow/gold, pink, orange
             - Winter: white/silver, blue
-            - Fall: orange/red, yellow
+            - Fall: orange, red, yellow
             - Night: dark blue, purple
 
 - Wall assets
