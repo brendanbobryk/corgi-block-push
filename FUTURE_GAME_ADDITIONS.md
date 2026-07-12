@@ -1,4 +1,4 @@
-# Future Game Additions 🐶🟦te
+# Future Game Additions 🐶🟦t
 
 Organized below are groupings of additions yet to be added to the game.
 
