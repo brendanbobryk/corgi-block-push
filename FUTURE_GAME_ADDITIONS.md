@@ -244,7 +244,7 @@ Organized below are groupings of additions yet to be added to the game.
 
 - Pushable block assets
     - Toy ball (Tennis ball) ⚽🔵🏀🟡
-    - Sticks (Perhaps not so clear as a toy)
+    - Stick
     - Rope
 
 - Sprite assests
