@@ -221,7 +221,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Misc.
         - Foggy 🌫️☁️
             - Limited visibility challenge levels
-        - Storming
+        - Storming ⛈️
             - Lightning flashes
             - Thunder sound effects
             - Heavy rainfall
