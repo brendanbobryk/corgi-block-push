@@ -210,6 +210,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Droplets on forefront player POV alike a glass window?
         - Creates puddles
         - Blooming flowers
+        - Rainbows
     - Winter (Snowy) 🌨️❄️
         - Falling snowflakes down screen
         - Breeze animations across screen
