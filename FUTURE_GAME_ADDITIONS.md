@@ -202,7 +202,7 @@ Organized below are groupings of additions yet to be added to the game.
     - Children bike riding past
 
 - Environment/Weather/Seasonal assets
-    - Summer (Sunny) ☀️
+    - Summer (Sunny) ☀️🌤️
         - Passing shadows of clouds
         - Light rays diagonally down screen
     - Spring (Rainy) 🌸🌧️
