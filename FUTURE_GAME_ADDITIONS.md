@@ -250,7 +250,7 @@ Organized below are groupings of additions yet to be added to the game.
 - Sprite assests
     - Unlock progression
         - Customizations as rewards for obtaining achievements
-        - Have some unlocked by defult
+        - Have some unlocked by default
         - Unlock more as you progress level completion
             - Colours and patterns?
             
