@@ -219,7 +219,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Falling leaves down screen
         - Breeze animations across screen
     - Misc.
-        - Foggy 🌫️
+        - Foggy 🌫️☁️
             - Limited visibility challenge levels
         - Storming
             - Lightning flashes
