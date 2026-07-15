@@ -274,6 +274,8 @@ Organized below are groupings of additions yet to be added to the game.
             - Puppy or Mid-aged
                 - Higher/Lower pitch bark sounds
                 - Physical size variance (small/medium/large character sprite)
+        
+        - Corgi weight
 
         - Corgi clothes/outfits
             - Bow/bowtie/tie (+ colour/pattern variations)
