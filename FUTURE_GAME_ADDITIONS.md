@@ -277,6 +277,7 @@ Organized below are groupings of additions yet to be added to the game.
         
         - Corgi weight
             - From smallest to largest:
+                - Potato
 
         - Corgi clothes/outfits
             - Bow/bowtie/tie (+ colour/pattern variations)
