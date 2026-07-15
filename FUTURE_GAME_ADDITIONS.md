@@ -275,7 +275,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Higher/Lower pitch bark sounds
                 - Physical size variance (small/medium/large character sprite)
 
-        - Corgi clothes & outfits
+        - Corgi clothes/outfits
             - Bow/bowtie/tie (+ colour/pattern variations)
             - Sweater (+ colour/pattern variations)
             - Suit (formal)
