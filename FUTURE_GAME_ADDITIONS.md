@@ -276,6 +276,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Physical size variance (small/medium/large character sprite)
         
         - Corgi weight
+            - Chonky
 
         - Corgi clothes/outfits
             - Bow/bowtie/tie (+ colour/pattern variations)
