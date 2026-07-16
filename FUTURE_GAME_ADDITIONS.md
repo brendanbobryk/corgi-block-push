@@ -277,7 +277,7 @@ Organized below are groupings of additions yet to be added to the game.
         
         - Corgi weight
             - From smallest to largest:
-                - Baby
+                - Baby pig
                 - Potato
                 - Chonk(er)(y)
 
