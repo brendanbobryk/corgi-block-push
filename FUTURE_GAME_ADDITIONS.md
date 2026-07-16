@@ -279,7 +279,7 @@ Organized below are groupings of additions yet to be added to the game.
             - From smallest to largest:
                 - Baby
                 - Potato
-                - Chonky
+                - Chonk(er)
 
         - Corgi clothes/outfits
             - Bow/bowtie/tie (+ colour/pattern variations)
