@@ -275,6 +275,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Higher/Lower pitch bark sounds
                 - Physical size variance (small/medium/large character sprite)
             - Mid-aged
+                - Mid-pitch bark sound
         
         - Corgi weight
             - From smallest to largest:
