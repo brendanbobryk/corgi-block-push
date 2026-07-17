@@ -271,7 +271,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Higher/Lower pitch bark sounds
 
         - Corgi age
-            - Puppy or Mid-aged
+            - Puppy
                 - Higher pitch bark sound
                 - Physical size variance (small/medium/large character sprite)
             - Mid-aged
