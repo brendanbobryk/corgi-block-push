@@ -274,6 +274,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Puppy
                 - Higher pitch bark sound
                 - Small sprite size
+                    - Small body
                     - Large ears, small body
             - Mid-aged
                 - Mid-pitch bark sound
