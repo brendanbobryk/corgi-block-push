@@ -279,6 +279,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Mid-aged
                 - Mid-pitch bark sound
                 - Medium sprite size
+                    - Medium body
                     - Large ears, medium body
         
         - Corgi weight
