@@ -281,6 +281,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Medium sprite size
                     - Medium body
                     - Large ears
+                    - Weight variance (see below)
         
         - Corgi weight
             - From smallest to largest:
