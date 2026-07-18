@@ -280,7 +280,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Mid-pitch bark sound
                 - Medium sprite size
                     - Medium body
-                    - Large ears, medium body
+                    - Large ears
         
         - Corgi weight
             - From smallest to largest:
