@@ -292,6 +292,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Bum size
                 - Normal
                 - Dumptruck
+            - Bum shape
 
         - Corgi clothes/outfits
             - Bow/bowtie/tie (+ colour/pattern variations)
