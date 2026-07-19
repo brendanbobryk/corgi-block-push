@@ -291,6 +291,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Chonk(er)(y)
             - Bum size
                 - Normal
+                - Dumptruck
 
         - Corgi clothes/outfits
             - Bow/bowtie/tie (+ colour/pattern variations)
