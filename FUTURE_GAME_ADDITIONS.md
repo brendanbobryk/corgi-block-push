@@ -289,7 +289,8 @@ Organized below are groupings of additions yet to be added to the game.
                 - Loaf
                 - Potato
                 - Chonk(er)(y)
-            - Bum size & shape
+            - Bum size
+                - Normal
 
         - Corgi clothes/outfits
             - Bow/bowtie/tie (+ colour/pattern variations)
