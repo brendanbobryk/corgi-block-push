@@ -295,6 +295,8 @@ Organized below are groupings of additions yet to be added to the game.
             - Bum shape
                 - Heart tail nub
 
+        - Corgi tail
+
         - Corgi clothes/outfits
             - Bow/bowtie/tie (+ colour/pattern variations)
             - Sweater (+ colour/pattern variations)
