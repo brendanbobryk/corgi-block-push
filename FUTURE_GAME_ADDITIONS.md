@@ -296,6 +296,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Heart tail nub
 
         - Corgi tail
+            - Nub
 
         - Corgi clothes/outfits
             - Bow/bowtie/tie (+ colour/pattern variations)
