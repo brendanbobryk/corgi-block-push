@@ -293,7 +293,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Normal
                 - Dumptruck
             - Bum shape
-                - Heart tail nub
+                - Heart
 
         - Corgi tail
             - Nub
