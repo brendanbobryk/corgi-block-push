@@ -294,6 +294,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Dumptruck
             - Bum shape
                 - Heart
+                - Fluffy
 
         - Corgi tail
             - Nub
