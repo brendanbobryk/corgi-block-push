@@ -256,7 +256,8 @@ Organized below are groupings of additions yet to be added to the game.
             
     - Customizations
         - Corgi colour
-            - Orange/White or Tri-colour
+            - Orange/White
+            - Tri-colour
 
             - Hair patterns
                 - Variations of fur colour patterns
