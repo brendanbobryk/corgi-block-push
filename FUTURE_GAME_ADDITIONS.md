@@ -291,6 +291,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Chonk(er)(y)
             - Bum size
                 - Normal
+                - Peach
                 - Dumptruck
             - Bum shape
                 - Heart
