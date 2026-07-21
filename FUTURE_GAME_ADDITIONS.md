@@ -268,7 +268,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Longer fur (husky-like)
 
         - Corgi gender 
-            - Male or Female
+            - Male
                 - Higher/Lower pitch bark sounds
             - Female
                 - Higher pitch bark sound
