@@ -269,7 +269,7 @@ Organized below are groupings of additions yet to be added to the game.
 
         - Corgi gender 
             - Male
-                - Higher/Lower pitch bark sounds
+                - Lower pitch bark sound
             - Female
                 - Higher pitch bark sound
 
