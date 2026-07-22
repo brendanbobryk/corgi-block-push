@@ -286,7 +286,7 @@ Organized below are groupings of additions yet to be added to the game.
                     - Large ears
                     - Weight variance (see below)
             - Late-aged
-                
+                - Low pitched bark sound
         
         - Corgi weight
             - From smallest to largest:
