@@ -275,7 +275,7 @@ Organized below are groupings of additions yet to be added to the game.
 
         - Corgi age
             - Puppy
-                - Higher pitch bark sound
+                - High pitch bark sound
                 - Small sprite size
                     - Small body
                     - Large ears
