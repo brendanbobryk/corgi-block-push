@@ -271,7 +271,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Male
                 - Lower pitch bark sound
             - Female
-                - Higher pitch bark sound
+                - High pitch bark sound
 
         - Corgi age
             - Puppy
