@@ -311,7 +311,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Long tail
 
         - Corgi clothes/outfits
-            - Bow/bowtie/tie (+ colour/pattern variations)
+            - Bow (+ colour/pattern variations)
             - Sweater (+ colour/pattern variations)
             - Harness (+ colour variations)
             - Collar (+ colour variations)
