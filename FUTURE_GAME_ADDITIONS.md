@@ -319,7 +319,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Bow (for head) (+ colour/pattern variations)
             - Raincoat (+ colour/pattern variations)
             - Suit (formal)
-                - Bowtie/tie
+                - Bowtie/tie (+ colour/pattern variations)
             - Glasses (+ colour/pattern variations)
                 - Regular glasses
                     - Round, square, etc.
