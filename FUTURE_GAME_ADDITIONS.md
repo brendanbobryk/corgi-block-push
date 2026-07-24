@@ -287,7 +287,7 @@ Organized below are groupings of additions yet to be added to the game.
                     - Weight variance (see below)
             - Late-aged
                 - Low pitched bark sound
-                - Medium/Large sprite size
+                - Medium/large sprite size
                     - Medium/large body
                     - Large ears
                     - Weight variance (see below)
