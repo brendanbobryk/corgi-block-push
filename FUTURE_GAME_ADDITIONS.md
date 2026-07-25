@@ -318,7 +318,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Bandana (+ colour/pattern variations)
             - Bow (for head) (+ colour/pattern variations)
             - Raincoat (+ colour/pattern variations)
-            - Suit (formal)
+            - Suit (formal) (+ colour/pattern variations)
                 - Bowtie (+ colour/pattern variations)
                 - Tie (+ colour/pattern variations)
             - Glasses (+ colour/pattern variations)
