@@ -320,7 +320,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Raincoat (+ colour/pattern variations)
             - Suit (formal)
                 - Bowtie/tie (+ colour/pattern variations)
-                - Tie
+                - Tie (+ colour/pattern variations)
             - Glasses (+ colour/pattern variations)
                 - Regular glasses
                     - Round, square, etc.
