@@ -322,6 +322,7 @@ Organized below are groupings of additions yet to be added to the game.
                 - Bowtie
                 - Tie
                 - Dress shoes
+                - Belt
             - Glasses (+ colour/pattern variations)
                 - Regular glasses
                     - Round, square, etc.
