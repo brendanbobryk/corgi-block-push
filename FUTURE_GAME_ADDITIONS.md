@@ -207,7 +207,7 @@ Organized below are groupings of additions yet to be added to the game.
         - Light rays diagonally down screen
     - Spring (Rainy) 🌸🌧️🌥️🌈
         - Rain down screen
-            - Droplets on forefront player POV alike a glass window?
+            - Droplets on forefront player POV alike a glass window
         - Creates puddles
         - Blooming flowers
         - Rainbows
