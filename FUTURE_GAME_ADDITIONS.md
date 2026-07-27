@@ -321,7 +321,7 @@ Organized below are groupings of additions yet to be added to the game.
             - Suit (formal) (+ colour/pattern variations)
                 - Bowtie
                 - Tie
-                - Shoes
+                - Dress shoes
             - Glasses (+ colour/pattern variations)
                 - Regular glasses
                     - Round, square, etc.
